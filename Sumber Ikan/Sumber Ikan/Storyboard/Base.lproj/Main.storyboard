@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HWM-5O-VD0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Daftar Ikan Controller-->
+        <scene sceneID="bw9-MO-r58">
+            <objects>
+                <tableViewController storyboardIdentifier="DaftarIkanController" id="NT6-nK-Kdg" customClass="DaftarIkanController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="2tD-VG-2ad">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="5tp-vP-fd0" detailTextLabel="XKU-tb-qF7" rowHeight="50" style="IBUITableViewCellStyleValue1" id="28h-Uo-mUd">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="28h-Uo-mUd" id="5Xd-hB-wbH">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5tp-vP-fd0">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XKU-tb-qF7">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NT6-nK-Kdg" id="4r2-bS-ag4"/>
+                            <outlet property="delegate" destination="NT6-nK-Kdg" id="Egr-Qf-j0e"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="IIW-6o-V4e"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Caz-a1-O0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="345"/>
+        </scene>
+        <!--Ikan Hidup-->
+        <scene sceneID="5Gx-fc-4iO">
+            <objects>
+                <navigationController id="vk1-0Z-6Q1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ikan Hidup" image="liveFish.png" id="G57-Hk-rZO">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="98Y-UB-Iab">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NT6-nK-Kdg" kind="relationship" relationship="rootViewController" id="Yzt-cX-FSJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taR-vs-oK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656" y="345"/>
+        </scene>
+        <!--Daftar Ikan Mati Controller-->
+        <scene sceneID="Y9N-8h-xVj">
+            <objects>
+                <tableViewController storyboardIdentifier="DaftarIkanMatiController" id="M3a-P1-iU6" customClass="DaftarIkanMatiController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="6Zj-rA-lgK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="Kci-zQ-RHg" detailTextLabel="0bY-en-hP3" rowHeight="50" style="IBUITableViewCellStyleValue1" id="mZ7-sT-5Ts">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZ7-sT-5Ts" id="fHh-65-oy8">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kci-zQ-RHg">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0bY-en-hP3">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="M3a-P1-iU6" id="W9L-y1-rqB"/>
+                            <outlet property="delegate" destination="M3a-P1-iU6" id="M6A-cY-mKT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="edT-Fx-MhD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNM-7b-Bg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448" y="1117"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1o0-iY-77T">
+            <objects>
+                <tabBarController id="HWM-5O-VD0" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jKN-SW-SPN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vk1-0Z-6Q1" kind="relationship" relationship="viewControllers" id="7Sr-yK-g6X"/>
+                        <segue destination="lcS-mc-LEn" kind="relationship" relationship="viewControllers" id="faG-zI-kSt"/>
+                        <segue destination="gsR-B6-ejn" kind="relationship" relationship="viewControllers" id="NEY-YC-HDh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pHc-I9-LT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="780"/>
+        </scene>
+        <!--Ikan Mati-->
+        <scene sceneID="5ZN-IE-etC">
+            <objects>
+                <navigationController id="lcS-mc-LEn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ikan Mati" image="deadFish.png" id="s2n-Hu-U1r">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ydg-bX-Smr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="M3a-P1-iU6" kind="relationship" relationship="rootViewController" id="ibu-Ij-qTO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Etq-Kb-I3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="1117"/>
+        </scene>
+        <!--Pesanan-->
+        <scene sceneID="efq-sX-DX5">
+            <objects>
+                <navigationController id="gsR-B6-ejn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pesanan" image="notes.png" id="N6T-ZV-Bzr">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L0j-sP-bFd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ib4-9f-biR" kind="relationship" relationship="rootViewController" id="iT4-1Q-b5N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pp-SR-l63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656" y="1942"/>
+        </scene>
+        <!--Pesanan-->
+        <scene sceneID="Zer-HS-X7Z">
+            <objects>
+                <viewController storyboardIdentifier="PesananController" id="Ib4-9f-biR" customClass="PesananController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="usi-p5-w6s"/>
+                        <viewControllerLayoutGuide type="bottom" id="gPg-jZ-mbC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D1j-11-v2S">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-ib-ONx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ib4-9f-biR" id="MUl-zx-0ho"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="A4Q-ib-ONx" secondAttribute="bottom" id="ARg-kb-rey"/>
+                            <constraint firstItem="A4Q-ib-ONx" firstAttribute="leading" secondItem="D1j-11-v2S" secondAttribute="leading" id="Nx8-yR-7Uh"/>
+                            <constraint firstItem="A4Q-ib-ONx" firstAttribute="top" secondItem="D1j-11-v2S" secondAttribute="top" id="TOg-65-jIQ"/>
+                            <constraint firstAttribute="trailing" secondItem="A4Q-ib-ONx" secondAttribute="trailing" id="hqv-Uw-pMI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pesanan" id="uMm-1S-kMQ"/>
+                    <connections>
+                        <outlet property="pesanan" destination="A4Q-ib-ONx" id="FeZ-u6-hAe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7b-kY-OtJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2363" y="1942"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deadFish.png" width="25" height="25"/>
+        <image name="liveFish.png" width="25" height="25"/>
+        <image name="notes.png" width="25" height="25"/>
+    </resources>
+</document>
