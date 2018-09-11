@@ -1,14 +1,22 @@
 # betway-ios
 
 ## 1. System Architecture (Figure)
+<<<<<<< HEAD
 #### Please refer to the architecture diagram :
 <br><img src = "https://github.com/xeravim/Sumber-Ikan/raw/branch/master/Screenshot/Architecture/Betway_Architecture.png" width = "250">
+=======
+#### Please refer to the architecture diagram! [Architect] (http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/Betway_Architecture.png)
+>>>>>>> e5564465ee7cab4d60a5526dbd765fbdf32ab026
 
 
 ## 2. Description of each module
 ### Home
+<<<<<<< HEAD
 #### 1 ViewControllers
 <br><img src = "https://github.com/xeravim/Sumber-Ikan/raw/branch/master/Screenshot/Welcome/Welcome.png" width = "250">
+=======
+#### 1 ViewControllers![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
+>>>>>>> e5564465ee7cab4d60a5526dbd765fbdf32ab026
 ##### 1.1MainBannerCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage%20top.png)
 ##### 1.2SYTableViewCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
 ### Games Lobby
@@ -24,7 +32,11 @@
 ##### 1.1 PageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/PageViewController.png)
 #### 2.ApplicationGuidanceViewController ![layout](http://gitea.funpodium.net/youkoka/betway-ios-fork/src/commit/dcdb4f7027ca420232e3ed1aada5be1e1b668bf9/ReadmeResource/ApplicationGuidanceViewController.png)
 #### 3.ApplicationFormViewController ![layout](http://gitea.funpodium.net/youkoka/betway-ios-fork/src/commit/dcdb4f7027ca420232e3ed1aada5be1e1b668bf9/ReadmeResource/ApplicationFormViewController.png)
+<<<<<<< HEAD
 ### Pig Page
+=======
+### 小猪页
+>>>>>>> e5564465ee7cab4d60a5526dbd765fbdf32ab026
 #### DepositPageViewController (framework)
         • UIView *headView -> upper block
         • UIImageView *headBGImg -> Background of the upper block
@@ -1116,4 +1128,8 @@
     - Calendar : Date related features
     - UIButton : Calculate the area size based on the string
     - Keyboard : Keyboard event related functions
+<<<<<<< HEAD
     - TouchOrFace : Biometric related functions
+=======
+    - TouchOrFace : Biometric related functions
+>>>>>>> e5564465ee7cab4d60a5526dbd765fbdf32ab026
