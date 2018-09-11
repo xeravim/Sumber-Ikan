@@ -1,4 +1,4 @@
-# Betway-ios
+# Betway-iOS
 
 ## 1. System Architecture (Figure)
 
@@ -6,7 +6,7 @@
 
 ## 2. Description of each modules
 ### Home
-#### 1 ViewControllers
+#### 1. ViewControllers
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPage.png?raw=true" width = "500">
 
 ##### 1.1 MainBannerCell
@@ -16,32 +16,40 @@
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
 
 ### Games Lobby
-#### 2 GameHallViewController
+#### 2. GameHallViewController
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallViewController.png?raw=true" width = "500">
 
-#### 3 遊戲頁籤(除我的最愛) GameListViewController
-<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/GameListViewController.png?raw=true" width = "500">
+#### 3. 遊戲頁籤(除我的最愛) GameListViewController
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameListViewController.png?raw=true" width = "500">
 
-#### 4 我的最愛頁籤 catalogViewController 
-<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/catalogViewController.png?raw=true" width = "500">
+#### 4. 我的最愛頁籤 catalogViewController 
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/catalogViewController.png?raw=true" width = "500">
 
-#### 5 顯示全部 checkAllViewController 
-<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/checkAllViewController.png?raw=true" width = "500">
+#### 5. 顯示全部 checkAllViewController 
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/checkAllViewController.png?raw=true" width = "500">
 
-#### 6 遊戲頁 gameCenterViewController 
-<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/gameCenterViewController.png?raw=true" width = "500">
+#### 6. 遊戲頁 gameCenterViewController 
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/gameCenterViewController.png?raw=true" width = "500">
 
 ##### 6.1 SideBarMenuView
-<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/SideBarMenuView.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/SideBarMenuView.png?raw=true" width = "500">
 
-#### 7 遊戲頁內優惠 GameHallDiscountListViewController
-<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/GameHallDiscountListViewController.png?raw=true" width = "500">
+#### 7. 遊戲頁內優惠 GameHallDiscountListViewController
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallDiscountListViewController.png?raw=true" width = "500">
 
 ### 優惠
-#### 1 DiscountPageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/DiscountPageViewController.png)
-##### 1.1 PageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/PageViewController.png)
-#### 2.ApplicationGuidanceViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/ApplicationGuidanceViewController.png)
-#### 3.ApplicationFormViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/ApplicationFormViewController.png)
+#### 1. DiscountPageViewController
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Offers/DiscountPageViewController.png?raw=true" width = "500">
+
+##### 1.1 PageViewController
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Offers/PageViewController.png?raw=true" width = "500">
+
+#### 2. ApplicationGuidanceViewController 
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Offers/ApplicationGuidanceViewController.png?raw=true" width = "500">
+
+#### 3. ApplicationFormViewController 
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Offers/ApplicationFormViewController.png?raw=true" width = "500">
+
 ### 小豬頁
 #### DepositPageViewController (框架)
         • UIView *headView -> 上方區塊
