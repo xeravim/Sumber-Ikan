@@ -9,18 +9,32 @@
 ### Home
 
 #### 1 ViewControllers
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/raw/branch/master/Screenshot/Welcome/Welcome.png" width = "250">
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPage.png?raw=true" width = "800">
+##### 1.1 MainBannerCell
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageTop.png?raw=true" width = "800">
 
-##### 1.1MainBannerCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage%20top.png)
-##### 1.2SYTableViewCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
+##### 1.2 SYTableViewCell
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "800">
+
 ### Games Lobby
-#### 2 GameHallViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameHallViewController.png)
-#### 3 Game Tab (except my favorite) GameListViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameListViewController.png)
-#### 4 My favorite tab catalogViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/catalogViewController.png)
-#### 5 Show all checkAllViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/checkAllViewController.png)
-#### 6 Game page gameCenterViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/gameCenterViewController.png)
-##### 6.1 SideBarMenuView![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/SideBarMenuView.png)
-#### 7 In-game offer GameHallDiscountListViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameHallDiscountListViewController.png)
+
+#### 2 GameHallViewController
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">
+#### 3 Game Tab (except my favorite) GameListViewController
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">)
+#### 4 My favorite tab catalogViewController
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">
+#### 5 Show all checkAllViewController 
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">
+
+#### 6 Game page gameCenterViewController 
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">
+
+##### 6.1 SideBarMenuView
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">
+#### 7 In-game offer GameHallDiscountListViewController
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">
+
 ### Offers
 #### 1 DiscountPageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/DiscountPageViewController.png)
 ##### 1.1 PageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/PageViewController.png)
