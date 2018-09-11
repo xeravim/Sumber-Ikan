@@ -7,7 +7,7 @@
 ## 2. Description of each modules
 ### Home
 #### 1 ViewControllers
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPage.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPage.png?raw=true" width = "500">
 
 ##### 1.1 MainBannerCell
 <br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageTop.png?raw=true" width = "500">
@@ -18,8 +18,10 @@
 ### Games Lobby
 #### 2 GameHallViewController
 <br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallViewController.png?raw=true" width = "500">
+
 #### 3 遊戲頁籤(除我的最愛) GameListViewController
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/GameListViewController.png?raw=true" width = "500">
+
 #### 4 我的最愛頁籤 catalogViewController 
 <br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
 #### 5 顯示全部 checkAllViewController 
