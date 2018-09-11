@@ -20,8 +20,8 @@
 ### 優惠
 #### 1 DiscountPageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/DiscountPageViewController.png)
 ##### 1.1 PageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/PageViewController.png)
-#### 2.ApplicationGuidanceViewController ![layout](http://gitea.funpodium.net/youkoka/betway-ios-fork/src/commit/dcdb4f7027ca420232e3ed1aada5be1e1b668bf9/ReadmeResource/ApplicationGuidanceViewController.png)
-#### 3.ApplicationFormViewController ![layout](http://gitea.funpodium.net/youkoka/betway-ios-fork/src/commit/dcdb4f7027ca420232e3ed1aada5be1e1b668bf9/ReadmeResource/ApplicationFormViewController.png)
+#### 2.ApplicationGuidanceViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/ApplicationGuidanceViewController.png)
+#### 3.ApplicationFormViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/ApplicationFormViewController.png)
 ### 小豬頁
 #### DepositPageViewController (框架)
         • UIView *headView -> 上方區塊
@@ -139,6 +139,518 @@
         • UIView *amountTFLine -> 轉帳金額輸入匡底線
         • UILabel *lbTransferHint -> 轉帳金額提示
         • UIButton *goDepositBtn -> 立即轉帳
+##### 2.3 TransferSuccessViewController
+        • UIScrollView *myScrollView -> 容器
+        • UIImageView *alertImgView -> 成功圖示
+        • UILabel *titleLab -> 標題
+        • UILabel *alertLab -> 提示訊息
+        • UIButton *personalCenterBtn -> 關閉
+##### 2.4 BonusItemView
+        • UIView *topView -> 上方區塊
+        • UIView *centerView -> 中間區塊
+        • UIView *bottomView -> 下方區塊
+        • UITextField *couponField -> 優惠券代碼輸入匡
+##### 2.5 UnfinishedGameHeaderView
+        • UILabel *lbPlatform -> 未完成遊戲的分類
+##### 2.6 UnfinishedGamesPromptViewController
+        • NSLayoutConstraint *FakeNavgationBarHeight -> 客製化天的高
+        • UIButton *backButton -> 返回按鈕
+        • UITableView *tableView -> 未完成遊戲列表
+##### 2.7 UnfinishedGameCell
+        • UIImageView *imgGame -> 遊戲預覽圖
+        • UILabel *lbGameTitle -> 遊戲名稱
+###### 2.8 ReminderPageViewController
+        • UIScrollView *myScrollView -> 容器
+        • UILabel *DepositRestrictionLab -> 存款限制
+        • UILabel *DepositRestrictionContentLab -> 存款限制提示內容
+        • UILabel *RemindYouLab -> 提醒您
+        • UILabel *RemindYouContentLab -> 提醒您內容
+##### 2.9 RealNameViewController
+        • UIScrollView *myScrollView -> 容器
+        • UIImageView *alertImgView -> 提示圖
+        • UILabel *alertLab -> 提示訊息
+        • UILabel *realNameLab -> 真實姓名
+        • UITextField *realNameTF -> 真實姓名輸入匡
+        • UIView *realNameTFLine -> 真實姓名輸入匡底線
+        • UILabel *realNameWordingLab -> 真實姓名提示
+        • UIButton *sendRealNameBtn -> 送出
+        • UILabel *pageWordingLab -> 真實姓名只能輸入一次的提示
+##### 2.10 RealNameSuccessViewController
+        • UIScrollView *myScrollView -> 容器
+        • UIImageView *alertImgView -> 成功圖示
+        • UILabel *titleLab -> 成功標題
+        • UILabel *alertLab -> 成功提示訊息
+        • UIButton *personalCenterBtn -> 關閉
+##### 2.11 NeedCompletedPersonalDataViewController
+        • UIScrollView *myScrollView -> 容器
+        • UIImageView *alertImgView -> 提示圖
+        • UILabel *alertLab -> 提示訊息
+        • UIButton *personalCenterBtn -> 關閉
+### 訊息
+#### 1. MessageViewController
+        • DLLRUCache *cache -> 頁籤的cache
+        • DLScrollTabbarItem *item -> 頁籤元件
+        • DLCustomSlideView *slideView -> 頁籤的內頁
+        • DLScrollTabbarView *tabbar -> 頁籤區塊
+        • YTDropMenu *dropMenu -> 下拉選單
+#### 2. MessageTableViewViewController
+        • UITableView *tableView -> 訊息列表
+        • UIRefreshControl *refreshControl -> 下拉刷新元件
+#### 3.MessageTableViewCell
+        • UIView *isRead -> 未讀的紅點
+        • UILabel *typeLab -> 訊息類別
+        • UILabel *dateLab -> 訊息日期
+        • UILabel *titleLab -> 訊息標題
+#### 4.MessageDetailsViewController
+        • UIScrollView *myScrollView -> 容器
+        • UILabel *typeLab -> 訊息類別
+        • UILabel *dateLab -> 訊息日期
+        • UILabel *titleLab -> 訊息標題
+        • UIView *lineView -> 分隔線
+        • UILabel *contenLab -> 訊息內容
+### 會員中心
+#### 1. MemberCenterViewController
+        • UITableView *tableView -> 列表
+        • UIView *tabeViewHeadView -> 頂部的view
+#### 2. UpdateVersionView
+        • UILabel *titleLab ->  提示訊息
+        • UIButton *btnUpdate -> 更新按鈕
+        • UILabel *versionLab -> 版本號
+#### 3. NotLoginTableViewCell
+        • UIView *topLine -> 頂部分隔線
+        • UIView *bottomLine -> 底部分隔線
+        • UIImageView *imgView -> icon
+        • UILabel *titleLab -> 標題
+        • UIImageView *rightView -> (>)圖示
+        • UIView *cellLine -> cell 的分隔線
+        • UISwitch *rightSwitch -> 開關
+        • UILabel *lbBadge -> 公告未讀則數
+#### 4. AlreadyLoginSectionFirstTableViewCell (第一區塊)
+        • UIImageView *moneyImgView -> icon
+        • UILabel *mainBalanceLab -> 主帳戶餘額
+        • UILabel *mainBalanceMoneyLab -> 主帳戶餘額的金額
+        • UIButton *refreshBalancesBtn -> 刷新按鈕
+        • UIView *mainBalanceLine -> 主帳戶餘額區塊下方的分隔線
+        • UIButton *rechargeBtn -> 充值
+        • UILabel *sportsBalanceLab -> 體育帳戶餘額
+        • UILabel *sportsBalanceMoneyLab -> 體育帳戶餘額的金額
+        • UIView *sportsBalanceLine -> 體育帳戶底餘額下的分隔線
+        • UILabel *realPersonBalanceLab -> 真人帳戶餘額
+        • UILabel *realPersonBalanceMoneyLab -> 真人帳戶餘額的金額 
+        • UIView *realPersonBalanceLine -> 真人帳戶餘額底下的分隔線
+        • UILabel *gameBalanceLab -> 遊戲帳戶餘額
+        • UILabel *gameBalanceMoneyLab -> 遊戲帳戶餘額的金額
+        • UIView *gameBalanceLine ->  遊戲帳戶餘額底下的分隔線
+        • UILabel *PTgameBalanceLab -> PT遊戲帳戶餘額
+        • UILabel *PTgameBalanceMoneyLab -> PT遊戲帳戶餘額的金額
+        • UIView *PTgameBalanceLine ->  PT遊戲帳戶餘額底下的分隔線
+#### 5.AlreadyLoginSectionSecondTableViewCell (第二區塊)
+        • UIView *topLine -> 頂部的線
+        • UIView *bottomLine -> 底部的線
+        • UIImageView *imgView -> 左邊的icon
+        • UILabel *titleLab -> 標題
+        • UIImageView *rightView -> 右邊的icon
+        • UIView *cellLine -> 分隔線
+        • UISwitch *rightSwitch -> 開關
+        • UILabel *lbBadge -> 公告未讀則數
+#### 6.AlreadyLoginSectionThirdTableViewCell(第三區塊)
+        • UIView *topLine -> 頂部的線
+        • UIView *bottomLine -> 底部的線
+        • UIImageView *imgView -> 左邊的icon
+        • UILabel *titleLab -> 標題
+        • UIImageView *rightView -> 右邊的icon
+        • UIView *cellLine -> 分隔線
+#### 7.AlreadyLogginHeadView
+        • UIImageView *topImgView ->  背景圖
+        • UIButton *headBtn ->  默認頭像
+        • UIView *btnView -> 編輯個人資料區塊       
+        • UILabel *userLab -> 使用者
+        • UILabel *editSelfLab -> 編輯個人資料
+        • UIButton *editBtn -> 編輯按鈕
+        • UIButton *arrowBtn -> (>)按鈕
+#### 8.AlreadyLogginFootView
+        • UILabel *titleLab -> 底部的提醒字樣
+        • UIButton *logoutBtn -> 退出帳號
+        • UpdateVersionView *updateVersionView -> 版本資訊
+#### 9.NotLoginHeadView
+        • UIImageView *topImgView -> 背景圖
+        • UIButton *headBtn -> 默認頭像
+        • UIView *btnView -> 登入/註冊的區塊                              
+        • UILabel *loginLab -> 登入/註冊按鈕
+#### 10.PTPasswordManagementViewController
+        • PTPasswordManagementView *passwordManagementView -> 遊戲密碼管理內頁
+        • UIButton *registBtn -> 註冊或保存
+##### 10.1 PTPasswordManagementView
+        • UIView  *bgView -> 背景
+        • UILabel *userNameLab -> PT遊戲用戶名
+        • UILabel *prefixUserLab -> bw8_
+        • UITextField *userNameTF -> 用戶名輸入匡
+        • UIView *userNameTFLine -> 用戶名輸入匡底線
+        • UILabel *ptPasswordLab -> PT遊戲下載版密碼
+        • UITextField *ptPasswordTF -> 密碼輸入匡
+        • UIView *ptPasswordTFLine -> 密碼輸入匡底線
+        • UILabel *surePtPasswordLab -> 確認PT遊戲下載版密碼 
+        • UITextField *surePtPasswordTF -> 確認密碼輸入匡
+        • UIView *surePtPasswordTFLine -> 確認密碼輸入匡底線
+        • UILabel *noteLab -> 下方提示訊息
+        • UILabel *userNameWarnningLabel -> 帳號錯誤提醒
+        • UILabel *passwordWarnningLabel -> 密碼錯誤提醒
+        • UILabel *confirmPasswordWarnningLabel -> 確認密碼錯誤提醒
+#### 11. EditPersonalDataViewController
+        • EditPersonDataView *editPersonDataView -> 編輯個人資料頁面
+##### 11.1 EditPersonDataView
+        • UIScrollView *myScrollView -> 容器
+        • UIView *personDataView ->  個人資料區塊
+        • UILabel *realNameLab -> 真實姓名
+        • UITextField *realNameTF -> 真實姓名輸入匡
+        • UIView *realNameTFLine -> 真實姓名輸入匡底線
+        • UILabel *lbHintOfRealName -> 真實姓名錯誤提醒
+        • UILabel *IDNumberLab -> 身分證字號
+        • UITextField *IDNumberTF -> 身分證字號輸入匡
+        • UIView *IDNumberTFLine -> 身分證字號輸入匡底線
+        • UILabel *lbHintOfIDNumber -> 身分證字號錯誤提醒
+        • UILabel *genderLab -> 性別
+        • UITextField *genderTF -> 性別輸入匡
+        • UIView *genderTFLine -> 性別輸入匡底線
+        • UILabel *birthDateLab -> 生日
+        • UITextField *birthDateTF -> 生日輸入匡
+        • UIView *birthDateTFLine -> 生日輸入匡底線
+        • UIView *contactDataView -> 聯絡訊息區塊
+        • UIImageView *contactDataMessageImgView -> 驗證郵件及手機號...的圖示
+        • UILabel *emailAddressLab -> 郵件地址
+        • UIView *emailAddressTVView -> 郵件地址輸入匡的區塊 
+        • CMInputView *emailAddressTV -> 郵件地址輸入匡
+        • UILabel *lbEmailAddress -> 郵件地址(有填過會將使用者的電郵顯示在這)
+        • UIButton *submitAddressBtn -> 驗證按鈕
+        • UIImageView *isAddressImgView -> 電郵驗證通過的綠勾
+        • UIView *emailAddressTVLine -> 郵件地址輸入匡底線
+        • UILabel *lbHintOfEmailAddress -> 郵件地址錯誤提示
+        • UILabel *areaCodeLab -> 國碼
+        • UILabel *telNumberLab -> 聯繫電話
+        • UIView *telNumberView -> 聯繫電話輸入匡的區塊
+        • UITextField *telNumberTF -> 聯繫電話輸入匡
+        • UIImageView *telImgView -> 聯繫電話驗證成功的綠勾
+        • UILabel *preferredAccountLab -> 首選賬戶
+        • UITextField *preferredAccountTF -> 首選賬戶輸入匡
+        • UIView *preferredAccountTFLine -> 首選賬戶輸入匡底線
+        • UILabel *countryLab -> 國家
+        • UITextField *countryTF -> 國家輸入匡
+        • UIView *countryTFLine -> 國家輸入匡底線
+        • UILabel *addressLab -> 聯繫地址
+        • UITextView *addressTV -> 聯繫地址輸入匡
+        • UILabel *addressTVPlaceholder -> 聯繫地址輸入匡的提示字樣
+        • UIView *addressTVLine -> 聯繫地址輸入匡底線
+        • UILabel *lbHintOfAddress -> 聯繫地址錯誤提示
+        • UILabel *cityLab -> 城市
+        • UITextField *cityTF -> 城市輸入匡
+        • UIView *cityTFLine -> 城市輸入匡底線
+        • UILabel *lbHintOfCity -> 城市錯誤提示
+        • UILabel *zipCodeLab -> 郵編
+        • UITextField *zipCodeTF -> 郵編輸入匡
+        • UIView *zipCodeTFLine -> 郵編輸入匡底線
+        • UILabel *lbHintOfZipCode -> 郵編錯誤提示 
+        • UILabel *wechatAccountLab -> 微信帳號
+        • UITextField *wechatAccountTF -> 微信帳號輸入匡
+        • UIView *wechatAccountTFLine -> 微信帳號輸入匡底線
+        • UILabel *lbHintOfWechatAccount -> 微信帳號錯誤提示
+        • UIView *safetyProblemDataView -> 安全問題/答案區塊
+        • UILabel *safetyProblemLab -> 安全問題
+        • UITextField *safetyProblemTF -> 安全問題輸入匡
+        • UIView *safetyProblemTFLine -> 安全問題輸入匡底線
+        • UILabel *lbHintOfSafetyQuestion -> 安全問題錯誤提示
+        • UILabel *safetyAnswerLab -> 安全答案
+        • UITextField *safetyAnswerTF -> 安全答案輸入匡
+        • UIView *safetyAnswerTFLine -> 安全答案輸入匡底線
+        • UILabel *lbHintOfSafetyAnswer -> 安全答案錯誤提示
+#### 12.VerificationMailboxViewController
+        • UIScrollView *myScrollView -> 容器
+        • UILabel *mailboxLab -> 電郵
+        • UIView *mailboxView -> 電郵輸入匡區塊
+        • UITextView *mailboxTV -> 電郵輸入匡
+        • UILabel *mailboxTVPlaceholder -> 電郵輸入匡提示
+        • UIButton *sendBtn -> 送出
+        • UIActivityIndicatorView *activityIndicator -> iOS原生的loadingView
+#### 13. AboutUSViewController
+        • AboutUSView *aboutUSView -> 關於我們的內容
+##### 13.1AboutUSView
+        • UIScrollView *myScrollView -> 容器
+        • UILabel *ourBrandLab -> 我們的品牌
+        • UIView *ourBrandLine -> 分隔線
+        • UILabel *ourBrandContent -> 我們的品牌內容 
+        • UIImageView *europeImgView -> betway歐洲 icon
+        • UILabel *europeContentLab -> betway歐洲 內容
+        • UIImageView *asiaImgView -> betway亞洲 icon
+        • UILabel *asiaContentLab -> betway亞洲 內容
+        • UILabel *ourProductLab -> 我們的產品
+        • UIView *ourProductLine -> 我們的產品分隔線
+        • UILabel *ourProductContent -> 我們的產品內容
+        • UIImageView *realPeopleImgView -> betway 真人 icon
+        • UILabel *realPeopleContentLab -> betway 真人 內容
+        • UIImageView *sportsImgView -> betway 體育 icon
+        • UILabel *sportsContentLab -> betway 體育 內容
+        • UIImageView *gameImgView -> betway 遊戲 icon
+        • UILabel *gameContentLab -> betway 遊戲 內容
+#### 14.PasswordManagementViewController
+        • PasswordManagementView *passwordManagementView -> 修改密碼內頁
+        • UIButton *saveItem -> 保存
+        • UIButton *backItem -> 返回
+##### 14.1 PasswordManagementView
+        • UIScrollView *myScrollView -> 容器
+        • UILabel *currentPasswordLab -> 當前密碼
+        • UITextField *currentPasswordTF -> 當前密碼輸入匡
+        • UIView *currentPasswordTFLine -> 當前密碼輸入匡底線
+        • UILabel *newPasswordLab -> 新的密碼 
+        • UITextField *newPasswordTF -> 新的密碼輸入匡
+        • UIView *newPasswordTFLine -> 新的密碼輸入匡底線
+        • UILabel *confirmPasswordLab -> 確認密碼
+        • UITextField *confirmPasswordTF -> 確認密碼輸入匡
+        • UIView *confirmPasswordTFLine -> 確認密碼輸入匡底線
+        • UILabel *passwordWarnningLabel -> 新密碼錯誤提示
+        • UILabel *confirmPasswordWarnningLabel -> 確認密碼錯誤提示
+        • UILabel *oldPasswordWarnningLabel -> 當前密碼錯誤提示
+#### 15 DrawMoneyViewController
+        • UIScrollView *myScrollView -> 容器
+        • UIImageView *headImgView -> 主帳戶的背景
+        • UILabel *mainAccountLab -> 主賬戶
+        • UIButton *refreshBtn -> 刷新按鈕
+        • UILabel *RMBLab -> RMB
+        • UILabel *moneyLab -> 主帳戶餘額
+        • UIButton *remindBtn -> 溫馨提醒
+        • UILabel *drawMoneyLab -> 提款金額
+        • UITextField *drawMoneyTF -> 提款金額輸入匡
+        • UIView *drawMoneyTFLine -> 提款金額輸入匡底線
+        • UILabel *tipsLab -> 提款金額提示
+        • UILabel *drawAccountLab -> 提款帳戶
+        • UIButton *goDrawBtn -> 立即提款
+        • UILabel *noDrawAccountLab -> 沒有提款帳戶
+        • UIButton *goSetBtn -> 設定
+        • UIView *bgView -> 提款帳戶區塊
+        • UILabel *bankNameLab -> 帳戶名稱
+        • UILabel *addressLab -> 地址
+        • UILabel *branchLab -> 分行
+        • UIView *lineView -> 分隔線
+        • UILabel *bankAccountLab -> 帳戶號碼 
+        • UILabel *holderNameLab -> 持有人
+#### 16.PersonInfoShouldCompleteViewController
+        • 繼承 NeedCompletedPersonalDataViewController，為了塞不同的alertLab且屬於提款專用
+#### 17.DrawMoneySuccessViewController
+        • UIScrollView *myScrollView -> 容器
+        • UIImageView *alertImgView -> 成功icon
+        • UILabel *titleLab -> 提款提交成功
+        • UILabel *alertLab -> 提款成功相關訊息
+        • UIButton *personalCenterBtn -> 關閉
+#### 18.TransactionRecordViewController
+        • DLLRUCache *cache -> 頁籤的cache
+        • DLScrollTabbarItem *item -> 頁籤元件
+        • DLCustomSlideView *slideView -> 頁籤的內頁
+        • DLScrollTabbarView *tabbar -> 頁籤區塊
+#### 19. TransactionRecordTableViewViewController
+        • UIView *dateView -> 起始/結束日期選擇區塊
+        • UIView *dateViewLine -> 區塊底下的線
+        • UIImageView *timeImgView -> 時鐘icon
+        • UITextField *startTimeTF -> 開始時間輸入匡
+        • UILabel *lineLab -> "~"
+        • UITextField *endTimeTF -> 結束時間輸入匡
+        • UITableView *tableView -> 列表
+##### 19.1 WithdrawalsRecordTableViewCell
+        • UIView *bgView -> 卡片背景
+        • UILabel *transactionTypeLab -> 交易類型
+        • UILabel *transactionNumberLab -> 交易編號
+        • UILabel *transactionAmountlab -> 交易金額
+        • UILabel *transactionDetailsLab -> 交易詳情
+        • UILabel *transactionDetailsContentLab -> 交易詳情-內容
+        • UILabel *serviceChargeLab -> 手續費
+        • UILabel *transactionStateLab -> 交易狀態
+        • UILabel *transactionTimeLab -> 交易時間
+        • UIButton *cancelBtn -> 取消/已取消
+##### 19.2 TransferRecordTableViewCell
+        • UIView *bgView -> 卡片背景
+        • UILabel *transactionTypeLab -> 交易類型
+        • UILabel *transactionNumberLab -> 交易編號
+        • UILabel *transactionAmountlab -> 交易金額
+        • UILabel *transactionDetailsLab -> 交易詳情
+        • UILabel *transactionDetailsContentLab -> 交易詳情-內容
+        • UILabel *serviceChargeLab -> 手續費
+        • UILabel *transactionStateLab -> 交易狀態
+        • UILabel *transactionTimeLab -> 交易時間
+##### 19.3 DepositRecordTableViewCell
+        • UIView *bgView -> 卡片背景
+        • UILabel *transactionTypeLab -> 交易類型
+        • UILabel *transactionNumberLab -> 交易編號
+        • UILabel *transactionAmountlab -> 交易金額
+        • UILabel *transactionDetailsLab -> 交易詳情
+        • UILabel *transactionDetailsContentLab -> 交易詳情-內容
+        • UILabel *serviceChargeLab -> 手續費
+        • UILabel *transactionStateLab -> 交易狀態
+        • UILabel *transactionTimeLab -> 交易時間
+#### 20 BankManagementViewController
+        • UITableView *tableView -> 列表
+#### 21 AddBankAccountViewController
+        • AddBankAccountView *addBankAccountView -> 添加銀行資料內頁
+##### 21.1 AddBankAccountView
+        • UIScrollView *myScrollView -> 容器
+        • UILabel *holderNameLab -> 帳戶持有者姓名
+        • UITextField *holderNameTF -> 帳戶持有者姓名輸入匡 
+        • UIView *holderNameTFLine -> 帳戶持有者姓名輸入匡底線
+        • UILabel *lbHintOFHolderName -> 帳戶持有者姓名錯誤提示 
+        • UILabel *bankNameLab -> 銀行名稱
+        • UITextField *bankNameTF -> 銀行名稱輸入匡
+        • UIView *bankNameTFLine -> 銀行名稱輸入匡底線
+        • UILabel *lbHintOfBankName -> 銀行名稱錯誤提示
+        • UILabel *bankNameKeyByUserLab -> 使用者輸入的銀行名稱
+        • UITextField *bankNameKeyByUserTF -> 使用者輸入的銀行名稱輸入匡
+        • UIView *bankNameKeyByUserTFLine -> 使用者輸入的銀行名稱輸入匡提示
+        • UILabel *lbHintOFBankKeyByUser -> 使用者輸入的銀行名稱錯誤提示
+        • UILabel *bankAccountLab -> 銀行帳號
+        • UITextField *bankAccountTF -> 銀行帳號輸入匡
+        • UIView *bankAccountTFLine -> 銀行帳號輸入匡底線
+        • UILabel *lbHintOFBankAccount -> 銀行帳號錯誤提示
+        • UILabel *provinceLab -> 省
+        • UITextField *provinceTF -> 省輸入匡
+        • UIView *provinceTFLine -> 省輸入匡底線
+        • UILabel *lbHintOFProvince -> 省錯誤提示
+        • UILabel *cityLab -> 城市
+        • UITextField *cityTF -> 城市輸入匡
+        • UIView *cityTFLine -> 城市輸入匡底線
+        • UILabel *lbHintOFCity -> 城市錯誤提示
+        • UILabel *branchLab -> 分行
+        • UITextField *branchTF -> 分行輸入匡
+        • UIView *branchTFLine -> 分行輸入匡底線
+        • UILabel *lbHintOFBanch -> 分行錯誤提示
+##### 21.2 BankEmptyTableViewCell
+        • UIImageView *imageview -> "+" icon
+        • UILabel *titleLab -> 新增银行资料
+        • UIImageView *arrowImageView -> ">" icon
+##### 21.3 HaveBankTableViewCell
+        • UIView *bgView -> 背景
+        • UILabel *bankNameLab -> 銀行名稱
+        • UILabel *addressLab -> 地址
+        • UILabel *branchLab -> 分行
+        • UILabel *bankAccountLab -> 銀行帳號
+        • UILabel *holderNameLab -> 持有者姓名
+#### 22. DividendDataViewController
+        • UIView *topLineView -> 頂部區塊
+        • DividendOverviewView *dividendOverviewView -> 紅利概覽 
+        • QueryDividendDataView *queryDividendDataView -> 查詢紅利紀錄
+        • BackwaterDiscountView *backwaterDiscountView -> 反水優惠
+##### 22.1 DividendOverviewView
+        • UIView *topView -> 頂部取快
+        • UIView *lineView -> 中間分隔線
+        • UIView *bottomLineView -> 底部分隔線
+        • UILabel *canReceiveLab -> 可領取紅利
+        • UILabel *canReceiveContentLab -> 可領取紅利金額
+        • UILabel *unlockedLab -> 未解鎖紅利
+        • UILabel *unlockedContentLab -> 未解鎖紅利
+        • UILabel *soonExpireLab -> 即將過期的紅利
+        • UITableView *tableView -> 列表
+        • UIRefreshControl *refreshControl -> 下拉刷新
+###### 22.1.1 DividendOverviewTableViewHeader
+        • UILabel *dateLab -> 日期
+        • UILabel *moneyLab -> 金額
+        • UIImageView *arrowBtn -> ">" icon
+###### 22.1.2 DividendOverviewTableViewCell
+        • UILabel *typeLab -> 類型
+        • UILabel *startDateLab -> 開始時間
+        • UILabel *contentMoneyLab -> 金額
+        • UILabel *contentTitleLab -> 標題
+        • UILabel *endDateLab -> 結束時間
+        • UILabel *endDateContentLab -> 結束時間內容
+        • UILabel *progressLab -> 狀態
+        • UIView  *contentLine -> 分隔線
+        • UILabel *targetDividendLab -> 目標紅利狀態
+        • UILabel *flowingWaterLab -> 流水
+        • UIButton *receiveBtn -> 領取
+##### 22.2 QueryDividendDataView
+        • UIView *topView -> 查詢區塊
+        • UILabel *desireQueryMonthLab -> 欲查詢月份
+        • UILabel *accountSourceLab -> 帳戶來源
+        • UIView *desireQueryMonthTF -> 欲查詢月份的view
+        • UIImageView *calendarImgView -> 日曆圖示
+        • UILabel *monthLab -> 月份時間
+        • UIView *accountSourceTF -> 帳戶來源輸入匡
+        • UIImageView *moneyImgView -> 帳戶圖示
+        • UILabel *bankLab -> 銀行/帳戶
+        • UIImageView *arrowImgView -> 下角icon
+        • UIButton *queryBtn -> 搜尋按鈕
+        • UILabel *alertLab -> 查詢紅利紀錄提示
+        • UITableView *tableView -> 列表
+###### 22.2.1 BWPickerView
+        • 月份及源自帳戶的picker
+###### 22.2.2 QueryDividendDataTableViewCell
+        • UIView  *bgView -> 背景
+        • UILabel *typeLab -> 類型
+        • UILabel *startDateLab -> 開始時間
+        • UILabel *contentMoneyLab -> 金額
+        • UILabel *contentTitleLab -> 標題
+        • UILabel *endDateLab -> 過期日期
+        • UILabel *endDateContentLab -> 過期日期時間
+        • UILabel *progressLab -> 狀態
+        • UIView  *contentLine -> 分隔線
+        • UILabel *targetDividendLab -> 紅利目標狀態
+        • UILabel *flowingWaterLab -> 流水
+        • UIButton *receiveBtn -> 領取
+##### 22.3 BackwaterDiscountView
+        • UITableView *tableView -> 列表
+        • UIRefreshControl *refreshControl -> 下拉刷新
+###### 22.3.1 BackwaterDiscountTableViewCell
+        • UIView *bgView -> 背景
+        • UITableView *tableView -> 列表
+###### 22.3.2 BackwaterDiscountCellTableViewCell
+        • UIView *cellView -> 下方可展開的區塊
+        • UILabel *levelRangeLab -> 等級範圍
+        • UILabel *levelRangeContentLab -> 等級範圍內容
+        • UIImageView *arrowImgView -> 下箭頭
+        • UIView *cellLine -> 分隔線
+        • UIView *cellContentView -> 上方內容區塊
+        • UILabel *effectiveBettingLab -> 有效投注
+        • UILabel *effectiveBettingContentLab -> 投注內容
+        • UILabel *backWaterScaleLab -> 反水比例
+        • UILabel *backWaterScaleContentLab -> 反水比例內容
+        • UIView *cellContentViewLine1  -> 第一條分隔線
+        • UILabel *backWaterMoneyLab -> 反水金額
+        • UILabel *backWaterMoneyContentLab -> 反水金額內容
+        • UIView *cellContentViewLine2 -> 第二條分隔線
+#### 23. ExclusivePreferenceViewController
+        • UIImageView *topImgView -> 上方圖
+        • UIView *bottomView -> 底部圖
+        • UILabel *couponCodeLab  -> 優惠券代碼
+        • UITextField *couponCodeTF -> 優惠券代碼輸入匡
+        • UILabel *couponCodeWarrningLab -> 優惠券代碼錯誤提示
+        • UIView *couponCodeTFLine -> 優惠券代碼輸入匡底線
+        • UIButton *submitBtn -> 優惠券代碼提交
+#### 24. NoticeViewController
+        • DLLRUCache *cache -> 頁籤的cache
+        • DLScrollTabbarItem *item -> 頁籤元件
+        • DLCustomSlideView *slideView -> 頁籤的內頁
+        • DLScrollTabbarView *tabbar -> 頁籤區塊
+##### 24.1 NoticeTableViewViewController
+        • UITableView *tableView -> 列表
+##### 24.1.1 DiscountNoticeTableViewCell
+        • UIView *bgView -> 卡片背景
+        • UILabel *typeLab -> 公告類型
+        • UILabel *dateLab -> 公告日期
+        • UILabel *titleLab -> 公告標題
+        • UIButton *lookBtn -> 觀看內容按鈕
+        • UIButton *arrowBtn -> ">"按鈕
+        • UILabel *contentLab -> 公告內容
+##### 24.1.2 NewNoticeTableViewCell
+        • UIView *bgView -> 卡片背景
+        • UILabel *typeLab -> 公告類型
+        • UILabel *dateLab -> 公告日期
+        • UILabel *titleLab -> 公告標題
+        • UIButton *lookBtn -> 觀看內容按鈕
+        • UIButton *arrowBtn -> ">"按鈕
+        • UILabel *contentLab -> 公告內容
+##### 24.1.3 EspeciallyNoticeTableViewCell
+        • UIView *bgView -> 卡片背景
+        • UILabel *typeLab -> 公告類型
+        • UILabel *dateLab -> 公告日期
+        • UILabel *titleLab -> 公告標題
+        • UIButton *lookBtn -> 觀看內容按鈕
+        • UIButton *arrowBtn -> ">"按鈕
+        • UILabel *contentLab -> 公告內容
+###  基礎頁面
+
 ## 3. 各模塊內程式架構/邏輯
 ### 3.0 AppDelage 初始化模組：
 
@@ -399,7 +911,207 @@
             
 ### 3.5 訊息
 
+        主頁面模組及相關事件 :
+        訊息組成區塊主要訊息類別選單.其中訊息包含所有讯息、存款通知、提款通知及红利通知．
+        • 訊息類別區塊組成包含
+        - 訊息選單部分由DLScrollTabbarView實作
+        - 訊息內容頁(slideView)由DLCustomSlideView實作
+        • NSNotificationCenter 新增 kEventUserDidLogin 事件, 偵測登入事件狀態.
+        • NSNotificationCenter 新增 kEventRefreshMessageList 事件, 偵測推播來的更新狀態.
+        • NSNotificationCenter 新增 kEventUserDidLogout 事件, 偵測登出事件狀態.
+        
+        主頁面(MessageViewController)邏輯 :
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 每次進入頁面時(viewWillAppear), 會取得訊息資料(call getMessageList api)更新訊息資料．
+        (3). 訊息分類是在App端寫死四種訊息分類, 分類的子頁面(MessageTableViewViewController)是在
+        - (UIViewController *)DLCustomSlideView:(DLCustomSlideView *)sender controllerAt:(NSInteger)index
+        做生成頁面的動作.
+        (4). 子頁面生成之後, 會在自己屬於的頁面去取得訊息已讀狀態(call sendMessageRead api)並發通知(kEventRefreshMessageUnReadCount)更新未讀訊息數量．
+        
 ### 3.6 會員
 
+        主頁面模組及相關事件 :
+        會員中心組成區塊可分為三個區塊, 並在登入/登出的layout不盡相同．
+        登入狀態分別是上方的使用者相關訊息(AlreadyLogginHeadView), 中間的功能列表(tableView)以及下方的版本資訊和登出按鈕(AlreadyLogginFootView)
+        登出狀態分別是上方的登入/註冊按鈕(NotLoginHeadView), 中間的功能列表(tableView)以及下方的版本資訊(UpdateVersionView)
+        功能列表則包含公告、专属优惠、红利信息、银行资料管理、交易记录、提款、密码管理、PT游戏下载版密码管理、指纹识别/脸部识别登录、关于以及客服功能
+        
+        • NSNotificationCenter 新增 kEventUserDidLogout 事件, 偵測登出事件狀態.
+        
+        主頁面(MessageViewController)邏輯 :
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 判斷是否需要顯示更新版本資訊及更新生物辨識功能按鈕狀態(kIsTouchOrFaceIDLogin, 跟前次登入帳號不一致, 須將狀態設為false)
+        (3). 每次進入頁面時(viewWillAppear)且為登入狀態, 會取得會員資料(call getUserInfo api)以及帳戶資料(call getUserWalletBalance api)並更新頁面資料
+        (4). 點擊提款需要先檢查使用者資料(call getUserInfo api)及提款設定(call getWithdrawSettings api)是否填寫完成.
+        
+        - 编辑个人资料(EditPersonalDataViewController)頁面邏輯
+        (1). 頁面開啟會先生成畫面所有元件
+        (2.) 會取得會員資料(call getUserInfo api)、帳戶資料(call getUserWalletBalance api)、安全問題(call getSecretQuestions api)以及國家列表(call getNationsList api)並更新頁面資料
+        (3). 驗證填寫更新資料後, 每個欄位都需檢查是否有調整資料, 如果有調整, 需 call updateUserInfo api 更新會員資料.
+        (4). 全部資料更新成功, 需返回上一頁. 當有資料更新失敗, 需顯示哪些欄位更新失敗(call showUpdateProfileStatus method判斷)
+        
+        - PT游戏密码管理(PTPasswordManagementViewController)頁面邏輯
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). call getUserVendorInfo api 取得是否有PT帳戶
+        (3). 密碼填寫驗證完之後, call updateVendorPassword api 更新PT密碼
+        
+        - 密码管理(PasswordManagementViewController)頁面邏輯
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 密碼填寫驗證完之後, call updateUserPassword api 更新密碼
+        
+        - 提款(DrawMoneyViewController)頁面邏輯
+        
+        • 點擊新增帳戶開啟新增帳戶((AddBankAccountViewController))資料頁面
+        • 點擊提示訊息開啟提示訊息頁面(ReminderPageViewController)
+        • NSNotificationCenter 新增 kEventTransationSettingsChanged 事件, 偵測事件更新帳戶資料.
+        • NSNotificationCenter 新增 kEventBankAccountDidAdd 事件, 偵測事件更新帳戶資料.
+        
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 需檢查是否驗證/填寫過使用者資料, 如果沒有, 需開啟RealNameViewController做填寫
+        (3). call getUserWalletBalance api 取得帳戶金額資料
+        (4). call getUserBanksInfo api 取得銀行資料, 並預設顯示的一筆
+        (5). call getWithdrawSettings api 取得帳戶設定資料, 並更新單筆提款金額會低最高值
+        (6). 提款資料填寫完, call submitWithdraw api 做提款動作.
+        
+        - 交易记录(TransactionRecordViewController)頁面邏輯
+        
+        交易紀錄組成區塊主要訊息類別選單.其中訊息包含所有交易、存款記錄、轉賬記錄及提款記錄．
+        • 交易紀錄區塊組成包含
+        - 交易紀錄選單部分由DLScrollTabbarView實作
+        - 交易紀錄內容頁(slideView)由DLCustomSlideView實作
+        - 各交易功能共用實作一個內容頁(TransactionRecordTableViewViewController), 依據index值得不同實作內容資訊
+        - index 值(畫面順序)是APP端寫死.
+        
+        交易內容頁(TransactionRecordTableViewViewController) 頁面邏輯 :
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 每次進入頁面時(viewWillAppear)會取call getTransactionHistory api取得最新交易資料.
+        (3). api 資料會依據 transactionType 做分類. 該內容頁會依據分類好的資料做顯示.
+        (4). 內容狀態會依據api給的statusID做顯示, 內容如下 :
+        statusID :
+        0、default -> api 給值
+        1 -> 待处理
+        2 -> 处理中
+        3 -> 网关处理中
+        4 -> 成功
+        5 -> 失败
+        6 -> 已取消
+        7、8、9 -> 处理中
+        
+        - 银行资料管理(BankManagementViewController)頁面邏輯
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 每次進入頁面時(viewWillAppear)會取call getUserBanksInfo api取得最新交易資料.
+        (3). 無銀行資料時, 可以點擊新增銀行新增銀行資料(new AddBankAccountViewController)
+        
+        - 红利信息(DividendDataViewController)頁面邏輯
+        紅利訊息組成區塊主要紅利選單.其中功能包含红利概览、查询红利记录及返水优惠．
+        • 紅利區塊組成包含
+        － 上方選單功能頁(topView), 是以刻死3個按鈕方式實作
+        - 下方內容區塊, 分別實作红利概览(DividendOverviewView)、查询红利记录(QueryDividendDataView)及返水优惠(BackwaterDiscountView) 三個頁面, 並直接addSubView方式貼在頁面上.
+        - 切換方式以show/hide view方式做顯示(btnClick method)
+        - 红利概览僅顯示 bonusStatusID = 3 and 4 分類資料
+        - 查询红利记录狀態按鈕, bonusStatusID = 2、5、6、8 將隱藏(完成及已過期不顯示按鈕)
+        
+        頁面邏輯 :
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 頁面生成時會 call getBonusBalance api 取得紅利資料
+        (3). call getBonusMilestone 取得各月份即將過期紅利值, call getPromotionHistory api 取得紅利詳細資訊(红利概览預設查詢區間由2008/01/01 00:00:00 至 當天的 23:59:59) 
+        (4). call getUserWalletBalance api 取得帳戶列表資料
+        (5). 日期選擇會透過 toSelect delegate method (re-call getPromotionHistory api) 取得最新資料
+        
+        - 专属优惠(ExclusivePreferenceViewController)頁面邏輯
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). coupon填寫完會call getCouponInfo api, 先取得資料作初步驗證, 在 call calculateBonusAmount api 驗證此coupon是否有效(有無被使用).
+        
+        - 公告(NoticeViewController)頁面邏輯
+        公告組成區塊主要訊息類別選單.其中訊息包含所有公告、特別公告、最新公告及優惠公告．
+        • 公告區塊組成包含
+        - 公告選單部分由DLScrollTabbarView實作
+        - 公告內容頁(slideView)由DLCustomSlideView實作
+        - 各公告功能共用實作一個內容頁(NoticeTableViewViewController), 依據index值得不同實作內容資訊
+         
+        頁面邏輯 :
+        (1). 頁面開啟會先生成畫面所有元件
+        (2). 頁面生成時會 call sendMessageRead api 送出該頁面已讀狀態.
+        (3). 各頁面依據index值得不同, 會 call getMessageList api取相特別公告對應資料. call getNewsList api 取得其他公告資料
+        (4). 所有公告在APP端自行需合併2支api資料, 並做日期排序.
+        
+        - 关于(AboutUSViewController)頁面邏輯
+        (1). 頁面開啟會先生成畫面所有元件
+        
 ## 4. SDK / Utiity 說明 
-
+    
+    • category :
+    - RequestData : 定義siteId
+    - NSString : 
+        (1). NSString+IsValidUrl : 判斷url是否有效
+        (2). NSString+IsBlank : 判斷字串是否為空
+        (3). NSString+isValidEmail : 判斷email是否有效
+    - UIColor : RGB轉換
+    - UITextField : 
+        (1). UITextField+TintAjust : 游標相關功能
+        (2). UITextField+Placeholder : placeholder相關功能
+    - UIImage :
+        (1). UIImage+EqualScaling : 圖片延伸功能
+        (2). UIImage+Tint : 圖片填色相關功能
+    - UIView+AddClickedEvent : view 新增click事件
+    - UIView+UIViewController : 取得該view的所屬viewcontroler
+    
+    • header :
+    - ApiHeader : 無作用
+    - ToolHeader : 無作用 
+    - CategoryHeader : include all custom category header
+    - ClassHeader : include third's party header
+    - SDKHeader : include all header's file 
+    - SDKHeader : 無作用
+    - FrameworkHeader : 無作用
+    - ViewHeader : include all view's header
+    - PageHeader : include all viewcontroller's header
+    - MacroDefinitionHeader : 定義UserDefault及共用系統值判斷式 
+    
+    • SharedView :
+    - ToastViewController : 自定義Toast功能
+    
+    • 工具类
+    - BetwayUtils :
+        +(BOOL) isnil:(id)value : 是否是空值
+        +(BOOL) isEmptyString:(NSString *)string : 是否是空字串
+        +(BOOL) isNotEmptyString:(NSString *)string; : 是否不是空字串
+        +(BOOL) isNumber:(NSString *)inputStr : 是否為數字
+        +(BOOL) isDouble:(NSString *)inputStr : 是否為double型態
+        +(BOOL)isValidPassword:(NSString *)pass : 是否為有效密碼格式
+        +(BOOL)isValidPhoneNumber:(NSString *)tel : 是否為有效電話格式
+        +(BOOL)isValidUserName:(NSString *)username : 是否為有效使用者代號 
+        +(BOOL)isValidRealNameWithWhitespace:(NSString *)realName : 是否為有效真實姓名
+        +(BOOL)isEmailAddress:(NSString*)mailAddress : 是否為有效email
+        +(NSString *)getTimeStampFromDate:(NSDate *)date : 依據nsdate轉換timestamp
+        +(NSDate *)getDateFromTimeStamp:(NSString *)timeStamp : 依據timstamp轉換nsdate
+        + (NSString *)AES256_Encrypt:(NSString *)originalStr key:(NSStr ing *)key : aes256加密
+        + (NSString *)AES256_Decrypt:(NSString *)encryptStr key:(NSString *)key : aes256解密
+        + (BOOL)isLoginStatusIllegal:(NSInteger)errorCode : 依據errorCode判斷是否為401 or 403
+        + (BOOL)isLoginStatusIllegalWithError:(NSError *)error : : 依據error訊息判斷是否為401 or 403
+        + (BOOL)isValidRemark:(NSString *)remark : 判斷表情符號
+        + (BOOL)isValidRealName:(NSString *)realName : 是否為有效真實姓名
+        + (BOOL)isValidBankName:(NSString *)bankName : 是否為有效銀行名稱
+        + (BOOL)isvalidAddress:(NSString *)address : 是否為有效地址
+        + (BOOL)isValidEmail:(NSString *)email : 是否為有效email
+        + (BOOL)isValidCity:(NSString *)city : 是否為有效程式
+        + (BOOL)isValidWechatAccount:(NSString *)wechatAccount : 是否為有效wechat帳號
+        + (BOOL)isvalidSecretAnswer:(NSString *)answer  : 是否為有效安全答案
+        + (BOOL)validateIDCardNumber:(NSString *)value : 是否為有效id card
+        + (BOOL)isValidRegion:(NSString *)region : 是否為有效區域
+        + (UIImage *)imageWithTintColor:(UIColor *)tintColor alpha:(CGFloat)alpha image:(UIImage *)image : image tint method
+        + (BiometricType) isBiometricAvailable : 是否可使用生物辨識功能
+        + (NSAttributedString *)attributedStringWithHTML:(NSString *)html : 依據html轉換NSAttributedString
+    
+    - Manager :
+        (1). FunpodiumSDKCacheMacros : cache相關功能
+        (2). FunpodiumSDKManager : sdk method 相關功能
+        
+    - ThousandthDivision : 小數點數值計算
+    - NSDate : 日期相關工具
+    - Saver : NSUserDefault 儲存功能
+    - ProgressHUD : hud套件
+    - Calendar : 日期相關功能
+    - UIButton : 依據字串計算區域大小
+    - Keyboard : 鍵盤事件相關功能
+    - TouchOrFace : 生物辨識相關功能
