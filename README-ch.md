@@ -1,14 +1,18 @@
-# betway-ios
+## 1. System Architecture (Figure)
 
-## 1. 系統功能架構(圖)
-#### 請參考架構圖![架構圖](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/Betway_Architecture.png)
+#### Please refer to the architecture [figure](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/Betway_Architecture.png)
 
+## 2. Description of each modules
+### Home
+#### 1 ViewControllers
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPage.png?raw=true" width = "400">
 
-## 2. 各模塊說明
-### 首頁
-#### 1 ViewControllers![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
-##### 1.1MainBannerCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage%20top.png)
-##### 1.2SYTableViewCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
+##### 1.1MainBannerCell
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageTop.png?raw=true" width = "400">
+
+##### 1.2SYTableViewCell
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "400">
+
 ### 遊戲大廳
 #### 2 GameHallViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameHallViewController.png)
 #### 3 遊戲頁籤(除我的最愛) GameListViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameListViewController.png)
