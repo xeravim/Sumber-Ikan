@@ -1,6 +1,6 @@
 # Sumber-Ikan
 # betway-ios
-[English](readme-ch.md)
+[English](README.md)
 ## 1. 系統功能架構(圖)
 #### 請參考架構圖![架構圖](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/Betway_Architecture.png)
 
