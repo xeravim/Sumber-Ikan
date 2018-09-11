@@ -52,7 +52,7 @@
 
 ### Piggy Bank Page (Mid TabBar Button)
 #### DepositPageViewController (Framework)
-        • UIView *headView -> pper block
+        • UIView *headView -> upper block
         • UIImageView *headBGImg -> background of the upper block
         • UIButton *topCloseBtn  -> close button
         • UILabel *mainAccountLab  -> master account
@@ -181,7 +181,7 @@
 ##### 2.5 UnfinishedGameHeaderView
         • UILabel *lbPlatform -> classification of unfinished games
 ##### 2.6 UnfinishedGamesPromptViewController
-        • NSLayoutConstraint *FakeNavgationBarHeight -> the heigh of the custom day
+        • NSLayoutConstraint *FakeNavgationBarHeight -> the height of the custom day
         • UIButton *backButton -> return button
         • UITableView *tableView -> unfinished game list
 ##### 2.7 UnfinishedGameCell
@@ -218,7 +218,7 @@
 #### 1. MessageViewController
     • DLLRUCache *cache -> tab cache
     • DLScrollTabbarItem *item -> tab component
-    • DLCustomSlideView *slideView -> Inner page of the tab
+    • DLCustomSlideView *slideView -> inner page of the tab
     • DLScrollTabbarView *tabbar -> tab block
     • YTDropMenu *dropMenu -> drop down menu
 #### 2. MessageTableViewViewController
@@ -746,400 +746,400 @@
 
 ### 3.1.2 Forgot your password?
 
-        Page logic:
-        (1). The page opens will make all the components of the screen
-        (2). According to the account and phone number input by the user, first perform the account verification action (call checkUserAccount api).
-        (3). Send the api to get the verification code ( call sendSMSCode api).
-        (3.1) The api is successfully transmitted and the message is sent successfully. The message number input box is displayed.
-        (3.2) When the api return value fails, the SMS verification code error message is displayed.
-        (3.3) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
-        (4). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
-        
+    Page logic:
+    (1). The page opens will make all the components of the screen
+    (2). According to the account and phone number input by the user, first perform the account verification action (call checkUserAccount api).
+    (3). Send the api to get the verification code ( call sendSMSCode api).
+    (3.1) The api is successfully transmitted and the message is sent successfully. The message number input box is displayed.
+    (3.2) When the api return value fails, the SMS verification code error message is displayed.
+    (3.3) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
+    (4). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
+    
 ### 3.1.3 Forgot username
 
-        Page logic:
-        (1). The page opens will make all the components of the screen
-        (2). According to the user's choice of birthday and phone number first account verification action (call checkUserBirth api).
-        (3). Send the api to get the verification code ( call sendSMSCode api).
-        (3.1) The api is successfully transmitted and the message is sent successfully. The message number input box is displayed.
-        (3.2) When the api return value fails, the SMS verification code error message is displayed.
-        (3.3) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
-        (4). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
-        
+    Page logic:
+    (1). The page opens will make all the components of the screen
+    (2). According to the user's choice of birthday and phone number first account verification action (call checkUserBirth api).
+    (3). Send the api to get the verification code ( call sendSMSCode api).
+    (3.1) The api is successfully transmitted and the message is sent successfully. The message number input box is displayed.
+    (3.2) When the api return value fails, the SMS verification code error message is displayed.
+    (3.3) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
+    (4). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
+    
 ### 3.1. 4 User registration
-        
-        Page logic:
-        (1). The page opens will make all the components of the screen
-        (2). After the user completes and verifies the field information, it is judged whether the coupon code is entered.
-        (2.1) Enter the coupon code, first make the coupon volume verification (call getCouponInfo api)
-        (2.2) Without entering the coupon code, go directly to (3)
-        (3). call userRegister api to do the registration action. When the registration is successful, the verification phone page (VerifyPhoneViewController) will be imported.
-        
-        The P.S. general registration page (RegistViewController) is currently not used.
+    
+    Page logic:
+    (1). The page opens will make all the components of the screen
+    (2). After the user completes and verifies the field information, it is judged whether the coupon code is entered.
+    (2.1) Enter the coupon code, first make the coupon volume verification (call getCouponInfo api)
+    (2.2) Without entering the coupon code, go directly to (3)
+    (3). call userRegister api to do the registration action. When the registration is successful, the verification phone page (VerifyPhoneViewController) will be imported.
+    
+    The P.S. general registration page (RegistViewController) is currently not used.
 
 ### 3.1.5 Verifying the phone
 
-        Page logic:
-        (1). The page opens will make all the components of the screen
-        (2). Send the api to get the verification code (call sendSMSCode api) according to the phone input by the user.
-        (2.1) api return success and SMS sent successfully, display the SMS number input box
-        (2.1) When the api return value fails, the SMS verification code error message is displayed.
-        (2.2) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
-        (3). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
-        
+    Page logic:
+    (1). The page opens will make all the components of the screen
+    (2). Send the api to get the verification code (call sendSMSCode api) according to the phone input by the user.
+    (2.1) api return success and SMS sent successfully, display the SMS number input box
+    (2.1) When the api return value fails, the SMS verification code error message is displayed.
+    (2.2) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
+    (3). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
+    
 ### 3.2 Home (ViewController)
 
-        The main components of the home block are the upper Banner and the main game category block (TableView) below.
-        • The Banner block uses the third-party suite TYCyclePagerView to implement the content page, and TYPageControl controls the page-changing behavior.
-        • Game category block uses SYTableViewCell to render the picture layout according to the GameCategoryModel data module.
-        • NSNotificationCenter added a kEventNewBannerArrival event to detect the update status of the push.
-        • NSNotificationCenter added a kEventNewGameArrival event to detect the update status of the push.
-        
-        Page logic:
-        (1). The page opens will make all the components of the screen
-        (2). Each time you enter the page (viewWillAppear), you will get the banner information (call getLobbyBanners api) and the game classification data (call getAllGameCategories api), and update the screen.
-        
-        Click/slide behavior:
-        • When the page is down, the update action will be updated. When the update is pulled down, the banner and game category data will be updated through the refreshMainPage method.
-        • When the game function block is clicked, the page behavior is based on the different gameCategoryName via the pushToGameLobbay method.
-        - When judging that you are clicking on the sports (portsportsbook) game category, you must first determine if the user has logged in. If you are not logged in, you must first jump to the login page.
-          In addition, you must also determine whether the user account is locked. When the account is locked, you need to refer to the customer service.
-        - Other types of games go directly to the game lobby page.
+    The main components of the home block are the upper Banner and the main game category block (TableView) below.
+    • The Banner block uses the third-party suite TYCyclePagerView to implement the content page, and TYPageControl controls the page-changing behavior.
+    • Game category block uses SYTableViewCell to render the picture layout according to the GameCategoryModel data module.
+    • NSNotificationCenter added a kEventNewBannerArrival event to detect the update status of the push.
+    • NSNotificationCenter added a kEventNewGameArrival event to detect the update status of the push.
+    
+    Page logic:
+    (1). The page opens will make all the components of the screen
+    (2). Each time you enter the page (viewWillAppear), you will get the banner information (call getLobbyBanners api) and the game classification data (call getAllGameCategories api), and update the screen.
+    
+    Click/slide behavior:
+    • When the page is down, the update action will be updated. When the update is pulled down, the banner and game category data will be updated through the refreshMainPage method.
+    • When the game function block is clicked, the page behavior is based on the different gameCategoryName via the pushToGameLobbay method.
+    •  When judging that you are clicking on the sports (portsportsbook) game category, you must first determine if the user has logged in. If you are not logged in, you must first jump to the login page.
+    In addition, you must also determine whether the user account is locked. When the account is locked, you need to refer to the customer service.
+    •  Other types of games go directly to the game lobby page.
         
 ### 3.3 Offers
 
-        ㄧ. Main page module and related events:
-        The concessions are divided into the upper Banner and the main concession category menu below. The offers include sports offers, live offers, game offers and special offers.
-        • The Banner block uses the third-party suite TYCyclePagerView to implement the content page, and TYPageControl controls the page-changing behavior.
-          - Banner block contains drop-down menu kit (YTDropMenu)
-        • Offer block composition contains
-          - The offer menu is partially implemented by DLScrollTabbarView
-          - Offer content page is implemented by DLCustomSlideView
-        • NSNotificationCenter added a kEventRefreshPromotionList event to detect the update status of the push.
-        • NSNotificationCenter added a kEventNewBannerArrival event to detect the update status of the push.
-        
-        Main page (DiscountPageViewController) logic:
-        (1). The page opens will make all the components of the screen
-        (2). Each time you enter the page (viewWillAppear), you will get the banner information (call getLobbyBanners api) to update the banner data.
-        (3). The discount classification is to write four game categories on the App side. The classified subpage (PageViewController) is in
-             - (UIViewController *) DLCustomSlideView: (DLCustomSlideView *) sender controllerAt: (NSInteger) index
-             Do the action of generating the page.
-        (4). After the sub-page is generated, the coupon list data (call getPromotionList api) will be obtained and updated on the page that belongs to it.
-        
-        2. Offer sliding paging module and related events:
-        Offer sliding tabs make up blocks with only their own TableView
-        • NSNotificationCenter added a NOTIFICATION_DISCOUNT_PAGE_REFRESH event to update the offer items that need to be displayed.
-        • NSNotificationCenter added a kEventRefreshPromotionList event to detect the update status of the push.
-        • NSNotificationCenter added a kEventNewPromotionArrival event to detect the update status of the push.
-        
-        Offer Slide Page (PageViewController) logic:
-        
-        (1). The page opens will make all the components of the screen
-        (2). Each time you enter the page (viewWillAppear), you will get the offer list data (call getPromotionList api) and update it.
-        
-        Click/slide behavior:
-        • Click on the Banner ad
-          - The banner click event will be handled uniformly in the DiscountPageViewController's actionByPromotionListData method. The action id value is defined as follows (this definition value is shared by all action ids):
-          "3": Deposit now (please go to the transfer page)
-          "9": Immediate betting (sports)
-          "11": Immediate betting (real person)
-          "12": Immediate betting (game)
-          "14": Discount page (sports)
-          "16": Discount page (real person)
-          "17": Discount page (game)
-          "18": Discount page (other)
-          "20": Home
-          Other numbers (0~2, 4, 5, 10, 13, 15, 19): no effect
-          
-        • Click on the menu button (dropMenu)
-          - Triggers the dropButtonClick event, which determines whether to show/hide the menu page depending on whether it is clicked.
-          - When the condition to be displayed is selected, pressing the filter button will trigger
-            -(void)dropMenu:(YTDropMenu *)dropMenu didMultiSelectIndexPaths:(NSIndexSet *)selIndexSet
-            as well as
-            - (void)filterData:(NSIndexSet *)selIndexSet
-            The above two methods will check which conditions have been selected in total, and convert different type values ​​depending on the name. (ex : deposit offer = type 2)
-          - The converted data will be stored in the NSMutableDictionary container and a notification event (NOTIFICATION_DISCOUNT_PAGE_REFRESH) will be sent to notify the subpage (PageViewController) that a screen update is required.
-          - After receiving the update event, the subpage will update the screen according to the type value and based on the api data.
-        • Click on a discount item
-          - Click on the offer image to generate a discount details page (DiscountDetailsViewController), which simply displays the offer information
-          - Click on the relevant button event such as immediate deposit/immediate bet, triggering PageViewController's actionByPromotionListData method to do action processing.
+    ㄧ. Main page module and related events:
+    The concessions are divided into the upper Banner and the main concession category menu below. The offers include sports offers, live offers, game offers and special offers.
+    • The Banner block uses the third-party suite TYCyclePagerView to implement the content page, and TYPageControl controls the page-changing behavior.
+        - Banner block contains drop-down menu kit (YTDropMenu)
+    • Offer block composition contains
+        - The offer menu is partially implemented by DLScrollTabbarView
+        - Offer content page is implemented by DLCustomSlideView
+    • NSNotificationCenter added a kEventRefreshPromotionList event to detect the update status of the push.
+    • NSNotificationCenter added a kEventNewBannerArrival event to detect the update status of the push.
+    
+    Main page (DiscountPageViewController) logic:
+    (1). The page opens will make all the components of the screen
+    (2). Each time you enter the page (viewWillAppear), you will get the banner information (call getLobbyBanners api) to update the banner data.
+    (3). The discount classification is to write four game categories on the App side. The classified subpage (PageViewController) is in
+        - (UIViewController *) DLCustomSlideView: (DLCustomSlideView *) sender controllerAt: (NSInteger) index
+            Do the action of generating the page.
+    (4). After the sub-page is generated, the coupon list data (call getPromotionList api) will be obtained and updated on the page that belongs to it.
+    
+    2. Offer sliding paging module and related events:
+    Offer sliding tabs make up blocks with only their own TableView
+    • NSNotificationCenter added a NOTIFICATION_DISCOUNT_PAGE_REFRESH event to update the offer items that need to be displayed.
+    • NSNotificationCenter added a kEventRefreshPromotionList event to detect the update status of the push.
+    • NSNotificationCenter added a kEventNewPromotionArrival event to detect the update status of the push.
+    
+    Offer Slide Page (PageViewController) logic:
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear), you will get the offer list data (call getPromotionList api) and update it.
+        
+    Click/slide behavior:
+    • Click on the Banner ad
+        - The banner click event will be handled uniformly in the DiscountPageViewController's actionByPromotionListData method. The action id value is defined as follows (this definition value is shared by all action ids):
+        "3": Deposit now (please go to the transfer page)
+        "9": Immediate betting (sports)
+        "11": Immediate betting (real person)
+        "12": Immediate betting (game)
+        "14": Discount page (sports)
+        "16": Discount page (real person)
+        "17": Discount page (game)
+        "18": Discount page (other)
+        "20": Home
+        Other numbers (0~2, 4, 5, 10, 13, 15, 19): no effect
+    
+    • Click on the menu button (dropMenu)
+        - Triggers the dropButtonClick event, which determines whether to show/hide the menu page depending on whether it is clicked.
+        - When the condition to be displayed is selected, pressing the filter button will trigger
+            -(void)dropMenu:(YTDropMenu *)dropMenu didMultiSelectIndexPaths:(NSIndexSet *)selIndexSet
+            as well as
+            - (void)filterData:(NSIndexSet *)selIndexSet
+            The above two methods will check which conditions have been selected in total, and convert different type values    depending on the name. (ex : deposit offer = type 2)
+            - The converted data will be stored in the NSMutableDictionary container and a notification event (NOTIFICATION_DISCOUNT_PAGE_REFRESH) will be sent to notify the subpage (PageViewController) that a screen update is required.
+            - After receiving the update event, the subpage will update the screen according to the type value and based on the api data.
+    • Click on a discount item
+            - Click on the offer image to generate a discount details page (DiscountDetailsViewController), which simply displays the offer information
+            - Click on the relevant button event such as immediate deposit/immediate bet, triggering PageViewController's actionByPromotionListData method to do action processing.
 ### 3.4 Deposit
 
-        1. The main page (DepositPageViewController) module and related events:
-        The deposit page distinguishes the deposit/transfer selection block above and the deposit function business menu below. The deposit implementation includes QQ payment, online payment, local bank transfer, cloud flash scan code, Jingdong wallet and Betwick card.
-        • The main page generation (on) method distinguishes 2 types
-          - Use the custom insured method (call initWithPresent method), this method will add a close button on the top left of the page.
-          - Opened in the normal way, TabBarItem is used this way, this method will not close the button on the top left of the page.
-        • The deposit block contains 2 buttons for deposit and transfer.
-        • Deposit business function block consists of
-          - The deposit menu section is implemented by DLScrollTabbarView
-          - Deposit content page is implemented by DLCustomSlideView
-        • NSNotificationCenter added a kEventNewDepositMethodArrival event to detect the update status of the push.
-        • NSNotificationCenter adds the kEventDespositSuccess event. When the deposit is successful, if the current page is opened using the Present method, the page is closed.
-        • NSNotificationCenter added a transfer_success event, when the transfer is successful, cut back to the home page
-        
-        Deposit page
-        The deposit function page is divided into two different types. One is to guide the web page when the deposit is completed, for example: QQ payment, cloud flash scan code, Jingdong wallet and online payment, etc. The other is to process the deposit completion behavior for the self page. For example: local bank transfer and BV.
-        
-        • The deposit page inherits the PaymentView in a unified manner. When there is coupon information, each deposit page must display coupon information. However, the coupon information will be cleared after leaving the piglet page. Whether or not the user has used the coupon roll.
-        
-        Deposit function page logic:
-        - QQ payment, cloud flash payment scan code, Jingdong wallet, online payment:
-        (1). The page opens will make all the components of the screen
-        (2). Check when a coupon volume is generated, generate a couponView.
-        (3). When the user enters the field data and the verification is completed, PaymentView's depositWithWebView method is triggered and call submitDeposit api is made to make the deposit action.
-        (4.1). The deposit is completed and no coupon is used. Open WebView directly to prompt the user to complete the deposit.
-        (4.2). The deposit is completed and coupon is used, which will trigger
-            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
-              And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open WebView to prompt the user to complete the deposit.
-          
-        - Local bank transfer:
-        (1). The page opens will make all the components of the screen
-        (2). Check when a coupon volume is generated, generate a couponView.
-        (3). call getDepositTargetBank api Get bank information. (This will ignore the 'Alipay Transfer' function when storing temporary data)
-        (4). call getLocalDepositMethods api Get the transfer function. (This will ignore the 'Alipay Transfer' function when storing temporary data)
-        (5). It should be noted that the bankTypeClick method will update the supported bank account according to the selected transfer function. Otherwise, click the bankClick method to update the corresponding transfer function.
-        (6). When the user enters the field data and the verification is completed, the call submitDeposit api is used to make the deposit action.
-        (7.1). The deposit is completed and no coupon is used. Open DepositApplicationSuccessViewController directly to prompt the user to complete the deposit.
-        (7.2). The deposit is completed and coupon is used, which will trigger
-            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
-            And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open DepositApplicationSuccessViewController to prompt the user to complete the deposit.
-        
-        - BW Card:
-        (1). The page opens will make all the components of the screen
-        (2). Check when a coupon volume is generated, generate a couponView.
-        (3). When the user enters the field data and the verification is completed, the call submitDeposit api will be used to make the deposit action.
-        (4.1). The deposit is completed and no coupon is used. Open DepositApplicationSuccessViewController directly to prompt the user to complete the deposit.
-        (4.2). The deposit is completed and coupon is used, which will trigger
-            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
-            And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open DepositApplicationSuccessViewController to prompt the user to complete the deposit.
-        
-        Transfer page
-        (1). The page opens will make all the components of the screen
-        (2). call getUserTransferWallets api Update user wallet data.
-        (3). When the user selects the target account, it will call the getBonusList api to get the bonus message of the account. And generate the corresponding bonusView field.
-        (4). The click status of the bonus field will be displayed differently depending on the amount of the transfer.
-            - When the bonus field is generated, the default selection field will be used next time.
-            - When the transfer amount is less than the minimum amount issued by the bonus, an error message will be displayed in the bonus field. The reminder amount is not up to standard.
-            - When the transfer amount changes, change the selection field to use it again next time.
-        (5). When the user selects the PT account, it will check whether the account has a registered PT account.
-        (6). The transfer process of the transfer page is divided into 4 steps.
-            - goDepositStep1 method : The main function is responsible for checking whether the field data is correct.
-            - goDepositStep2 method : The main function is responsible for confirming whether to use coupon or bonus
-                1. Determine whether to use the coupon volume, if it is used, enter the goDepositStep3 method
-                2. The user selects a valid bonus field, then call calculateBonusAmount api to confirm whether the bonus can be used. If it can be used, enter the goDepositStep3 method
-                3. Other states go directly to the goDepositStep3 method
-            - goDepositStep3 method : The main function is responsible for the transfer action
-                1. call submitTransfer api to make the transfer, the transfer will display 'transfer success' toast. and re-update the offer and bonus list information. Finally transfer the transfer success page
-                2. The transfer is successful and the coupon volume is used, which triggers
-                - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
-                And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally, the 'exclusive offer is successfully used' toast. Finally, the transfer is transferred. Success page
-                3. If you have a choice bonus, go to goDepositStep4
-                - goDepositStep4 method : The main function is responsible for applying for dividends. call applyBonus api gets the bonus application status. When the bonus application is successful, the offer and bonus list information will be updated again. Finally, the transfer success page will be transferred.
+    1. The main page (DepositPageViewController) module and related events:
+    The deposit page distinguishes the deposit/transfer selection block above and the deposit function business menu below. The deposit implementation includes QQ payment, online payment, local bank transfer, cloud flash scan code, Jingdong wallet and Betwick card.
+    • The main page generation (on) method distinguishes 2 types
+        - Use the custom insured method (call initWithPresent method), this method will add a close button on the top left of the page.
+        - Opened in the normal way, TabBarItem is used this way, this method will not close the button on the top left of the page.
+    • The deposit block contains 2 buttons for deposit and transfer.
+    • Deposit business function block consists of
+        - The deposit menu section is implemented by DLScrollTabbarView
+        - Deposit content page is implemented by DLCustomSlideView
+    • NSNotificationCenter added a kEventNewDepositMethodArrival event to detect the update status of the push.
+    • NSNotificationCenter adds the kEventDespositSuccess event. When the deposit is successful, if the current page is opened using the Present method, the page is closed.
+    • NSNotificationCenter added a transfer_success event, when the transfer is successful, cut back to the home page
+    
+    Deposit page
+    The deposit function page is divided into two different types. One is to guide the web page when the deposit is completed, for example: QQ payment, cloud flash scan code, Jingdong wallet and online payment, etc. The other is to process the deposit completion behavior for the self page. For example: local bank transfer and BV.
+    
+    • The deposit page inherits the PaymentView in a unified manner. When there is coupon information, each deposit page must display coupon information. However, the coupon information will be cleared after leaving the piglet page. Whether or not the user has used the coupon roll.
+    
+    Deposit function page logic:
+        - QQ payment, cloud flash payment scan code, Jingdong wallet, online payment:
+        (1). The page opens will make all the components of the screen
+        (2). Check when a coupon volume is generated, generate a couponView.
+        (3). When the user enters the field data and the verification is completed, PaymentView's depositWithWebView method is triggered and call submitDeposit api is made to make the deposit action.
+        (4.1). The deposit is completed and no coupon is used. Open WebView directly to prompt the user to complete the deposit.
+        (4.2). The deposit is completed and coupon is used, which will trigger
+            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+            And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open WebView to prompt the user to complete the deposit.
+    
+        - Local bank transfer:
+        (1). The page opens will make all the components of the screen
+        (2). Check when a coupon volume is generated, generate a couponView.
+        (3). call getDepositTargetBank api Get bank information. (This will ignore the 'Alipay Transfer' function when storing temporary data)
+        (4). call getLocalDepositMethods api Get the transfer function. (This will ignore the 'Alipay Transfer' function when storing temporary data)
+        (5). It should be noted that the bankTypeClick method will update the supported bank account according to the selected transfer function. Otherwise, click the bankClick method to update the corresponding transfer function.
+        (6). When the user enters the field data and the verification is completed, the call submitDeposit api is used to make the deposit action.
+        (7.1). The deposit is completed and no coupon is used. Open DepositApplicationSuccessViewController directly to prompt the user to complete the deposit.
+        (7.2). The deposit is completed and coupon is used, which will trigger
+            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+            And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open DepositApplicationSuccessViewController to prompt the user to complete the deposit.
+    
+        - BW Card:
+        (1). The page opens will make all the components of the screen
+        (2). Check when a coupon volume is generated, generate a couponView.
+        (3). When the user enters the field data and the verification is completed, the call submitDeposit api will be used to make the deposit action.
+        (4.1). The deposit is completed and no coupon is used. Open DepositApplicationSuccessViewController directly to prompt the user to complete the deposit.
+        (4.2). The deposit is completed and coupon is used, which will trigger
+            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+            And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open DepositApplicationSuccessViewController to prompt the user to complete the deposit.
+    
+    Transfer page
+        (1). The page opens will make all the components of the screen
+        (2). call getUserTransferWallets api Update user wallet data.
+        (3). When the user selects the target account, it will call the getBonusList api to get the bonus message of the account. And generate the corresponding bonusView field.
+        (4). The click status of the bonus field will be displayed differently depending on the amount of the transfer.
+            - When the bonus field is generated, the default selection field will be used next time.
+            - When the transfer amount is less than the minimum amount issued by the bonus, an error message will be displayed in the bonus field. The reminder amount is not up to standard.
+            - When the transfer amount changes, change the selection field to use it again next time.
+        (5). When the user selects the PT account, it will check whether the account has a registered PT account.
+        (6). The transfer process of the transfer page is divided into 4 steps.
+            - goDepositStep1 method : The main function is responsible for checking whether the field data is correct.
+            - goDepositStep2 method : The main function is responsible for confirming whether to use coupon or bonus
+                1. Determine whether to use the coupon volume, if it is used, enter the goDepositStep3 method
+                2. The user selects a valid bonus field, then call calculateBonusAmount api to confirm whether the bonus can be used. If it can be used, enter the goDepositStep3 method
+                3. Other states go directly to the goDepositStep3 method
+                - goDepositStep3 method : The main function is responsible for the transfer action
+                1. call submitTransfer api to make the transfer, the transfer will display 'transfer success' toast. and re-update the offer and bonus list information. Finally transfer the transfer success page
+                2. The transfer is successful and the coupon volume is used, which triggers
+                - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+                And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally, the 'exclusive offer is successfully used' toast. Finally, the transfer is transferred. Success page
+                3. If you have a choice bonus, go to goDepositStep4
+                - goDepositStep4 method : The main function is responsible for applying for dividends. call applyBonus api gets the bonus application status. When the bonus application is successful, the offer and bonus list information will be updated again. Finally, the transfer success page will be transferred.
             
 ### 3.5 Message
 
-        Main page module and related events:
-        The message forms the main message category menu for the block. The message contains all messages, deposit notifications, withdrawal notices and bonus notifications.
-        • Message category block composition contains
-        - The message menu section is implemented by DLScrollTabbarView
-        - The message content page (slideView) is implemented by DLCustomSlideView
-        • NSNotificationCenter added a kEventUserDidLogin event to detect the status of the login event.
-        • NSNotificationCenter added a kEventRefreshMessageList event to detect the update status of the push.
-        • NSNotificationCenter added a kEventUserDidLogout event to detect the status of the logout event.
-        
-        Main page (MessageViewController) logic:
-        (1). The page opens will make all the components of the screen
-        (2). Each time you enter the page (viewWillAppear), you will get the message data (call getMessageList api) to update the message data.
-        (3). The message classification is to write four kinds of message classifications on the App side. The classified sub-page (MessageTableViewViewController) is in
-        - (UIViewController *) DLCustomSlideView: (DLCustomSlideView *) sender controllerAt: (NSInteger) index
-        Do the action of generating the page.
-        (4). After the sub-page is generated, it will get the message read status (call sendMessageRead api) concurrent notification (kEventRefreshMessageUnReadCount) to update the number of unread messages on the page it belongs to.
-        
+    Main page module and related events:
+    The message forms the main message category menu for the block. The message contains all messages, deposit notifications, withdrawal notices and bonus notifications.
+    • Message category block composition contains
+        - The message menu section is implemented by DLScrollTabbarView
+        - The message content page (slideView) is implemented by DLCustomSlideView
+    • NSNotificationCenter added a kEventUserDidLogin event to detect the status of the login event.
+    • NSNotificationCenter added a kEventRefreshMessageList event to detect the update status of the push.
+    • NSNotificationCenter added a kEventUserDidLogout event to detect the status of the logout event.
+    
+    Main page (MessageViewController) logic:
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear), you will get the message data (call getMessageList api) to update the message data.
+        (3). The message classification is to write four kinds of message classifications on the App side. The classified sub-page (MessageTableViewViewController) is in
+        - (UIViewController *) DLCustomSlideView: (DLCustomSlideView *) sender controllerAt: (NSInteger) index
+        Do the action of generating the page.
+        (4). After the sub-page is generated, it will get the message read status (call sendMessageRead api) concurrent notification (kEventRefreshMessageUnReadCount) to update the number of unread messages on the page it belongs to.
+    
 ### 3.6 Members
 
-        Main page module and related events:
-        The membership center block can be divided into three blocks, and the layout of login/logout is not the same.
-        The login status is the user related message (AlreadyLogginHeadView), the middle function list (tableView) and the version information and logout button (AlreadyLogginFootView).
-        The logout status is the login/registration button (NotLoginHeadView), the function list (tableView) in the middle, and the version information (UpdateVersionView) below.
-        The function list includes announcements, exclusive offers, bonus information, bank data management, transaction records, withdrawals, password management, PT game download password management, fingerprint recognition/face recognition login, and customer service functions.
-        
-        • NSNotificationCenter added a kEventUserDidLogout event to detect the status of the logout event.
-        
-        Main page (MessageViewController) logic:
-        (1). The page opens will make all the components of the screen
-        (2). Determine whether it is necessary to display the updated version information and update the biometric function button status (kIsTouchOrFaceIDLogin, which is inconsistent with the previous login account, and must be set to false)
-        (3). Each time you enter the page (viewWillAppear) and log in, you will get the member data (call getUserInfo api) and account data (call getUserWalletBalance api) and update the page data.
-        (4). Click to check the user data (call getUserInfo api) and the withdrawal setting (call getWithdrawSettings api) is completed.
-        
-        - Edit Profile (EditPersonalDataViewController) page logic
-        (1). The page opens will make all the components of the screen
-        (2.) will get the member information (call getUserInfo api), account data (call getUserWalletBalance api), security question (call getSecretQuestions api) and country list (call getNationsList api) and update the page data
-        (3). After verifying the updated information, each field needs to check whether there is any adjustment data. If there is any adjustment, call updateUserInfo api to update the member information.
-        (4). All data is updated successfully, need to return to the previous page. When there is data update failure, which fields need to be updated failed (call showUpdateProfileStatus method judgment)
-        
-        - PT Game Password Management (PTPasswordManagementViewController) page logic
-        (1). The page opens will make all the components of the screen
-        (2). call getUserVendorInfo api to get a PT account
-        (3). After the password is filled in, the call updateVendorPassword api updates the PT password.
-        
-        - Password Management (PasswordManagementViewController) page logic
-        (1). The page opens will make all the components of the screen
-        (2). After the password is filled in, call updateUserPassword api to update the password.
-        
-        - DrawMoneyViewController page logic
-        
-        • Click Add Account to open the Add Account (AddBankAccountViewController) profile page.
-        • Click on the prompt message to open the prompt message page (ReminderPageViewController)
-        • NSNotificationCenter added a kEventTransationSettingsChanged event to detect event updates to account data.
-        • NSNotificationCenter added the kEventBankAccountDidAdd event to detect event updates to account data.
-        
-        (1). The page opens will make all the components of the screen
-        (2). Check whether the user data is verified/filled. If not, you need to open RealNameViewController to fill in.
-        (3). call getUserWalletBalance api Get account amount information
-        (4). call getUserBanksInfo api Get bank information, and preset the displayed
-        (5). call getWithdrawSettings api Get account settings data, and update the single withdrawal amount will be the lowest value
-        (6). After the withdrawal information is completed, call submitWithdraw api is used to make withdrawals.
-        
-        - Transaction Record (TransactionRecordViewController) page logic
-        
-        The transaction record constitutes the main message category menu of the block. The message contains all transactions, deposit records, transfer records and withdrawal records.
-        • The transaction record block consists of
-        - The transaction history menu is implemented by DLScrollTabbarView
-        - The transaction record content page (slideView) is implemented by DLCustomSlideView
-        - Each transaction function is shared as a content page (TransactionRecordTableViewViewController), based on the index worth different implementation content information
-        - The index value (screen order) is written on the APP side.
-        
-        Transaction Content Page (TransactionRecordTableViewViewController) Page Logic:
-        (1). The page opens will make all the components of the screen
-        (2). Each time you enter the page (viewWillAppear) will take the call getTransactionHistory api to get the latest transaction data.
-        (3). The api data will be classified according to the transactionType. The content page will be displayed according to the classified information.
-        (4). The content status will be displayed according to the statusID given by the api, as follows:
-        statusID :
-        0, default -> api to the value
-        1 -> pending
-        2 -> Processing
-        3 -> Gateway processing
-        4 -> Success
-        5 -> failed
-        6 -> Cancelled
-        7, 8, 9 -> Processing
-        
-        - BankManagementViewController page logic
-        (1). The page opens will make all the components of the screen
-        (2). Each time you enter the page (viewWillAppear) will take the call getUserBanksInfo api to get the latest transaction data.
-        (3). When there is no bank information, you can click Add Bank to add bank information (new AddBankAccountViewController)
+    Main page module and related events:
+    • The membership center block can be divided into three blocks, and the layout of login/logout is not the same.
+    • The login status is the user related message (AlreadyLogginHeadView), the middle function list (tableView) and the version information and logout button (AlreadyLogginFootView).
+    • The logout status is the login/registration button (NotLoginHeadView), the function list (tableView) in the middle, and the version information (UpdateVersionView) below.
+    • The function list includes announcements, exclusive offers, bonus information, bank data management, transaction records, withdrawals, password management, PT game download password management, fingerprint recognition/face recognition login, and customer service functions.
+    
+    • NSNotificationCenter added a kEventUserDidLogout event to detect the status of the logout event.
+    
+    Main page (MessageViewController) logic:
+    (1). The page opens will make all the components of the screen
+    (2). Determine whether it is necessary to display the updated version information and update the biometric function button status (kIsTouchOrFaceIDLogin, which is inconsistent with the previous login account, and must be set to false)
+    (3). Each time you enter the page (viewWillAppear) and log in, you will get the member data (call getUserInfo api) and account data (call getUserWalletBalance api) and update the page data.
+    (4). Click to check the user data (call getUserInfo api) and the withdrawal setting (call getWithdrawSettings api) is completed.
+    
+    - Edit Profile (EditPersonalDataViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2.) will get the member information (call getUserInfo api), account data (call getUserWalletBalance api), security question (call getSecretQuestions api) and country list (call getNationsList api) and update the page data
+        (3). After verifying the updated information, each field needs to check whether there is any adjustment data. If there is any adjustment, call updateUserInfo api to update the member information.
+        (4). All data is updated successfully, need to return to the previous page. When there is data update failure, which fields need to be updated failed (call showUpdateProfileStatus method judgment)
+    
+    - PT Game Password Management (PTPasswordManagementViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2). call getUserVendorInfo api to get a PT account
+        (3). After the password is filled in, the call updateVendorPassword api updates the PT password.
+    
+    - Password Management (PasswordManagementViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2). After the password is filled in, call updateUserPassword api to update the password.
+    
+    - DrawMoneyViewController page logic
+        • Click Add Account to open the Add Account (AddBankAccountViewController) profile page.
+        • Click on the prompt message to open the prompt message page (ReminderPageViewController)
+        • NSNotificationCenter added a kEventTransationSettingsChanged event to detect event updates to account data.
+        • NSNotificationCenter added the kEventBankAccountDidAdd event to detect event updates to account data.
+    
+        (1). The page opens will make all the components of the screen
+        (2). Check whether the user data is verified/filled. If not, you need to open RealNameViewController to fill in.
+        (3). call getUserWalletBalance api Get account amount information
+        (4). call getUserBanksInfo api Get bank information, and preset the displayed
+        (5). call getWithdrawSettings api Get account settings data, and update the single withdrawal amount will be the lowest value
+        (6). After the withdrawal information is completed, call submitWithdraw api is used to make withdrawals.
+    
+        - Transaction Record (TransactionRecordViewController) page logic
+    
+        The transaction record constitutes the main message category menu of the block. The message contains all transactions, deposit records, transfer records and withdrawal records.
+    • The transaction record block consists of
+        - The transaction history menu is implemented by DLScrollTabbarView
+        - The transaction record content page (slideView) is implemented by DLCustomSlideView
+        - Each transaction function is shared as a content page (TransactionRecordTableViewViewController), based on the index worth different implementation content information
+        - The index value (screen order) is written on the APP side.
+    
+    Transaction Content Page (TransactionRecordTableViewViewController) Page Logic:
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear) will take the call getTransactionHistory api to get the latest transaction data.
+        (3). The api data will be classified according to the transactionType. The content page will be displayed according to the classified information.
+        (4). The content status will be displayed according to the statusID given by the api, as follows:
+        statusID :
+        0, default -> api to the value
+        1 -> pending
+        2 -> Processing
+        3 -> Gateway processing
+        4 -> Success
+        5 -> failed
+        6 -> Cancelled
+        7, 8, 9 -> Processing
+        
+        - BankManagementViewController page logic
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear) will take the call getUserBanksInfo api to get the latest transaction data.
+        (3). When there is no bank information, you can click Add Bank to add bank information (new AddBankAccountViewController)
 
         - DividendDataViewController page logic
-        The bonus message forms the main bonus menu of the block. The function includes the bonus overview, the inquiry bonus record and the return water offer.
-        • Bonus block composition contains
-        - The top menu function page (topView) is implemented by killing 3 buttons.
-        - The following content blocks are divided into three pages: DividendOverviewView, QueryDividendDataView and BackwaterDiscountView, and are directly attached to the page by addSubView.
-        - Switching mode is displayed in show/hide view mode (btnClick method)
-        - Dividend overview only shows bonusStatusID = 3 and 4
-        - Query bonus record status button, bonusStatusID = 2, 5, 6, 8 will be hidden (completed and expired without displaying button)
-        
-        Page logic:
-        (1). The page opens will make all the components of the screen
-        (2). When the page is generated, it will call getBonusBalance api to get the bonus information.
-        (3). call getBonusMilestone Get the bonus value of each month's upcoming expiration, call getPromotionHistory api Get the bonus details (the bonus query preset query interval from 2008/01/01 00:00:00 to 23:59:59 of the day)
-        (4). call getUserWalletBalance api Get account list information
-        (5). Date selection will get the latest information through toSelect delegate method (re-call getPromotionHistory api)
-        
-        - Exclusive offer (ExclusivePreferenceViewController) page logic
-        (1). The page opens will make all the components of the screen
-        (2). After the coupon is filled out, call getCouponInfo api, first obtain the data for preliminary verification, and verify whether the coupon is valid (with or without it) in call calculateBonusAmount api.
-        
-        - Announcement (NoticeViewController) page logic
-        Announcements form the main message category menu for the block. The message contains all announcements, special announcements, latest announcements and offers.
-        • Announcement block composition contains
-        - The bulletin menu is implemented by DLScrollTabbarView
-        - Announcement content page (slideView) is implemented by DLCustomSlideView
-        - Each announcement function shares a content page (NoticeTableViewViewController), based on the index worth different implementation content information
-         
-        Page logic:
-        (1). The page opens will make all the components of the screen
-        (2). When the page is generated, the call sendMessageRead api will send out the read status of the page.
-        (3). Each page is different according to the index, and will call getMessageList api to take the corresponding information of the special announcement. call getNewsList api Get other announcement materials
-        (4). All announcements need to merge 2 api data on the APP side and sort the date.
-        
-        - About (AboutUSViewController) page logic
-        (1). The page opens will make all the components of the screen
+        The bonus message forms the main bonus menu of the block. The function includes the bonus overview, the inquiry bonus record and the return water offer.
+        • Bonus block composition contains
+            - The top menu function page (topView) is implemented by killing 3 buttons.
+            - The following content blocks are divided into three pages: DividendOverviewView, QueryDividendDataView and BackwaterDiscountView, and are directly attached to the page by addSubView.
+            - Switching mode is displayed in show/hide view mode (btnClick method)
+            - Dividend overview only shows bonusStatusID = 3 and 4
+            - Query bonus record status button, bonusStatusID = 2, 5, 6, 8 will be hidden (completed and expired without displaying button)
+    
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). When the page is generated, it will call getBonusBalance api to get the bonus information.
+        (3). call getBonusMilestone Get the bonus value of each month's upcoming expiration, call getPromotionHistory api Get the bonus details (the bonus query preset query interval from 2008/01/01 00:00:00 to 23:59:59 of the day)
+        (4). call getUserWalletBalance api Get account list information
+        (5). Date selection will get the latest information through toSelect delegate method (re-call getPromotionHistory api)
+    
+        - Exclusive offer (ExclusivePreferenceViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2). After the coupon is filled out, call getCouponInfo api, first obtain the data for preliminary verification, and verify whether the coupon is valid (with or without it) in call calculateBonusAmount api.
+    
+        - Announcement (NoticeViewController) page logic
+        Announcements form the main message category menu for the block. The message contains all announcements, special announcements, latest announcements and offers.
+        • Announcement block composition contains
+            - The bulletin menu is implemented by DLScrollTabbarView
+            - Announcement content page (slideView) is implemented by DLCustomSlideView
+            - Each announcement function shares a content page (NoticeTableViewViewController), based on the index worth different implementation content information
+    
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). When the page is generated, the call sendMessageRead api will send out the read status of the page.
+        (3). Each page is different according to the index, and will call getMessageList api to take the corresponding information of the special announcement. call getNewsList api Get other announcement materials
+        (4). All announcements need to merge 2 api data on the APP side and sort the date.
+    
+        - About (AboutUSViewController) page logic
+        (1). The page opens will make all the components of the screen
         
-## 4. SDK / Utiity 說明 
+## 4. SDK / Utiity Description
     
     • category :
-    - RequestData : 定義siteId
-    - NSString : 
-        (1). NSString+IsValidUrl : 判斷url是否有效
-        (2). NSString+IsBlank : 判斷字串是否為空
-        (3). NSString+isValidEmail : 判斷email是否有效
-    - UIColor : RGB轉換
-    - UITextField : 
-        (1). UITextField+TintAjust : 游標相關功能
-        (2). UITextField+Placeholder : placeholder相關功能
+    - RequestData : Define siteId
+    - NSString :
+        (1). NSString+IsValidUrl : Determine if the url is valid
+        (2). NSString+IsBlank : Determine if the string is empty
+        (3). NSString+isValidEmail : Determine if email is valid
+    - UIColor : RGB conversion
+    - UITextField :
+        (1). UITextField+TintAjust : Cursor related functions
+        (2). UITextField+Placeholder : placeholder related functions
     - UIImage :
-        (1). UIImage+EqualScaling : 圖片延伸功能
-        (2). UIImage+Tint : 圖片填色相關功能
-    - UIView+AddClickedEvent : view 新增click事件
-    - UIView+UIViewController : 取得該view的所屬viewcontroler
+        (1). UIImage+EqualScaling : Image extension function
+        (2). UIImage+Tint : Image color matching related function
+    - UIView+AddClickedEvent : view Add click event
+    - UIView+UIViewController : Get the viewcontroler of the view
     
     • header :
-    - ApiHeader : 無作用
-    - ToolHeader : 無作用 
-    - CategoryHeader : include all custom category header
-    - ClassHeader : include third's party header
-    - SDKHeader : include all header's file 
-    - SDKHeader : 無作用
-    - FrameworkHeader : 無作用
-    - ViewHeader : include all view's header
-    - PageHeader : include all viewcontroller's header
-    - MacroDefinitionHeader : 定義UserDefault及共用系統值判斷式 
+        - ApiHeader : No effect
+        - ToolHeader : No effect
+        - CategoryHeader : include all custom category header
+        - ClassHeader : include third's party header
+        - SDKHeader : include all header's file
+        - SDKHeader : No effect
+        - FrameworkHeader : No effect
+        - ViewHeader : include all view's header
+        - PageHeader : include all viewcontroller's header
+        - MacroDefinitionHeader : Define UserDefault and shared system value judgment
     
     • SharedView :
-    - ToastViewController : 自定義Toast功能
+        - ToastViewController : Custom Toast function
     
-    • 工具类
-    - BetwayUtils :
-        +(BOOL) isnil:(id)value : 是否是空值
-        +(BOOL) isEmptyString:(NSString *)string : 是否是空字串
-        +(BOOL) isNotEmptyString:(NSString *)string; : 是否不是空字串
-        +(BOOL) isNumber:(NSString *)inputStr : 是否為數字
-        +(BOOL) isDouble:(NSString *)inputStr : 是否為double型態
-        +(BOOL)isValidPassword:(NSString *)pass : 是否為有效密碼格式
-        +(BOOL)isValidPhoneNumber:(NSString *)tel : 是否為有效電話格式
-        +(BOOL)isValidUserName:(NSString *)username : 是否為有效使用者代號 
-        +(BOOL)isValidRealNameWithWhitespace:(NSString *)realName : 是否為有效真實姓名
-        +(BOOL)isEmailAddress:(NSString*)mailAddress : 是否為有效email
-        +(NSString *)getTimeStampFromDate:(NSDate *)date : 依據nsdate轉換timestamp
-        +(NSDate *)getDateFromTimeStamp:(NSString *)timeStamp : 依據timstamp轉換nsdate
-        + (NSString *)AES256_Encrypt:(NSString *)originalStr key:(NSStr ing *)key : aes256加密
-        + (NSString *)AES256_Decrypt:(NSString *)encryptStr key:(NSString *)key : aes256解密
-        + (BOOL)isLoginStatusIllegal:(NSInteger)errorCode : 依據errorCode判斷是否為401 or 403
-        + (BOOL)isLoginStatusIllegalWithError:(NSError *)error : : 依據error訊息判斷是否為401 or 403
-        + (BOOL)isValidRemark:(NSString *)remark : 判斷表情符號
-        + (BOOL)isValidRealName:(NSString *)realName : 是否為有效真實姓名
-        + (BOOL)isValidBankName:(NSString *)bankName : 是否為有效銀行名稱
-        + (BOOL)isvalidAddress:(NSString *)address : 是否為有效地址
-        + (BOOL)isValidEmail:(NSString *)email : 是否為有效email
-        + (BOOL)isValidCity:(NSString *)city : 是否為有效程式
-        + (BOOL)isValidWechatAccount:(NSString *)wechatAccount : 是否為有效wechat帳號
-        + (BOOL)isvalidSecretAnswer:(NSString *)answer  : 是否為有效安全答案
-        + (BOOL)validateIDCardNumber:(NSString *)value : 是否為有效id card
-        + (BOOL)isValidRegion:(NSString *)region : 是否為有效區域
+    • Tools
+    - BetwayUtils:
+        +(BOOL) isnil:(id)value : whether it is null
+        +(BOOL) isEmptyString:(NSString *)string : Whether it is an empty string
+        +(BOOL) isNotEmptyString:(NSString *)string; : Is it not an empty string?
+        +(BOOL) isNumber:(NSString *)inputStr : Whether it is a number
+        +(BOOL) isDouble:(NSString *)inputStr : Whether it is a double type
+        +(BOOL)isValidPassword:(NSString *)pass : Whether it is a valid password format
+        +(BOOL)isValidPhoneNumber:(NSString *)tel : Is it a valid phone format?
+        +(BOOL)isValidUserName:(NSString *)username : Is it a valid user code?
+        +(BOOL)isValidRealNameWithWhitespace:(NSString *)realName : Whether it is a valid real name
+        +(BOOL)isEmailAddress:(NSString*)mailAddress : Is it a valid email?
+        +(NSString *)getTimeStampFromDate:(NSDate *)date : Convert timestamp according to nsdate
+        +(NSDate *)getDateFromTimeStamp:(NSString *)timeStamp : Convert nsdate according to timstamp
+        + (NSString *)AES256_Encrypt:(NSString *)originalStr key:(NSStr ing *)key : aes256 encryption
+        + (NSString *)AES256_Decrypt:(NSString *)encryptStr key:(NSString *)key : aes256decrypt
+        + (BOOL)isLoginStatusIllegal:(NSInteger)errorCode : Determines whether it is 401 or 403 based on errorCode
+        + (BOOL)isLoginStatusIllegalWithError:(NSError *)error : : Determines whether it is 401 or 403 based on the error message.
+        + (BOOL)isValidRemark:(NSString *)remark : Judging emoji
+        + (BOOL)isValidRealName:(NSString *)realName : Whether it is a valid real name
+        + (BOOL)isValidBankName:(NSString *)bankName : Is it a valid bank name?
+        + (BOOL)isvalidAddress:(NSString *)address : Whether it is a valid address
+        + (BOOL)isValidEmail:(NSString *)email : Is it a valid email?
+        + (BOOL)isValidCity:(NSString *)city : Is it a valid program?
+        + (BOOL)isValidWechatAccount:(NSString *)wechatAccount : Is it a valid wechat account?
+        + (BOOL)isvalidSecretAnswer:(NSString *)answer : Is it a valid security answer?
+        + (BOOL)validateIDCardNumber:(NSString *)value : Whether it is a valid id card
+        + (BOOL)isValidRegion:(NSString *)region : Whether it is a valid area
         + (UIImage *)imageWithTintColor:(UIColor *)tintColor alpha:(CGFloat)alpha image:(UIImage *)image : image tint method
-        + (BiometricType) isBiometricAvailable : 是否可使用生物辨識功能
-        + (NSAttributedString *)attributedStringWithHTML:(NSString *)html : 依據html轉換NSAttributedString
+        + (BiometricType) isBiometricAvailable : Whether biometrics can be used
+    + (NSAttributedString *)attributedStringWithHTML:(NSString *)html : Convert NSAttributedString based on html
     
-    - Manager :
-        (1). FunpodiumSDKCacheMacros : cache相關功能
-        (2). FunpodiumSDKManager : sdk method 相關功能
-        
-    - ThousandthDivision : 小數點數值計算
-    - NSDate : 日期相關工具
-    - Saver : NSUserDefault 儲存功能
-    - ProgressHUD : hud套件
-    - Calendar : 日期相關功能
-    - UIButton : 依據字串計算區域大小
-    - Keyboard : 鍵盤事件相關功能
-    - TouchOrFace : 生物辨識相關功能
+    - Manager:
+        (1). FunpodiumSDKCacheMacros : cache related functions
+        (2). FunpodiumSDKManager : sdk method Related Functions
+    
+    - ThousandthDivision : Decimal point numerical calculation
+    - NSDate : Date related tools
+    - Saver : NSUserDefault storage function
+    - ProgressHUD : hud kit
+    - Calendar : Date related features
+    - UIButton : Calculate the area size based on the string
+    - Keyboard : Keyboard event related functions
+    - TouchOrFace : Biometric related functions
+
+
