@@ -10,28 +10,32 @@
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPage.png?raw=true" width = "500">
 
 ##### 1.1 MainBannerCell
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageTop.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageTop.png?raw=true" width = "500">
 
 ##### 1.2 SYTableViewCell
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
 
 ### Games Lobby
 #### 2 GameHallViewController
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallViewController.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallViewController.png?raw=true" width = "500">
 
 #### 3 遊戲頁籤(除我的最愛) GameListViewController
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/GameListViewController.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/GameListViewController.png?raw=true" width = "500">
 
 #### 4 我的最愛頁籤 catalogViewController 
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/catalogViewController.png?raw=true" width = "500">
+
 #### 5 顯示全部 checkAllViewController 
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/checkAllViewController.png?raw=true" width = "500">
+
 #### 6 遊戲頁 gameCenterViewController 
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/gameCenterViewController.png?raw=true" width = "500">
+
 ##### 6.1 SideBarMenuView
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/SideBarMenuView.png?raw=true" width = "500">
+
 #### 7 遊戲頁內優惠 GameHallDiscountListViewController
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+<img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/GameHallDiscountListViewController.png?raw=true" width = "500">
 
 ### 優惠
 #### 1 DiscountPageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/DiscountPageViewController.png)
