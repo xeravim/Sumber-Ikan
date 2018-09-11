@@ -1,22 +1,36 @@
-# betway-ios
+# Betway-ios
 
-## 1. 系統功能架構(圖)
-#### 請參考架構圖![架構圖](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/Betway_Architecture.png)
+## 1. System Architecture (Figure)
 
+#### Please refer to the architecture [figure](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/Betway_Architecture.png)
 
-## 2. 各模塊說明
-### 首頁
-#### 1 ViewControllers![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
-##### 1.1MainBannerCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage%20top.png)
-##### 1.2SYTableViewCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
-### 遊戲大廳
-#### 2 GameHallViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameHallViewController.png)
-#### 3 遊戲頁籤(除我的最愛) GameListViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameListViewController.png)
-#### 4 我的最愛頁籤 catalogViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/catalogViewController.png)
-#### 5 顯示全部 checkAllViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/checkAllViewController.png)
-#### 6 遊戲頁 gameCenterViewController ![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/gameCenterViewController.png)
-##### 6.1 SideBarMenuView![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/SideBarMenuView.png)
-#### 7 遊戲頁內優惠 GameHallDiscountListViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/GameHallDiscountListViewController.png)
+## 2. Description of each modules
+### Home
+#### 1 ViewControllers
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPage.png?raw=true" width = "500">
+
+##### 1.1 MainBannerCell
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageTop.png?raw=true" width = "500">
+
+##### 1.2 SYTableViewCell
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+
+### Games Lobby
+#### 2 GameHallViewController
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallViewController.png?raw=true" width = "500">
+#### 3 遊戲頁籤(除我的最愛) GameListViewController
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+#### 4 我的最愛頁籤 catalogViewController 
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+#### 5 顯示全部 checkAllViewController 
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+#### 6 遊戲頁 gameCenterViewController 
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+##### 6.1 SideBarMenuView
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+#### 7 遊戲頁內優惠 GameHallDiscountListViewController
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Home/MainPageBottom.png?raw=true" width = "500">
+
 ### 優惠
 #### 1 DiscountPageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/DiscountPageViewController.png)
 ##### 1.1 PageViewController![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/PageViewController.png)
