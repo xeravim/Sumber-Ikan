@@ -19,25 +19,25 @@
 #### 2. GameHallViewController
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallViewController.png?raw=true" width = "800">
 
-#### 3. 遊戲頁籤(除我的最愛) GameListViewController
+#### 3. Game Tab (except my favorite) - GameListViewController
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameListViewController.png?raw=true" width = "800">
 
-#### 4. 我的最愛頁籤 catalogViewController 
+#### 4. My Favorite Tab - catalogViewController 
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/catalogViewController.png?raw=true" width = "800">
 
-#### 5. 顯示全部 checkAllViewController 
+#### 5. Show All - checkAllViewController 
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/checkAllViewController.png?raw=true" width = "800">
 
-#### 6. 遊戲頁 gameCenterViewController 
+#### 6. Game Page - gameCenterViewController 
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/gameCenterViewController.png?raw=true" width = "800">
 
 ##### 6.1 SideBarMenuView
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/SideBarMenuView.png?raw=true" width = "800">
 
-#### 7. 遊戲頁內優惠 GameHallDiscountListViewController
+#### 7. In-game Offer - GameHallDiscountListViewController
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Game-Lobby/GameHallDiscountListViewController.png?raw=true" width = "800">
 
-### 優惠
+### Offers
 #### 1. DiscountPageViewController
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Offers/DiscountPageViewController.png?raw=true" width = "800">
 
@@ -50,50 +50,50 @@
 #### 3. ApplicationFormViewController 
 <img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Offers/ApplicationFormViewController.png?raw=true" width = "800">
 
-### 小豬頁
-#### DepositPageViewController (框架)
-        • UIView *headView -> 上方區塊
-        • UIImageView *headBGImg -> 上方區塊的背景
-        • UIButton *topCloseBtn  -> 關閉按鈕
-        • UILabel *mainAccountLab  -> 主帳戶
-        • UIButton *refreshBtn ->  刷新按鈕
-        • UIView *moneyView -> RMBLab的superView
-        • UILabel *RMBLab -> RMB字樣
-        • UILabel *moneyLab -> 餘額
-        • UIButton *depositBtn -> 存款
-        • UIButton *transferBtn -> 轉賬
-        • DLLRUCache *cache -> 頁籤的cache
-        • DLScrollTabbarItem *item -> 頁籤元件
-        • DLCustomSlideView *slideView -> 頁籤的內頁
-        • DLScrollTabbarView *tabbar -> 頁籤區塊
-#### 1. 存款
-##### 1.1 CouponView (優惠券)
-        • UIButton *checkBox -> 使用優惠券的勾勾
-        • UILabel *titleLable -> 優惠券標題
-        • UILabel *contentLable -> 優惠券內容
-        • UITextField *couponField -> 優惠券輸入匡
-        • UILabel *tipsLable -> 優惠券提示
-        • UILabel *warningLable -> 申請金額提示
-##### 1.2 LocalBankAndAlipayView （本地銀行）
-        • UIScrollView *myScrollView -> 容器
-        • UIButton *remindBtn -> 溫馨提醒
-        • UILabel *dateLab -> 到帳時間
-        • UIButton *localBankTransferInformationBtn -> 本地銀行轉帳信息
-        • UILabel *depositAmountLab -> 存款金額
-        • UITextField *amountTF -> 存款金額輸入匡
-        • UIView *amountTFLine -> 輸入匡下的底線
-        • UILabel *explainLab -> 存款提示訊息
-        • UIView *btnView -> 快選金額
-        • UILabel *bankTypeLab -> 轉帳方式
-        • UITextField *bankTypeTF -> 轉帳方式輸入匡
-        • UIView *bankTypeTFLine -> 轉帳方式輸入匡底線
-        • UILabel *bankLab -> 銀行選擇
-        • UITextField *bankTF -> 銀行選擇輸入匡 
-        • UIView *bankTFLine -> 銀行選擇輸入匡底線
-        • UILabel *payerNameLab -> 付款方姓名
-        • UITextField *payNameTF -> 付款方姓名輸入匡 
-        • UIButton *submitBtn -> 提交按鈕
-        • UILabel *promptLab -> 请先成功「存款」或「转账」后再进行提交申请訊息
+### Piggy Bank Page (Mid TabBar Button)
+#### DepositPageViewController (Framework)
+        • UIView *headView -> pper block
+        • UIImageView *headBGImg -> background of the upper block
+        • UIButton *topCloseBtn  -> close button
+        • UILabel *mainAccountLab  -> master account
+        • UIButton *refreshBtn ->  refresh button
+        • UIView *moneyView -> RMBLab superView
+        • UILabel *RMBLab -> RMB typeface
+        • UILabel *moneyLab -> balance
+        • UIButton *depositBtn -> deposit
+        • UIButton *transferBtn -> transfer
+        • DLLRUCache *cache -> tab cache
+        • DLScrollTabbarItem *item -> tab component
+        • DLCustomSlideView *slideView -> inner page of the tab
+        • DLScrollTabbarView *tabbar -> tab block
+#### 1. Deposit
+##### 1.1 CouponView (Coupon)
+        • UIButton *checkBox -> use the coupon checkmark
+        • UILabel *titleLable -> coupon Title
+        • UILabel *contentLable -> coupon content
+        • UITextField *couponField -> coupon input
+        • UILabel *tipsLable -> coupon tips
+        • UILabel *warningLable -> application amount tip
+##### 1.2 LocalBankAndAlipayView （Local Bank）
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> warm reminder
+        • UILabel *dateLab -> arrival time
+        • UIButton *localBankTransferInformationBtn -> local bank transfer information
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> deposit amount input
+        • UIView *amountTFLine -> Enter the bottom line underneath
+        • UILabel *explainLab -> deposite reminder message
+        • UIView *btnView -> quick selection amount
+        • UILabel *bankTypeLab -> transfer method
+        • UITextField *bankTypeTF -> transfer mode input
+        • UIView *bankTypeTFLine -> transfer mode input bottom line
+        • UILabel *bankLab -> bank selection
+        • UITextField *bankTF -> bank selection input 
+        • UIView *bankTFLine -> bank selection input bottom line
+        • UILabel *payerNameLab -> payer name
+        • UITextField *payNameTF -> payer name input 
+        • UIButton *submitBtn -> submit button
+        • UILabel *promptLab -> please submit the application message after successful "deposit" or "transfer"
 ##### 1.3 QQPayView  (QQ支付)
         • UIScrollView *myScrollView -> 容器
         • UIButton *remindBtn -> 溫馨提醒
