@@ -1,9 +1,9 @@
 # betway-ios
 
 ## 1. System Architecture (Figure)
-<<<<<<< HEAD
+
 #### Please refer to the architecture diagram :
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/raw/branch/master/Screenshot/Architecture/Betway_Architecture.png" width = "250">
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "250">
 =======
 #### Please refer to the architecture diagram! [Architect] (http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/Betway_Architecture.png)
 >>>>>>> e5564465ee7cab4d60a5526dbd765fbdf32ab026
