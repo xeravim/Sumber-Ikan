@@ -11,8 +11,6 @@
 #### 1 ViewControllers
 <br><img src = "https://github.com/xeravim/Sumber-Ikan/raw/branch/master/Screenshot/Welcome/Welcome.png" width = "250">
 
-#### 1 ViewControllers![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
-
 ##### 1.1MainBannerCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage%20top.png)
 ##### 1.2SYTableViewCell![layout](http://gitea.funpodium.net/funpodium/betway-ios/src/branch/Develop/ReadmeResource/mainpage.png)
 ### Games Lobby
