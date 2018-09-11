@@ -204,867 +204,867 @@
         • UIButton *sendRealNameBtn -> send out
         • UILabel *pageWordingLab -> prompt that the real name can only be entered once
 ##### 2.10 RealNameSuccessViewController
-        • UIScrollView *myScrollView -> 容器
-        • UIImageView *alertImgView -> 成功圖示
-        • UILabel *titleLab -> 成功標題
-        • UILabel *alertLab -> 成功提示訊息
-        • UIButton *personalCenterBtn -> 關閉
+     • UIScrollView *myScrollView -> container
+     • UIImageView *alertImgView -> success icon
+     • UILabel *titleLab -> Success Title
+     • UILabel *alertLab -> success message
+     • UIButton *personalCenterBtn -> Close
 ##### 2.11 NeedCompletedPersonalDataViewController
-        • UIScrollView *myScrollView -> 容器
-        • UIImageView *alertImgView -> 提示圖
-        • UILabel *alertLab -> 提示訊息
-        • UIButton *personalCenterBtn -> 關閉
-### 訊息
+     • UIScrollView *myScrollView -> container
+     • UIImageView *alertImgView -> prompt map
+     • UILabel *alertLab -> prompt message
+     • UIButton *personalCenterBtn -> Close
+### Message
 #### 1. MessageViewController
-        • DLLRUCache *cache -> 頁籤的cache
-        • DLScrollTabbarItem *item -> 頁籤元件
-        • DLCustomSlideView *slideView -> 頁籤的內頁
-        • DLScrollTabbarView *tabbar -> 頁籤區塊
-        • YTDropMenu *dropMenu -> 下拉選單
+    • DLLRUCache *cache -> tab cache
+    • DLScrollTabbarItem *item -> tab component
+    • DLCustomSlideView *slideView -> Inner page of the tab
+    • DLScrollTabbarView *tabbar -> tab block
+    • YTDropMenu *dropMenu -> drop down menu
 #### 2. MessageTableViewViewController
-        • UITableView *tableView -> 訊息列表
-        • UIRefreshControl *refreshControl -> 下拉刷新元件
+    • UITableView *tableView -> message list
+    • UIRefreshControl *refreshControl -> pulldown refresh component
 #### 3.MessageTableViewCell
-        • UIView *isRead -> 未讀的紅點
-        • UILabel *typeLab -> 訊息類別
-        • UILabel *dateLab -> 訊息日期
-        • UILabel *titleLab -> 訊息標題
+    • UIView *isRead -> unread red dot
+    • UILabel *typeLab -> message category
+    • UILabel *dateLab -> message date
+    • UILabel *titleLab -> message title
 #### 4.MessageDetailsViewController
-        • UIScrollView *myScrollView -> 容器
-        • UILabel *typeLab -> 訊息類別
-        • UILabel *dateLab -> 訊息日期
-        • UILabel *titleLab -> 訊息標題
-        • UIView *lineView -> 分隔線
-        • UILabel *contenLab -> 訊息內容
-### 會員中心
+    • UIScrollView *myScrollView -> container
+    • UILabel *typeLab -> message category
+    • UILabel *dateLab -> message date
+    • UILabel *titleLab -> message title
+    • UIView *lineView -> divider
+    • UILabel *contenLab -> message content
+### Member Centre
 #### 1. MemberCenterViewController
-        • UITableView *tableView -> 列表
-        • UIView *tabeViewHeadView -> 頂部的view
+    • UITableView *tableView -> list
+    • UIView *tabeViewHeadView -> top view
 #### 2. UpdateVersionView
-        • UILabel *titleLab ->  提示訊息
-        • UIButton *btnUpdate -> 更新按鈕
-        • UILabel *versionLab -> 版本號
+    • UILabel *titleLab -> prompt message
+    • UIButton *btnUpdate -> update button
+    • UILabel *versionLab -> version number
 #### 3. NotLoginTableViewCell
-        • UIView *topLine -> 頂部分隔線
-        • UIView *bottomLine -> 底部分隔線
-        • UIImageView *imgView -> icon
-        • UILabel *titleLab -> 標題
-        • UIImageView *rightView -> (>)圖示
-        • UIView *cellLine -> cell 的分隔線
-        • UISwitch *rightSwitch -> 開關
-        • UILabel *lbBadge -> 公告未讀則數
-#### 4. AlreadyLoginSectionFirstTableViewCell (第一區塊)
-        • UIImageView *moneyImgView -> icon
-        • UILabel *mainBalanceLab -> 主帳戶餘額
-        • UILabel *mainBalanceMoneyLab -> 主帳戶餘額的金額
-        • UIButton *refreshBalancesBtn -> 刷新按鈕
-        • UIView *mainBalanceLine -> 主帳戶餘額區塊下方的分隔線
-        • UIButton *rechargeBtn -> 充值
-        • UILabel *sportsBalanceLab -> 體育帳戶餘額
-        • UILabel *sportsBalanceMoneyLab -> 體育帳戶餘額的金額
-        • UIView *sportsBalanceLine -> 體育帳戶底餘額下的分隔線
-        • UILabel *realPersonBalanceLab -> 真人帳戶餘額
-        • UILabel *realPersonBalanceMoneyLab -> 真人帳戶餘額的金額 
-        • UIView *realPersonBalanceLine -> 真人帳戶餘額底下的分隔線
-        • UILabel *gameBalanceLab -> 遊戲帳戶餘額
-        • UILabel *gameBalanceMoneyLab -> 遊戲帳戶餘額的金額
-        • UIView *gameBalanceLine ->  遊戲帳戶餘額底下的分隔線
-        • UILabel *PTgameBalanceLab -> PT遊戲帳戶餘額
-        • UILabel *PTgameBalanceMoneyLab -> PT遊戲帳戶餘額的金額
-        • UIView *PTgameBalanceLine ->  PT遊戲帳戶餘額底下的分隔線
-#### 5.AlreadyLoginSectionSecondTableViewCell (第二區塊)
-        • UIView *topLine -> 頂部的線
-        • UIView *bottomLine -> 底部的線
-        • UIImageView *imgView -> 左邊的icon
-        • UILabel *titleLab -> 標題
-        • UIImageView *rightView -> 右邊的icon
-        • UIView *cellLine -> 分隔線
-        • UISwitch *rightSwitch -> 開關
-        • UILabel *lbBadge -> 公告未讀則數
-#### 6.AlreadyLoginSectionThirdTableViewCell(第三區塊)
-        • UIView *topLine -> 頂部的線
-        • UIView *bottomLine -> 底部的線
-        • UIImageView *imgView -> 左邊的icon
-        • UILabel *titleLab -> 標題
-        • UIImageView *rightView -> 右邊的icon
-        • UIView *cellLine -> 分隔線
+    • UIView *topLine -> top divider
+    • UIView *bottomLine -> bottom divider
+    • UIImageView *imgView -> icon
+    • UILabel *titleLab -> title
+    • UIImageView *rightView -> (>) icon
+    • UIView *cellLine -> cell divider
+    • UISwitch *rightSwitch -> switch
+    • UILabel *lbBadge -> Announcement Unread
+#### 4. AlreadyLoginSectionFirstTableViewCell (first block)
+    • UIImageView *moneyImgView -> icon
+    • UILabel *mainBalanceLab -> Master Account Balance
+    • UILabel *mainBalanceMoneyLab -> Amount of the primary account balance
+    • UIButton *refreshBalancesBtn -> refresh button
+    • UIView *mainBalanceLine -> separator line below the main account balance block
+    • UIButton *rechargeBtn -> Recharge
+    • UILabel *sportsBalanceLab -> Sports Account Balance
+    • UILabel *sportsBalanceMoneyLab -> Amount of sports account balance
+    • UIView *sportsBalanceLine -> Dividing line under the bottom balance of the sports account
+    • UILabel *realPersonBalanceLab -> Live Account Balance
+    • UILabel *realPersonBalanceMoneyLab -> Amount of live account balance
+    • UIView *realPersonBalanceLine -> Divider under the real account balance
+    • UILabel *gameBalanceLab -> Game Account Balance
+    • UILabel *gameBalanceMoneyLab -> Amount of game account balance
+    • UIView *gameBalanceLine -> separator line under the game account balance
+    • UILabel *PTgameBalanceLab -> PT Game Account Balance
+    • UILabel *PTgameBalanceMoneyLab -> Amount of PT game account balance
+    • UIView *PTgameBalanceLine -> Divide line under the PT game account balance
+#### 5.AlreadyLoginSectionSecondTableViewCell (Second Block)
+    • UIView *topLine -> top line
+    • UIView *bottomLine -> bottom line
+    • UIImageView *imgView -> icon on the left
+    • UILabel *titleLab -> title
+    • UIImageView *rightView -> icon to the right
+    • UIView *cellLine -> divider
+    • UISwitch *rightSwitch -> switch
+    • UILabel *lbBadge -> Announcement Unread
+#### 6.AlreadyLoginSectionThirdTableViewCell (third block)
+    • UIView *topLine -> top line
+    • UIView *bottomLine -> bottom line
+    • UIImageView *imgView -> icon on the left
+    • UILabel *titleLab -> title
+    • UIImageView *rightView -> icon to the right
+    • UIView *cellLine -> divider
 #### 7.AlreadyLogginHeadView
-        • UIImageView *topImgView ->  背景圖
-        • UIButton *headBtn ->  默認頭像
-        • UIView *btnView -> 編輯個人資料區塊       
-        • UILabel *userLab -> 使用者
-        • UILabel *editSelfLab -> 編輯個人資料
-        • UIButton *editBtn -> 編輯按鈕
-        • UIButton *arrowBtn -> (>)按鈕
+    • UIImageView *topImgView -> background image
+    • UIButton *headBtn -> default avatar
+    • UIView *btnView -> Edit Profile Block
+    • UILabel *userLab -> User
+    • UILabel *editSelfLab -> Edit Profile
+    • UIButton *editBtn -> edit button
+    • UIButton *arrowBtn -> (>) button
 #### 8.AlreadyLogginFootView
-        • UILabel *titleLab -> 底部的提醒字樣
-        • UIButton *logoutBtn -> 退出帳號
-        • UpdateVersionView *updateVersionView -> 版本資訊
+    • UILabel *titleLab -> reminder at the bottom
+    • UIButton *logoutBtn -> Exit account
+    • UpdateVersionView *updateVersionView -> version information
 #### 9.NotLoginHeadView
-        • UIImageView *topImgView -> 背景圖
-        • UIButton *headBtn -> 默認頭像
-        • UIView *btnView -> 登入/註冊的區塊                              
-        • UILabel *loginLab -> 登入/註冊按鈕
+    • UIImageView *topImgView -> background image
+    • UIButton *headBtn -> default avatar
+    • UIView *btnView -> Login/Registered Blocks
+    • UILabel *loginLab -> Login / Registration button
 #### 10.PTPasswordManagementViewController
-        • PTPasswordManagementView *passwordManagementView -> 遊戲密碼管理內頁
-        • UIButton *registBtn -> 註冊或保存
+    • PTPasswordManagementView *passwordManagementView -> Game Password Management inside page
+    • UIButton *registBtn -> Register or save
 ##### 10.1 PTPasswordManagementView
-        • UIView  *bgView -> 背景
-        • UILabel *userNameLab -> PT遊戲用戶名
-        • UILabel *prefixUserLab -> bw8_
-        • UITextField *userNameTF -> 用戶名輸入匡
-        • UIView *userNameTFLine -> 用戶名輸入匡底線
-        • UILabel *ptPasswordLab -> PT遊戲下載版密碼
-        • UITextField *ptPasswordTF -> 密碼輸入匡
-        • UIView *ptPasswordTFLine -> 密碼輸入匡底線
-        • UILabel *surePtPasswordLab -> 確認PT遊戲下載版密碼 
-        • UITextField *surePtPasswordTF -> 確認密碼輸入匡
-        • UIView *surePtPasswordTFLine -> 確認密碼輸入匡底線
-        • UILabel *noteLab -> 下方提示訊息
-        • UILabel *userNameWarnningLabel -> 帳號錯誤提醒
-        • UILabel *passwordWarnningLabel -> 密碼錯誤提醒
-        • UILabel *confirmPasswordWarnningLabel -> 確認密碼錯誤提醒
+    • UIView *bgView -> background
+    • UILabel *userNameLab -> PT game username
+    • UILabel *prefixUserLab -> bw8_
+    • UITextField *userNameTF -> Username input匡
+    • UIView *userNameTFLine -> Username input bottom line
+    • UILabel *ptPasswordLab -> PT game download password
+    • UITextField *ptPasswordTF -> Password input匡
+    • UIView *ptPasswordTFLine -> password input bottom line
+    • UILabel *surePtPasswordLab -> Confirm PT game download password
+    • UITextField *surePtPasswordTF -> Confirm password input匡
+    • UIView *surePtPasswordTFLine -> Confirm password input bottom line
+    • UILabel *noteLab -> prompt message below
+    • UILabel *userNameWarnningLabel -> Account Error Reminder
+    • UILabel *passwordWarnningLabel -> Password Error Reminder
+    • UILabel *confirmPasswordWarnningLabel -> Confirm password error reminder
 #### 11. EditPersonalDataViewController
-        • EditPersonDataView *editPersonDataView -> 編輯個人資料頁面
+    • EditPersonDataView *editPersonDataView -> Edit Profile Page
 ##### 11.1 EditPersonDataView
-        • UIScrollView *myScrollView -> 容器
-        • UIView *personDataView ->  個人資料區塊
-        • UILabel *realNameLab -> 真實姓名
-        • UITextField *realNameTF -> 真實姓名輸入匡
-        • UIView *realNameTFLine -> 真實姓名輸入匡底線
-        • UILabel *lbHintOfRealName -> 真實姓名錯誤提醒
-        • UILabel *IDNumberLab -> 身分證字號
-        • UITextField *IDNumberTF -> 身分證字號輸入匡
-        • UIView *IDNumberTFLine -> 身分證字號輸入匡底線
-        • UILabel *lbHintOfIDNumber -> 身分證字號錯誤提醒
-        • UILabel *genderLab -> 性別
-        • UITextField *genderTF -> 性別輸入匡
-        • UIView *genderTFLine -> 性別輸入匡底線
-        • UILabel *birthDateLab -> 生日
-        • UITextField *birthDateTF -> 生日輸入匡
-        • UIView *birthDateTFLine -> 生日輸入匡底線
-        • UIView *contactDataView -> 聯絡訊息區塊
-        • UIImageView *contactDataMessageImgView -> 驗證郵件及手機號...的圖示
-        • UILabel *emailAddressLab -> 郵件地址
-        • UIView *emailAddressTVView -> 郵件地址輸入匡的區塊 
-        • CMInputView *emailAddressTV -> 郵件地址輸入匡
-        • UILabel *lbEmailAddress -> 郵件地址(有填過會將使用者的電郵顯示在這)
-        • UIButton *submitAddressBtn -> 驗證按鈕
-        • UIImageView *isAddressImgView -> 電郵驗證通過的綠勾
-        • UIView *emailAddressTVLine -> 郵件地址輸入匡底線
-        • UILabel *lbHintOfEmailAddress -> 郵件地址錯誤提示
-        • UILabel *areaCodeLab -> 國碼
-        • UILabel *telNumberLab -> 聯繫電話
-        • UIView *telNumberView -> 聯繫電話輸入匡的區塊
-        • UITextField *telNumberTF -> 聯繫電話輸入匡
-        • UIImageView *telImgView -> 聯繫電話驗證成功的綠勾
-        • UILabel *preferredAccountLab -> 首選賬戶
-        • UITextField *preferredAccountTF -> 首選賬戶輸入匡
-        • UIView *preferredAccountTFLine -> 首選賬戶輸入匡底線
-        • UILabel *countryLab -> 國家
-        • UITextField *countryTF -> 國家輸入匡
-        • UIView *countryTFLine -> 國家輸入匡底線
-        • UILabel *addressLab -> 聯繫地址
-        • UITextView *addressTV -> 聯繫地址輸入匡
-        • UILabel *addressTVPlaceholder -> 聯繫地址輸入匡的提示字樣
-        • UIView *addressTVLine -> 聯繫地址輸入匡底線
-        • UILabel *lbHintOfAddress -> 聯繫地址錯誤提示
-        • UILabel *cityLab -> 城市
-        • UITextField *cityTF -> 城市輸入匡
-        • UIView *cityTFLine -> 城市輸入匡底線
-        • UILabel *lbHintOfCity -> 城市錯誤提示
-        • UILabel *zipCodeLab -> 郵編
-        • UITextField *zipCodeTF -> 郵編輸入匡
-        • UIView *zipCodeTFLine -> 郵編輸入匡底線
-        • UILabel *lbHintOfZipCode -> 郵編錯誤提示 
-        • UILabel *wechatAccountLab -> 微信帳號
-        • UITextField *wechatAccountTF -> 微信帳號輸入匡
-        • UIView *wechatAccountTFLine -> 微信帳號輸入匡底線
-        • UILabel *lbHintOfWechatAccount -> 微信帳號錯誤提示
-        • UIView *safetyProblemDataView -> 安全問題/答案區塊
-        • UILabel *safetyProblemLab -> 安全問題
-        • UITextField *safetyProblemTF -> 安全問題輸入匡
-        • UIView *safetyProblemTFLine -> 安全問題輸入匡底線
-        • UILabel *lbHintOfSafetyQuestion -> 安全問題錯誤提示
-        • UILabel *safetyAnswerLab -> 安全答案
-        • UITextField *safetyAnswerTF -> 安全答案輸入匡
-        • UIView *safetyAnswerTFLine -> 安全答案輸入匡底線
-        • UILabel *lbHintOfSafetyAnswer -> 安全答案錯誤提示
+    • UIScrollView *myScrollView -> container
+    • UIView *personDataView -> Profile Block
+    • UILabel *realNameLab -> real name
+    • UITextField *realNameTF -> Real Name Input匡
+    • UIView *realNameTFLine -> real name input bottom line
+    • UILabel *lbHintOfRealName -> Real Name Error Reminder
+    • UILabel *IDNumberLab -> ID card number
+    • UITextField *IDNumberTF -> ID card number input匡
+    • UIView *IDNumberTFLine -> ID card number input bottom line
+    • UILabel *lbHintOfIDNumber -> Identity card error notification
+    • UILabel *genderLab -> Gender
+    • UITextField *genderTF -> Gender input匡
+    • UIView *genderTFLine -> gender input bottom line
+    • UILabel *birthDateLab -> birthday
+    • UITextField *birthDateTF -> Birthday input匡
+    • UIView *birthDateTFLine -> birthday input bottom line
+    • UIView *contactDataView -> Contact Message Block
+    • UIImageView *contactDataMessageImgView -> icon for verifying mail and phone number...
+    • UILabel *emailAddressLab -> email address
+    • UIView *emailAddressTVView -> Email address input 匡 block
+    • CMInputView *emailAddressTV -> Email address input匡
+    • UILabel *lbEmailAddress -> Email address (filled in will display the user's email here)
+    • UIButton *submitAddressBtn -> verification button
+    • UIImageView *isAddressImgView -> Green check for email verification
+    • UIView *emailAddressTVLine -> Email address input bottom line
+    • UILabel *lbHintOfEmailAddress -> Email address error message
+    • UILabel *areaCodeLab -> country code
+    • UILabel *telNumberLab -> Contact Phone
+    • UIView *telNumberView -> Contact Phone Input 匡 Block
+    • UITextField *telNumberTF -> Contact Phone Input匡
+    • UIImageView *telImgView -> Contact Phone Verification Successful Green Tick
+    • UILabel *preferredAccountLab -> Preferred Account
+    • UITextField *preferredAccountTF -> Preferred Account Entry匡
+    • UIView *preferredAccountTFLine -> Preferred Account Entry Bottom Line
+    • UILabel *countryLab -> Country
+    • UITextField *countryTF -> Country Input匡
+    • UIView *countryTFLine -> Country input bottom line
+    • UILabel *addressLab -> Contact Address
+    • UITextView *addressTV -> Contact Address Input匡
+    • UILabel *addressTVPlaceholder -> Contact address input 提示 prompt word
+    • UIView *addressTVLine -> Contact address input bottom line
+    • UILabel *lbHintOfAddress -> Contact Address Error Prompt
+    • UILabel *cityLab -> City
+    • UITextField *cityTF -> City Input匡
+    • UIView *cityTFLine -> City input bottom line
+    • UILabel *lbHintOfCity -> City Error Prompt
+    • UILabel *zipCodeLab -> Zip Code
+    • UITextField *zipCodeTF -> Zip code input匡
+    • UIView *zipCodeTFLine -> Zip code input bottom line
+    • UILabel *lbHintOfZipCode -> Zip Code Error Prompt
+    • UILabel *wechatAccountLab -> WeChat account
+    • UITextField *wechatAccountTF -> WeChat account input匡
+    • UIView *wechatAccountTFLine -> WeChat account input bottom line
+    • UILabel *lbHintOfWechatAccount -> WeChat account error message
+    • UIView *safetyProblemDataView -> Security Question / Answer Block
+    • UILabel *safetyProblemLab -> Security Issues
+    • UITextField *safetyProblemTF -> Security question input匡
+    • UIView *safetyProblemTFLine -> Security question input bottom line
+    • UILabel *lbHintOfSafetyQuestion -> Security Issues Error Prompt
+    • UILabel *safetyAnswerLab -> Security Answer
+    • UITextField *safetyAnswerTF -> Security Answer Input匡
+    • UIView *safetyAnswerTFLine -> Security Answer Input Bottom Line
+    • UILabel *lbHintOfSafetyAnswer -> Security Answer Error Prompt
 #### 12.VerificationMailboxViewController
-        • UIScrollView *myScrollView -> 容器
-        • UILabel *mailboxLab -> 電郵
-        • UIView *mailboxView -> 電郵輸入匡區塊
-        • UITextView *mailboxTV -> 電郵輸入匡
-        • UILabel *mailboxTVPlaceholder -> 電郵輸入匡提示
-        • UIButton *sendBtn -> 送出
-        • UIActivityIndicatorView *activityIndicator -> iOS原生的loadingView
+    • UIScrollView *myScrollView -> container
+    • UILabel *mailboxLab -> Email
+    • UIView *mailboxView -> Email Input Block
+    • UITextView *mailboxTV -> Email Input匡
+    • UILabel *mailboxTVPlaceholder -> Email Input Tips
+    • UIButton *sendBtn -> send out
+    • UIActivityIndicatorView *activityIndicator -> iOS native loadingView
 #### 13. AboutUSViewController
-        • AboutUSView *aboutUSView -> 關於我們的內容
+    • AboutUSView *aboutUSView -> About our content
 ##### 13.1AboutUSView
-        • UIScrollView *myScrollView -> 容器
-        • UILabel *ourBrandLab -> 我們的品牌
-        • UIView *ourBrandLine -> 分隔線
-        • UILabel *ourBrandContent -> 我們的品牌內容 
-        • UIImageView *europeImgView -> betway歐洲 icon
-        • UILabel *europeContentLab -> betway歐洲 內容
-        • UIImageView *asiaImgView -> betway亞洲 icon
-        • UILabel *asiaContentLab -> betway亞洲 內容
-        • UILabel *ourProductLab -> 我們的產品
-        • UIView *ourProductLine -> 我們的產品分隔線
-        • UILabel *ourProductContent -> 我們的產品內容
-        • UIImageView *realPeopleImgView -> betway 真人 icon
-        • UILabel *realPeopleContentLab -> betway 真人 內容
-        • UIImageView *sportsImgView -> betway 體育 icon
-        • UILabel *sportsContentLab -> betway 體育 內容
-        • UIImageView *gameImgView -> betway 遊戲 icon
-        • UILabel *gameContentLab -> betway 遊戲 內容
+    • UIScrollView *myScrollView -> container
+    • UILabel *ourBrandLab -> Our brand
+    • UIView *ourBrandLine -> divider
+    • UILabel *ourBrandContent -> Our branded content
+    • UIImageView *europeImgView -> betway Europe icon
+    • UILabel *europeContentLab -> betway Europe Content
+    • UIImageView *asiaImgView -> betway Asia icon
+    • UILabel *asiaContentLab -> betway Asia Content
+    • UILabel *ourProductLab -> Our products
+    • UIView *ourProductLine -> Our product divider
+    • UILabel *ourProductContent -> Our product content
+    • UIImageView *realPeopleImgView -> betway Live icon
+    • UILabel *realPeopleContentLab -> betway live content
+    • UIImageView *sportsImgView -> betway Sports icon
+    • UILabel *sportsContentLab -> betway Sports Content
+    • UIImageView *gameImgView -> betway game icon
+    • UILabel *gameContentLab -> betway game content
 #### 14.PasswordManagementViewController
-        • PasswordManagementView *passwordManagementView -> 修改密碼內頁
-        • UIButton *saveItem -> 保存
-        • UIButton *backItem -> 返回
+    • PasswordManagementView *passwordManagementView -> Modify password page
+    • UIButton *saveItem -> save
+    • UIButton *backItem -> return
 ##### 14.1 PasswordManagementView
-        • UIScrollView *myScrollView -> 容器
-        • UILabel *currentPasswordLab -> 當前密碼
-        • UITextField *currentPasswordTF -> 當前密碼輸入匡
-        • UIView *currentPasswordTFLine -> 當前密碼輸入匡底線
-        • UILabel *newPasswordLab -> 新的密碼 
-        • UITextField *newPasswordTF -> 新的密碼輸入匡
-        • UIView *newPasswordTFLine -> 新的密碼輸入匡底線
-        • UILabel *confirmPasswordLab -> 確認密碼
-        • UITextField *confirmPasswordTF -> 確認密碼輸入匡
-        • UIView *confirmPasswordTFLine -> 確認密碼輸入匡底線
-        • UILabel *passwordWarnningLabel -> 新密碼錯誤提示
-        • UILabel *confirmPasswordWarnningLabel -> 確認密碼錯誤提示
-        • UILabel *oldPasswordWarnningLabel -> 當前密碼錯誤提示
+    • UIScrollView *myScrollView -> container
+    • UILabel *currentPasswordLab -> current password
+    • UITextField *currentPasswordTF -> Current password input匡
+    • UIView *currentPasswordTFLine -> current password input bottom line
+    • UILabel *newPasswordLab -> new password
+    • UITextField *newPasswordTF -> New password input匡
+    • UIView *newPasswordTFLine -> New password input bottom line
+    • UILabel *confirmPasswordLab -> Confirm password
+    • UITextField *confirmPasswordTF -> Confirm password input匡
+    • UIView *confirmPasswordTFLine -> Confirm password input bottom line
+    • UILabel *passwordWarnningLabel -> New Password Error Prompt
+    • UILabel *confirmPasswordWarnningLabel -> Confirm password error prompt
+    • UILabel *oldPasswordWarnningLabel -> current password error message
 #### 15 DrawMoneyViewController
-        • UIScrollView *myScrollView -> 容器
-        • UIImageView *headImgView -> 主帳戶的背景
-        • UILabel *mainAccountLab -> 主賬戶
-        • UIButton *refreshBtn -> 刷新按鈕
-        • UILabel *RMBLab -> RMB
-        • UILabel *moneyLab -> 主帳戶餘額
-        • UIButton *remindBtn -> 溫馨提醒
-        • UILabel *drawMoneyLab -> 提款金額
-        • UITextField *drawMoneyTF -> 提款金額輸入匡
-        • UIView *drawMoneyTFLine -> 提款金額輸入匡底線
-        • UILabel *tipsLab -> 提款金額提示
-        • UILabel *drawAccountLab -> 提款帳戶
-        • UIButton *goDrawBtn -> 立即提款
-        • UILabel *noDrawAccountLab -> 沒有提款帳戶
-        • UIButton *goSetBtn -> 設定
-        • UIView *bgView -> 提款帳戶區塊
-        • UILabel *bankNameLab -> 帳戶名稱
-        • UILabel *addressLab -> 地址
-        • UILabel *branchLab -> 分行
-        • UIView *lineView -> 分隔線
-        • UILabel *bankAccountLab -> 帳戶號碼 
-        • UILabel *holderNameLab -> 持有人
+    • UIScrollView *myScrollView -> container
+    • UIImageView *headImgView -> background of the main account
+    • UILabel *mainAccountLab -> Master Account
+    • UIButton *refreshBtn -> refresh button
+    • UILabel *RMBLab -> RMB
+    • UILabel *moneyLab -> Master Account Balance
+    • UIButton *remindBtn -> Warm reminder
+    • UILabel *drawMoneyLab -> Withdrawal Amount
+    • UITextField *drawMoneyTF -> withdrawal amount input匡
+    • UIView *drawMoneyTFLine -> withdrawal amount input bottom line
+    • UILabel *tipsLab -> Withdrawal Amount Tips
+    • UILabel *drawAccountLab -> Withdrawal Account
+    • UIButton *goDrawBtn -> Immediate withdrawal
+    • UILabel *noDrawAccountLab -> No withdrawal account
+    • UIButton *goSetBtn -> setting
+    • UIView *bgView -> Withdrawal Account Block
+    • UILabel *bankNameLab -> account name
+    • UILabel *addressLab -> address
+    • UILabel *branchLab -> Branch
+    • UIView *lineView -> divider
+    • UILabel *bankAccountLab -> account number
+    • UILabel *holderNameLab -> holder
 #### 16.PersonInfoShouldCompleteViewController
-        • 繼承 NeedCompletedPersonalDataViewController，為了塞不同的alertLab且屬於提款專用
+    • Inheriting NeedCompletedPersonalDataViewController, in order to plug different alertLab and belong to the withdrawal
 #### 17.DrawMoneySuccessViewController
-        • UIScrollView *myScrollView -> 容器
-        • UIImageView *alertImgView -> 成功icon
-        • UILabel *titleLab -> 提款提交成功
-        • UILabel *alertLab -> 提款成功相關訊息
-        • UIButton *personalCenterBtn -> 關閉
+    • UIScrollView *myScrollView -> container
+    • UIImageView *alertImgView -> success icon
+    • UILabel *titleLab -> withdrawal submission successfully
+    • UILabel *alertLab -> withdrawal success related information
+    • UIButton *personalCenterBtn -> Close
 #### 18.TransactionRecordViewController
-        • DLLRUCache *cache -> 頁籤的cache
-        • DLScrollTabbarItem *item -> 頁籤元件
-        • DLCustomSlideView *slideView -> 頁籤的內頁
-        • DLScrollTabbarView *tabbar -> 頁籤區塊
+    • DLLRUCache *cache -> tab cache
+    • DLScrollTabbarItem *item -> tab component
+    • DLCustomSlideView *slideView -> Inner page of the tab
+    • DLScrollTabbarView *tabbar -> tab block
 #### 19. TransactionRecordTableViewViewController
-        • UIView *dateView -> 起始/結束日期選擇區塊
-        • UIView *dateViewLine -> 區塊底下的線
-        • UIImageView *timeImgView -> 時鐘icon
-        • UITextField *startTimeTF -> 開始時間輸入匡
-        • UILabel *lineLab -> "~"
-        • UITextField *endTimeTF -> 結束時間輸入匡
-        • UITableView *tableView -> 列表
+    • UIView *dateView -> start/end date selection block
+    • UIView *dateViewLine -> Line below the block
+    • UIImageView *timeImgView -> clock icon
+    • UITextField *startTimeTF -> Start time input匡
+    • UILabel *lineLab -> "~"
+    • UITextField *endTimeTF -> End time input匡
+    • UITableView *tableView -> list
 ##### 19.1 WithdrawalsRecordTableViewCell
-        • UIView *bgView -> 卡片背景
-        • UILabel *transactionTypeLab -> 交易類型
-        • UILabel *transactionNumberLab -> 交易編號
-        • UILabel *transactionAmountlab -> 交易金額
-        • UILabel *transactionDetailsLab -> 交易詳情
-        • UILabel *transactionDetailsContentLab -> 交易詳情-內容
-        • UILabel *serviceChargeLab -> 手續費
-        • UILabel *transactionStateLab -> 交易狀態
-        • UILabel *transactionTimeLab -> 交易時間
-        • UIButton *cancelBtn -> 取消/已取消
+    • UIView *bgView -> card background
+    • UILabel *transactionTypeLab -> transaction type
+    • UILabel *transactionNumberLab -> transaction number
+    • UILabel *transactionAmountlab -> transaction amount
+    • UILabel *transactionDetailsLab -> Transaction details
+    • UILabel *transactionDetailsContentLab -> Transaction Details - Content
+    • UILabel *serviceChargeLab -> Fee
+    • UILabel *transactionStateLab -> transaction status
+    • UILabel *transactionTimeLab -> Trading Hours
+    • UIButton *cancelBtn -> Cancel / Canceled
 ##### 19.2 TransferRecordTableViewCell
-        • UIView *bgView -> 卡片背景
-        • UILabel *transactionTypeLab -> 交易類型
-        • UILabel *transactionNumberLab -> 交易編號
-        • UILabel *transactionAmountlab -> 交易金額
-        • UILabel *transactionDetailsLab -> 交易詳情
-        • UILabel *transactionDetailsContentLab -> 交易詳情-內容
-        • UILabel *serviceChargeLab -> 手續費
-        • UILabel *transactionStateLab -> 交易狀態
-        • UILabel *transactionTimeLab -> 交易時間
+    • UIView *bgView -> card background
+    • UILabel *transactionTypeLab -> transaction type
+    • UILabel *transactionNumberLab -> transaction number
+    • UILabel *transactionAmountlab -> transaction amount
+    • UILabel *transactionDetailsLab -> Transaction details
+    • UILabel *transactionDetailsContentLab -> Transaction Details - Content
+    • UILabel *serviceChargeLab -> Fee
+    • UILabel *transactionStateLab -> transaction status
+    • UILabel *transactionTimeLab -> Trading Hours
 ##### 19.3 DepositRecordTableViewCell
-        • UIView *bgView -> 卡片背景
-        • UILabel *transactionTypeLab -> 交易類型
-        • UILabel *transactionNumberLab -> 交易編號
-        • UILabel *transactionAmountlab -> 交易金額
-        • UILabel *transactionDetailsLab -> 交易詳情
-        • UILabel *transactionDetailsContentLab -> 交易詳情-內容
-        • UILabel *serviceChargeLab -> 手續費
-        • UILabel *transactionStateLab -> 交易狀態
-        • UILabel *transactionTimeLab -> 交易時間
+    • UIView *bgView -> card background
+    • UILabel *transactionTypeLab -> transaction type
+    • UILabel *transactionNumberLab -> transaction number
+    • UILabel *transactionAmountlab -> transaction amount
+    • UILabel *transactionDetailsLab -> Transaction details
+    • UILabel *transactionDetailsContentLab -> Transaction Details - Content
+    • UILabel *serviceChargeLab -> Fee
+    • UILabel *transactionStateLab -> transaction status
+    • UILabel *transactionTimeLab -> Trading Hours
 #### 20 BankManagementViewController
-        • UITableView *tableView -> 列表
+    • UITableView *tableView -> list
 #### 21 AddBankAccountViewController
-        • AddBankAccountView *addBankAccountView -> 添加銀行資料內頁
+    • AddBankAccountView *addBankAccountView -> Add bank data page
 ##### 21.1 AddBankAccountView
-        • UIScrollView *myScrollView -> 容器
-        • UILabel *holderNameLab -> 帳戶持有者姓名
-        • UITextField *holderNameTF -> 帳戶持有者姓名輸入匡 
-        • UIView *holderNameTFLine -> 帳戶持有者姓名輸入匡底線
-        • UILabel *lbHintOFHolderName -> 帳戶持有者姓名錯誤提示 
-        • UILabel *bankNameLab -> 銀行名稱
-        • UITextField *bankNameTF -> 銀行名稱輸入匡
-        • UIView *bankNameTFLine -> 銀行名稱輸入匡底線
-        • UILabel *lbHintOfBankName -> 銀行名稱錯誤提示
-        • UILabel *bankNameKeyByUserLab -> 使用者輸入的銀行名稱
-        • UITextField *bankNameKeyByUserTF -> 使用者輸入的銀行名稱輸入匡
-        • UIView *bankNameKeyByUserTFLine -> 使用者輸入的銀行名稱輸入匡提示
-        • UILabel *lbHintOFBankKeyByUser -> 使用者輸入的銀行名稱錯誤提示
-        • UILabel *bankAccountLab -> 銀行帳號
-        • UITextField *bankAccountTF -> 銀行帳號輸入匡
-        • UIView *bankAccountTFLine -> 銀行帳號輸入匡底線
-        • UILabel *lbHintOFBankAccount -> 銀行帳號錯誤提示
-        • UILabel *provinceLab -> 省
-        • UITextField *provinceTF -> 省輸入匡
-        • UIView *provinceTFLine -> 省輸入匡底線
-        • UILabel *lbHintOFProvince -> 省錯誤提示
-        • UILabel *cityLab -> 城市
-        • UITextField *cityTF -> 城市輸入匡
-        • UIView *cityTFLine -> 城市輸入匡底線
-        • UILabel *lbHintOFCity -> 城市錯誤提示
-        • UILabel *branchLab -> 分行
-        • UITextField *branchTF -> 分行輸入匡
-        • UIView *branchTFLine -> 分行輸入匡底線
-        • UILabel *lbHintOFBanch -> 分行錯誤提示
+    • UIScrollView *myScrollView -> container
+    • UILabel *holderNameLab -> account holder name
+    • UITextField *holderNameTF -> Account holder name input匡
+    • UIView *holderNameTFLine -> Account holder name input bottom line
+    • UILabel *lbHintOFHolderName -> Account Holder Name Error Prompt
+    • UILabel *bankNameLab -> Bank Name
+    • UITextField *bankNameTF -> Bank Name Input匡
+    • UIView *bankNameTFLine -> Bank name input bottom line
+    • UILabel *lbHintOfBankName -> Bank Name Error Prompt
+    • UILabel *bankNameKeyByUserLab -> bank name entered by the user
+    • UITextField *bankNameKeyByUserTF -> Enter the bank name entered by the user匡
+    • UIView *bankNameKeyByUserTFLine -> User input bank name input 匡 prompt
+    • UILabel *lbHintOFBankKeyByUser -> User-entered bank name error message
+    • UILabel *bankAccountLab -> Bank Account
+    • UITextField *bankAccountTF -> Bank Account Entry匡
+    • UIView *bankAccountTFLine -> Bank account entry bottom line
+    • UILabel *lbHintOFBankAccount -> Bank Account Error Prompt
+    • UILabel *provinceLab -> Province
+    • UITextField *provinceTF -> Provincial Input匡
+    • UIView *provinceTFLine -> Provincial Input Bottom Line
+    • UILabel *lbHintOFProvince -> Provincial Error Prompt
+    • UILabel *cityLab -> City
+    • UITextField *cityTF -> City Input匡
+    • UIView *cityTFLine -> City input bottom line
+    • UILabel *lbHintOFCity -> City Error Prompt
+    • UILabel *branchLab -> Branch
+    • UITextField *branchTF -> branch input匡
+    • UIView *branchTFLine -> branch input bottom line
+    • UILabel *lbHintOFBanch -> Branch Error Prompt
 ##### 21.2 BankEmptyTableViewCell
-        • UIImageView *imageview -> "+" icon
-        • UILabel *titleLab -> 新增银行资料
-        • UIImageView *arrowImageView -> ">" icon
+    • UIImageView *imageview -> "+" icon
+    • UILabel *titleLab -> Add bank information
+    • UIImageView *arrowImageView -> ">" icon
 ##### 21.3 HaveBankTableViewCell
-        • UIView *bgView -> 背景
-        • UILabel *bankNameLab -> 銀行名稱
-        • UILabel *addressLab -> 地址
-        • UILabel *branchLab -> 分行
-        • UILabel *bankAccountLab -> 銀行帳號
-        • UILabel *holderNameLab -> 持有者姓名
+    • UIView *bgView -> background
+    • UILabel *bankNameLab -> Bank Name
+    • UILabel *addressLab -> address
+    • UILabel *branchLab -> Branch
+    • UILabel *bankAccountLab -> Bank Account
+    • UILabel *holderNameLab -> holder name
 #### 22. DividendDataViewController
-        • UIView *topLineView -> 頂部區塊
-        • DividendOverviewView *dividendOverviewView -> 紅利概覽 
-        • QueryDividendDataView *queryDividendDataView -> 查詢紅利紀錄
-        • BackwaterDiscountView *backwaterDiscountView -> 反水優惠
+    • UIView *topLineView -> top block
+    • DividendOverviewView *dividendOverviewView -> Bonus Overview
+    • QueryDividendDataView *queryDividendDataView -> Query Dividend History
+    • BackwaterDiscountView *backwaterDiscountView -> Anti-water offer
 ##### 22.1 DividendOverviewView
-        • UIView *topView -> 頂部取快
-        • UIView *lineView -> 中間分隔線
-        • UIView *bottomLineView -> 底部分隔線
-        • UILabel *canReceiveLab -> 可領取紅利
-        • UILabel *canReceiveContentLab -> 可領取紅利金額
-        • UILabel *unlockedLab -> 未解鎖紅利
-        • UILabel *unlockedContentLab -> 未解鎖紅利
-        • UILabel *soonExpireLab -> 即將過期的紅利
-        • UITableView *tableView -> 列表
-        • UIRefreshControl *refreshControl -> 下拉刷新
+    • UIView *topView -> top fast
+    • UIView *lineView -> middle divider
+    • UIView *bottomLineView -> bottom divider
+    • UILabel *canReceiveLab -> can receive bonuses
+    • UILabel *canReceiveContentLab -> can receive bonus amount
+    • UILabel *unlockedLab -> Unlocked Bonus
+    • UILabel *unlockedContentLab -> Unlocked Bonus
+    • UILabel *soonExpireLab -> Bonus to expire
+    • UITableView *tableView -> list
+    • UIRefreshControl *refreshControl -> dropdown refresh
 ###### 22.1.1 DividendOverviewTableViewHeader
-        • UILabel *dateLab -> 日期
-        • UILabel *moneyLab -> 金額
-        • UIImageView *arrowBtn -> ">" icon
+    • UILabel *dateLab -> Date
+    • UILabel *moneyLab -> Amount
+    • UIImageView *arrowBtn -> ">" icon
 ###### 22.1.2 DividendOverviewTableViewCell
-        • UILabel *typeLab -> 類型
-        • UILabel *startDateLab -> 開始時間
-        • UILabel *contentMoneyLab -> 金額
-        • UILabel *contentTitleLab -> 標題
-        • UILabel *endDateLab -> 結束時間
-        • UILabel *endDateContentLab -> 結束時間內容
-        • UILabel *progressLab -> 狀態
-        • UIView  *contentLine -> 分隔線
-        • UILabel *targetDividendLab -> 目標紅利狀態
-        • UILabel *flowingWaterLab -> 流水
-        • UIButton *receiveBtn -> 領取
+    • UILabel *typeLab -> type
+    • UILabel *startDateLab -> Start time
+    • UILabel *contentMoneyLab -> Amount
+    • UILabel *contentTitleLab -> title
+    • UILabel *endDateLab -> End time
+    • UILabel *endDateContentLab -> End time content
+    • UILabel *progressLab -> Status
+    • UIView *contentLine -> divider
+    • UILabel *targetDividendLab -> Target Dividend Status
+    • UILabel *flowingWaterLab -> running water
+    • UIButton *receiveBtn -> Get
 ##### 22.2 QueryDividendDataView
-        • UIView *topView -> 查詢區塊
-        • UILabel *desireQueryMonthLab -> 欲查詢月份
-        • UILabel *accountSourceLab -> 帳戶來源
-        • UIView *desireQueryMonthTF -> 欲查詢月份的view
-        • UIImageView *calendarImgView -> 日曆圖示
-        • UILabel *monthLab -> 月份時間
-        • UIView *accountSourceTF -> 帳戶來源輸入匡
-        • UIImageView *moneyImgView -> 帳戶圖示
-        • UILabel *bankLab -> 銀行/帳戶
-        • UIImageView *arrowImgView -> 下角icon
-        • UIButton *queryBtn -> 搜尋按鈕
-        • UILabel *alertLab -> 查詢紅利紀錄提示
-        • UITableView *tableView -> 列表
+    • UIView *topView -> Query block
+    • UILabel *desireQueryMonthLab -> want to query the month
+    • UILabel *accountSourceLab -> Account Source
+    • UIView *desireQueryMonthTF -> view of the month to be queried
+    • UIImageView *calendarImgView -> calendar icon
+    • UILabel *monthLab -> month time
+    • UIView *accountSourceTF -> Account Source Input匡
+    • UIImageView *moneyImgView -> Account Icon
+    • UILabel *bankLab -> Bank / Account
+    • UIImageView *arrowImgView -> lower corner icon
+    • UIButton *queryBtn -> search button
+    • UILabel *alertLab -> Query bonus record tips
+    • UITableView *tableView -> list
 ###### 22.2.1 BWPickerView
-        • 月份及源自帳戶的picker
+    • Months and picker from the account
 ###### 22.2.2 QueryDividendDataTableViewCell
-        • UIView  *bgView -> 背景
-        • UILabel *typeLab -> 類型
-        • UILabel *startDateLab -> 開始時間
-        • UILabel *contentMoneyLab -> 金額
-        • UILabel *contentTitleLab -> 標題
-        • UILabel *endDateLab -> 過期日期
-        • UILabel *endDateContentLab -> 過期日期時間
-        • UILabel *progressLab -> 狀態
-        • UIView  *contentLine -> 分隔線
-        • UILabel *targetDividendLab -> 紅利目標狀態
-        • UILabel *flowingWaterLab -> 流水
-        • UIButton *receiveBtn -> 領取
+    • UIView *bgView -> background
+    • UILabel *typeLab -> type
+    • UILabel *startDateLab -> Start time
+    • UILabel *contentMoneyLab -> Amount
+    • UILabel *contentTitleLab -> title
+    • UILabel *endDateLab -> Expiration date
+    • UILabel *endDateContentLab -> Expiration date and time
+    • UILabel *progressLab -> Status
+    • UIView *contentLine -> divider
+    • UILabel *targetDividendLab -> bonus target status
+    • UILabel *flowingWaterLab -> running water
+    • UIButton *receiveBtn -> Get
 ##### 22.3 BackwaterDiscountView
-        • UITableView *tableView -> 列表
-        • UIRefreshControl *refreshControl -> 下拉刷新
+    • UITableView *tableView -> list
+    • UIRefreshControl *refreshControl -> dropdown refresh
 ###### 22.3.1 BackwaterDiscountTableViewCell
-        • UIView *bgView -> 背景
-        • UITableView *tableView -> 列表
+    • UIView *bgView -> background
+    • UITableView *tableView -> list
 ###### 22.3.2 BackwaterDiscountCellTableViewCell
-        • UIView *cellView -> 下方可展開的區塊
-        • UILabel *levelRangeLab -> 等級範圍
-        • UILabel *levelRangeContentLab -> 等級範圍內容
-        • UIImageView *arrowImgView -> 下箭頭
-        • UIView *cellLine -> 分隔線
-        • UIView *cellContentView -> 上方內容區塊
-        • UILabel *effectiveBettingLab -> 有效投注
-        • UILabel *effectiveBettingContentLab -> 投注內容
-        • UILabel *backWaterScaleLab -> 反水比例
-        • UILabel *backWaterScaleContentLab -> 反水比例內容
-        • UIView *cellContentViewLine1  -> 第一條分隔線
-        • UILabel *backWaterMoneyLab -> 反水金額
-        • UILabel *backWaterMoneyContentLab -> 反水金額內容
-        • UIView *cellContentViewLine2 -> 第二條分隔線
+    • UIView *cellView -> expandable block below
+    • UILabel *levelRangeLab -> level range
+    • UILabel *levelRangeContentLab -> level range content
+    • UIImageView *arrowImgView -> Down Arrow
+    • UIView *cellLine -> divider
+    • UIView *cellContentView -> upper content block
+    • UILabel *effectiveBettingLab -> Effective betting
+    • UILabel *effectiveBettingContentLab -> Betting Content
+    • UILabel *backWaterScaleLab -> anti-water ratio
+    • UILabel *backWaterScaleContentLab -> anti-water ratio content
+    • UIView *cellContentViewLine1 -> first divider
+    • UILabel *backWaterMoneyLab -> amount of water
+    • UILabel *backWaterMoneyContentLab -> Anti-water amount content
+    • UIView *cellContentViewLine2 -> second divider
 #### 23. ExclusivePreferenceViewController
-        • UIImageView *topImgView -> 上方圖
-        • UIView *bottomView -> 底部圖
-        • UILabel *couponCodeLab  -> 優惠券代碼
-        • UITextField *couponCodeTF -> 優惠券代碼輸入匡
-        • UILabel *couponCodeWarrningLab -> 優惠券代碼錯誤提示
-        • UIView *couponCodeTFLine -> 優惠券代碼輸入匡底線
-        • UIButton *submitBtn -> 優惠券代碼提交
+    • UIImageView *topImgView -> above
+    • UIView *bottomView -> bottom image
+    • UILabel *couponCodeLab -> coupon code
+    • UITextField *couponCodeTF -> Coupon Code Entry匡
+    • UILabel *couponCodeWarrningLab -> Coupon Code Error Prompt
+    • UIView *couponCodeTFLine -> Coupon code input bottom line
+    • UIButton *submitBtn -> Coupon Code Submission
 #### 24. NoticeViewController
-        • DLLRUCache *cache -> 頁籤的cache
-        • DLScrollTabbarItem *item -> 頁籤元件
-        • DLCustomSlideView *slideView -> 頁籤的內頁
-        • DLScrollTabbarView *tabbar -> 頁籤區塊
+    • DLLRUCache *cache -> tab cache
+    • DLScrollTabbarItem *item -> tab component
+    • DLCustomSlideView *slideView -> Inner page of the tab
+    • DLScrollTabbarView *tabbar -> tab block
 ##### 24.1 NoticeTableViewViewController
-        • UITableView *tableView -> 列表
+    • UITableView *tableView -> list
 ##### 24.1.1 DiscountNoticeTableViewCell
-        • UIView *bgView -> 卡片背景
-        • UILabel *typeLab -> 公告類型
-        • UILabel *dateLab -> 公告日期
-        • UILabel *titleLab -> 公告標題
-        • UIButton *lookBtn -> 觀看內容按鈕
-        • UIButton *arrowBtn -> ">"按鈕
-        • UILabel *contentLab -> 公告內容
+    • UIView *bgView -> card background
+    • UILabel *typeLab -> Announcement Type
+    • UILabel *dateLab -> Announcement Date
+    • UILabel *titleLab -> announcement title
+    • UIButton *lookBtn -> watch content button
+    • UIButton *arrowBtn -> ">" button
+    • UILabel *contentLab -> Announcement content
 ##### 24.1.2 NewNoticeTableViewCell
-        • UIView *bgView -> 卡片背景
-        • UILabel *typeLab -> 公告類型
-        • UILabel *dateLab -> 公告日期
-        • UILabel *titleLab -> 公告標題
-        • UIButton *lookBtn -> 觀看內容按鈕
-        • UIButton *arrowBtn -> ">"按鈕
-        • UILabel *contentLab -> 公告內容
+    • UIView *bgView -> card background
+    • UILabel *typeLab -> Announcement Type
+    • UILabel *dateLab -> Announcement Date
+    • UILabel *titleLab -> announcement title
+    • UIButton *lookBtn -> watch content button
+    • UIButton *arrowBtn -> ">" button
+    • UILabel *contentLab -> Announcement content
 ##### 24.1.3 EspeciallyNoticeTableViewCell
-        • UIView *bgView -> 卡片背景
-        • UILabel *typeLab -> 公告類型
-        • UILabel *dateLab -> 公告日期
-        • UILabel *titleLab -> 公告標題
-        • UIButton *lookBtn -> 觀看內容按鈕
-        • UIButton *arrowBtn -> ">"按鈕
-        • UILabel *contentLab -> 公告內容
-###  基礎頁面
+    • UIView *bgView -> card background
+    • UILabel *typeLab -> Announcement Type
+    • UILabel *dateLab -> Announcement Date
+    • UILabel *titleLab -> announcement title
+    • UIButton *lookBtn -> watch content button
+    • UIButton *arrowBtn -> ">" button
+    • UILabel *contentLab -> Announcement content
 
-## 3. 各模塊內程式架構/邏輯
-### 3.0 AppDelage 初始化模組：
+### Basic page
+## 3. Program architecture/logic in each module
+### 3.0 AppDelegate Initialization Module:
 
 #### function didFinishLaunchingWithOptions
-        (1). 友盟sdk初始化
-        (2). branch io sdk初始化
-        (3). 使用NSUserDefault 儲存 affiliateCode, 並設置 key 值為 DeepLinkRegisterBonusCode
-        (4). 初始化 UserInfoManager 模組. 該模組使用來記錄使用者相關資訊.
-        (5). 初始化 Reachability 工具. 該工具為偵測網路事件工具.
-        (6). 使用NSUserDefault 儲存/重設 kShowMultiLogoutMessage 設定值. 該值是用來判斷當頁面有多支api都會回傳401 or 403時, 除第一次要跳訊息外, 其他QA 不希望重複跳出"您的账号已经被登出，请重新登录"提示訊息. 因此多設置一個值來做判斷. 該值會在提示訊息跳出時設置為NO, 在登出時重新設置為YES.
-        (7). NSNotificationCenter 新增 reachabilityDidChange 事件, 偵測網路狀態是否有改變.
-        (8). NSNotificationCenter 新增 goAction 事件, 統一處理tabBarVC導頁需求.
-        
+    (1). Union sdk initialization
+    (2). branch io sdk initialization
+    (3). Use NSUserDefault to store affiliateCode, and set the key value to DeepLinkRegisterBonusCode
+    (4). Initialize the UserInfoManager module. This module is used to record user related information.
+    (5). Initialize the Reachability tool. This tool is a tool for detecting network events.
+    (6). Use NSUserDefault to store/reset the kShowMultiLogoutMessage setting. This value is used to determine when there are multiple apis on the page that will return 401 or 403. Except for the first time to skip the message, other QAs do not want to repeatedly pop out." Your account has been logged out, please log in again. "Prompt message. So set a value to make a judgment. This value will be set to NO when the prompt message pops up, and reset to YES when logging out.
+    (7). NSNotificationCenter added a reachabilityDidChange event to detect if the network status has changed.
+    (8). NSNotificationCenter added a goAction event to handle tabBarVC guides in a unified manner.
+    
 #### function applicationDidBecomeActive
-        (1). 版本檢查
-        
-#### function didRegisterForRemoteNotificationsWithDeviceToken 
-        (1). 取得推播 device token 並做友盟及api註冊.
-        
+    (1). Version check
+    
+#### function didRegisterForRemoteNotificationsWithDeviceToken
+    (1). Get the push device token and do the Union and api registration.
+    
 #### function didReceiveRemoteNotification
-        (1). iOS9 的推播事件會在這裡處理
-        
+    (1). iOS9 push events will be handled here
+    
 #### function userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler
-        (1). iOS10 的推播事件會在這裡處理
-        
+    (1). iOS10 push events will be handled here
+    
 #### function handleNotificationRefreshEvent
-        (1). 統一處理推播更新事件並更新api資料時
-        事件以及相關動作分別為 :
-        • NewGameArrival          -> call getGameLobbyInfo api
-        • SettingsChanged         -> call getWithdrawSettings api
-        • NewDepositMethodArrival -> call getDepositPaymentMethods api
-        • NewPromotionArrival     -> call getPromotionList and getLobbyBanners api
-        • NewBonusArrival         -> call getBonusList and getLobbyBanners api
-        • NewBannerArrival        -> call getLobbyBanners api
-        
+    (1). Unified processing when pushing update events and updating api data
+    The events and related actions are:
+    • NewGameArrival -> call getGameLobbyInfo api
+    • SettingsChanged -> call getWithdrawSettings api
+    • NewDepositMethodArrival -> call getDepositPaymentMethods api
+    • NewPromotionArrival -> call getPromotionList and getLobbyBanners api
+    • NewBonusArrival -> call getBonusList and getLobbyBanners api
+    • NewBannerArrival -> call getLobbyBanners api
+    
 #### function handleNotificationFunctionEvent
-        (1). 統一處理推播功能事件
-        功能及相關動作分別為 :
-        CheckVersion -> call checkAppVersion api (檢查版本更新)
+    (1). Unified processing of push function events
+    The functions and related actions are:
+    CheckVersion -> call checkAppVersion api (check version update)
 
-### 3.1 登入及公用頁面
+### 3.1 Login and public page
 
-        登入功能頁面分為一般帳密登入、生物辨識登入、忘記密碼、忘記用戶名、驗證手機以及用戶註冊功能
+    The login function page is divided into general account login, biometric login, forgotten password, forgotten username, verified mobile phone and user registration function.
         
-### 3.1.1  一般登入、指紋登入及臉部辨識登入
+### 3.1.1 General login, fingerprint login and face recognition login
 
-        頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        
-        (2.1). 檢查使用者是否可以使用生物辨識功能 checkIsShowBiometricBtn(), 當使用者手機可以使用生物辨識並在會員登入頁面有開啟時, 需顯示生物辨識登入按鈕, 並將頁面導致生物辨識頁面. 這邊會依據使用者裝置的不同, 再決定要開啟指紋或是臉部辨識頁面.
-        
-        (2.2). 當使用者沒有開啟生物辨識功能或是初次登入, 使用者需自行輸入帳號及密碼做登入.
-        
-        (3). 當使用者登入成功後, 除了更新使用者資訊(UserInformationResponseData)外, 另外會特別更新以下資料.
-        • kShowMultiLogoutMessage : 將401/403錯誤訊息狀態設為YES, 表示下次會顯示錯誤訊息
-        • kEventUserDidLogout : 登出狀態設為NO
-        • 取得 kGoActionValue 狀態. 此設定值是用來判斷在登入完成後, 是否要到特別頁面去. 配合AppDelegate's goAction method 使用
-        • 更新推播狀態
-        
-        (4). 當使用者沒有輸入過手機時, 須將之導致手機號碼驗證頁(VerifyPhoneViewController)
-        (5). 更新kUserName 以及 kPassword 值, 給生物辨識登入使用.
-        (6). 判斷如果非同帳號登入時, 須將 kIsTouchOrFaceIDLogin 值設定為NO, 避免下次使用到錯誤的帳號登入.
-        
-        P.S. 一般登入有個共用方法 show(), 這個是給其他頁面要呼叫登入功能時使用.
+    Page logic:
+    (1). The page opens will make all the components of the screen
+    
+    (2.1). Check if the user can use the biometric function checkIsShowBiometricBtn(). When the user's mobile phone can use biometric identification and the member login page is enabled, the biometric login button needs to be displayed, and the page will cause the biometric page. The side will decide to open the fingerprint or face recognition page depending on the user device.
+    
+    (2.2). When the user does not open the biometric function or log in for the first time, the user needs to enter the account and password to log in.
+    
+    (3). After the user logs in successfully, in addition to updating the user information (UserInformationResponseData), the following information will be specially updated.
+    • kShowMultiLogoutMessage : Set the 401/403 error message status to YES, indicating that the error message will be displayed next time.
+    • kEventUserDidLogout : Logout status is set to NO
+    • Get the kGoActionValue state. This setting is used to determine if you want to go to the special page after the login is complete. Use with AppDelegate's goAction method
+    • Update push status
+    
+    (4). When the user has not entered the mobile phone, it must be caused to the mobile phone number verification page (VerifyPhoneViewController)
+    (5). Update the kUserName and kPassword values for biometric login.
+    (6). To determine if the non-same account is logged in, you must set the kIsTouchOrFaceIDLogin value to NO to avoid the next time you use the wrong account login.
+    
+    P.S. General login has a shared method show(), which is used when other pages want to call the login function.
 
-### 3.1.2 忘記密碼
+### 3.1.2 Forgot your password?
 
-        頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 依據使用者輸入的帳號及電話先做帳號驗證動作(call checkUserAccount api).
-        (3). 發送api取得驗證碼( call sendSMSCode api).
-        (3.1) api 回傳成功及簡訊發送成功, 顯示簡訊號碼輸入框
-        (3.2) api 回傳值失敗時, 顯示 简讯验证码错误 訊息
-        (3.3) api 回傳值成功但簡訊發送失敗, 依據errorCode顯示錯誤訊息.
-        (4). 簡訊驗證(call verifySMSCode api)成功後, 進入 重置密碼頁. 否則依據錯誤訊息顯示錯誤.
-        
-### 3.1.3 忘記用戶名
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). According to the account and phone number input by the user, first perform the account verification action (call checkUserAccount api).
+        (3). Send the api to get the verification code ( call sendSMSCode api).
+        (3.1) The api is successfully transmitted and the message is sent successfully. The message number input box is displayed.
+        (3.2) When the api return value fails, the SMS verification code error message is displayed.
+        (3.3) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
+        (4). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
+        
+### 3.1.3 Forgot username
 
-        頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 依據使用者選擇的生日及電話先做帳號驗證動作(call checkUserBirth api).
-        (3). 發送api取得驗證碼( call sendSMSCode api).
-        (3.1) api 回傳成功及簡訊發送成功, 顯示簡訊號碼輸入框
-        (3.2) api 回傳值失敗時, 顯示 简讯验证码错误 訊息
-        (3.3) api 回傳值成功但簡訊發送失敗, 依據errorCode顯示錯誤訊息.
-        (4). 簡訊驗證(call verifySMSCode api)成功後, 進入 重置密碼頁. 否則依據錯誤訊息顯示錯誤.
-        
-### 3.1. 4 用戶註冊
-        
-        頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 使用者填完並驗證過欄位資料後, 判斷是否有輸入優惠卷代碼.
-        (2.1) 有輸入優惠卷代碼, 先做coupon卷驗證(call getCouponInfo api)
-        (2.2) 沒有輸入優惠卷代碼, 直接進入(3)
-        (3). call userRegister api做註冊動作. 當註冊成功時, 會導入驗證手機頁面(VerifyPhoneViewController).
-        
-        P.S. 一般註冊頁面(RegistViewController)目前未使用.
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). According to the user's choice of birthday and phone number first account verification action (call checkUserBirth api).
+        (3). Send the api to get the verification code ( call sendSMSCode api).
+        (3.1) The api is successfully transmitted and the message is sent successfully. The message number input box is displayed.
+        (3.2) When the api return value fails, the SMS verification code error message is displayed.
+        (3.3) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
+        (4). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
+        
+### 3.1. 4 User registration
+        
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). After the user completes and verifies the field information, it is judged whether the coupon code is entered.
+        (2.1) Enter the coupon code, first make the coupon volume verification (call getCouponInfo api)
+        (2.2) Without entering the coupon code, go directly to (3)
+        (3). call userRegister api to do the registration action. When the registration is successful, the verification phone page (VerifyPhoneViewController) will be imported.
+        
+        The P.S. general registration page (RegistViewController) is currently not used.
 
-### 3.1.5 驗證手機
+### 3.1.5 Verifying the phone
 
-        頁面邏輯 :  
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 依據使用者輸入的電話發送api取得驗證碼( call sendSMSCode api).
-        (2.1) api 回傳成功及簡訊發送成功, 顯示簡訊號碼輸入框
-        (2.1) api 回傳值失敗時, 顯示 简讯验证码错误 訊息
-        (2.2) api 回傳值成功但簡訊發送失敗, 依據errorCode顯示錯誤訊息.
-        (3). 簡訊驗證(call verifySMSCode api)成功後, 進入 重置密碼頁. 否則依據錯誤訊息顯示錯誤.
-        
-### 3.2 首頁(ViewController)
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). Send the api to get the verification code (call sendSMSCode api) according to the phone input by the user.
+        (2.1) api return success and SMS sent successfully, display the SMS number input box
+        (2.1) When the api return value fails, the SMS verification code error message is displayed.
+        (2.2) The api return value is successful but the message is sent unsuccessfully, and an error message is displayed according to errorCode.
+        (3). After the call verificationSMSCode api is successful, enter the reset password page. Otherwise, an error is displayed according to the error message.
+        
+### 3.2 Home (ViewController)
 
-        首頁組成區塊分別為上方Banner 以及 下方主要遊戲類別區塊(TableView).
-        • Banner區塊使用第三方套件TYCyclePagerView實作內容頁, TYPageControl控制換頁行為.
-        • 遊戲類別區塊使用 SYTableViewCell 依據 GameCategoryModel 資料模組來呈現畫面layout. 
-        • NSNotificationCenter 新增 kEventNewBannerArrival 事件, 偵測推播來的更新狀態.
-        • NSNotificationCenter 新增 kEventNewGameArrival 事件, 偵測推播來的更新狀態.
+        The main components of the home block are the upper Banner and the main game category block (TableView) below.
+        • The Banner block uses the third-party suite TYCyclePagerView to implement the content page, and TYPageControl controls the page-changing behavior.
+        • Game category block uses SYTableViewCell to render the picture layout according to the GameCategoryModel data module.
+        • NSNotificationCenter added a kEventNewBannerArrival event to detect the update status of the push.
+        • NSNotificationCenter added a kEventNewGameArrival event to detect the update status of the push.
+        
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear), you will get the banner information (call getLobbyBanners api) and the game classification data (call getAllGameCategories api), and update the screen.
+        
+        Click/slide behavior:
+        • When the page is down, the update action will be updated. When the update is pulled down, the banner and game category data will be updated through the refreshMainPage method.
+        • When the game function block is clicked, the page behavior is based on the different gameCategoryName via the pushToGameLobbay method.
+        - When judging that you are clicking on the sports (portsportsbook) game category, you must first determine if the user has logged in. If you are not logged in, you must first jump to the login page.
+          In addition, you must also determine whether the user account is locked. When the account is locked, you need to refer to the customer service.
+        - Other types of games go directly to the game lobby page.
         
-        頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 當每次進入頁面時(viewWillAppear), 會取得banner資料(call getLobbyBanners api)及遊戲分類資料(call getAllGameCategories api), 並更新畫面.
-        
-        點擊/滑動行為 : 
-        • 頁面時坐下拉更新動作, 當下拉更新時, 會透過 refreshMainPage method 去更新 banner及game category資料
-        • 遊戲功能區塊點擊時, 會透過 pushToGameLobbay method 依據不同的 gameCategoryName 去做導頁行為.
-        - 當判斷是點擊體育(mobilesportsbook)遊戲類別時, 須先判斷使用者是否登入過, 如果沒有登入須先跳登入頁.
-          另外也須判斷使用者帳戶是不是被鎖定, 當帳號被鎖定時, 需轉導客服.
-        - 其他類型遊戲直接進入遊戲大廳頁即可.
-        
-### 3.3 優惠
+### 3.3 Offers
 
-        ㄧ. 主頁面模組及相關事件 :
-        優惠組成區塊分別為上方Banner 以及 下方主要優惠類別選單.其中優惠包含體育優惠、真人優惠、遊戲優惠及特別優惠．
-        • Banner區塊使用第三方套件TYCyclePagerView實作內容頁, TYPageControl控制換頁行為.
-          - Banner區塊包含下拉選單套件(YTDropMenu)
-        • 優惠區塊組成包含
-          - 優惠選單部分由DLScrollTabbarView實作
-          - 優惠內容頁由DLCustomSlideView實作
-        • NSNotificationCenter 新增 kEventRefreshPromotionList 事件, 偵測推播來的更新狀態.
-        • NSNotificationCenter 新增 kEventNewBannerArrival 事件, 偵測推播來的更新狀態.
-        
-        主頁面(DiscountPageViewController)邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 每次進入頁面時(viewWillAppear), 會取得banner資料(call getLobbyBanners api)更新banner資料．
-        (3). 優惠分類是在App端寫死四種遊戲分類, 分類的子頁面(PageViewController)是在
-             - (UIViewController *)DLCustomSlideView:(DLCustomSlideView *)sender controllerAt:(NSInteger)index
-             做生成頁面的動作.
-        (4). 子頁面生成之後, 會在自己屬於的頁面去取得優惠列表資料(call getPromotionList api)並更新．
-        
-        二. 优惠滑动分页模組及相關事件 :
-        優惠滑動分頁組成區塊僅有自己本身的TableView
-        • NSNotificationCenter 新增 NOTIFICATION_DISCOUNT_PAGE_REFRESH 事件, 更新需要顯示的優惠項目.
-        • NSNotificationCenter 新增 kEventRefreshPromotionList 事件, 偵測推播來的更新狀態.
-        • NSNotificationCenter 新增 kEventNewPromotionArrival 事件, 偵測推播來的更新狀態.
-        
-        优惠滑动分页(PageViewController)邏輯 :
-        
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 每次進入頁面時(viewWillAppear), 會取得優惠列表資料(call getPromotionList api)並更新.
-        
-        點擊/滑動行為 : 
-        • 點擊Banner廣告 
-          - banner點擊事件會統一在 DiscountPageViewController's actionByPromotionListData method 中做處理.其中 action id 值定義如下(此定義值所有action id共用):
-          "3": 立即存款(請至轉帳頁)
-          “9”: 立即投注(體育）
-          “11”: 立即投注(真人）
-          “12”: 立即投注(遊戲）
-          “14”: 優惠頁(體育）
-          “16”: 優惠頁(真人）
-          “17”: 優惠頁(遊戲）
-          “18”: 優惠頁(其他）
-          “20”: 首頁
-          其他數字（0~2, 4, 5, 10, 13, 15, 19）：不作用
-          
-        • 點擊選單(dropMenu)按鈕 
-          - 觸發 dropButtonClick 事件, 該事件會依據是否點擊來判斷是否顯示/隱藏選單頁.
-          - 當選擇完需要顯示的條件後, 按下篩選按鈕, 會觸發 
-            -(void)dropMenu:(YTDropMenu *)dropMenu didMultiSelectIndexPaths:(NSIndexSet *)selIndexSet 
-            以及
-            - (void)filterData:(NSIndexSet *)selIndexSet
-            以上2個method會去檢查總共選擇了哪些條件, 依據名稱的不同去轉換不同的type值.(ex : 存款优惠 = type 2)
-          - 轉換的資料會被儲存在 NSMutableDictionary 容器內, 並發送通知事件(NOTIFICATION_DISCOUNT_PAGE_REFRESH) 通知子頁面(PageViewController)需要做畫面更新.
-          - 子頁面在收到更新事件後, 會依據type值並依據api資料做畫面的更新.
-        • 點擊優惠項目
-          - 點擊優惠圖片, 會生成優惠詳情頁(DiscountDetailsViewController), 該頁面單純顯示優惠資料
-          - 點擊立即存款/立即投注等相關按鈕事件, 觸發 PageViewController's actionByPromotionListData method 做動作處理.
-### 3.4 存款
+        ㄧ. Main page module and related events:
+        The concessions are divided into the upper Banner and the main concession category menu below. The offers include sports offers, live offers, game offers and special offers.
+        • The Banner block uses the third-party suite TYCyclePagerView to implement the content page, and TYPageControl controls the page-changing behavior.
+          - Banner block contains drop-down menu kit (YTDropMenu)
+        • Offer block composition contains
+          - The offer menu is partially implemented by DLScrollTabbarView
+          - Offer content page is implemented by DLCustomSlideView
+        • NSNotificationCenter added a kEventRefreshPromotionList event to detect the update status of the push.
+        • NSNotificationCenter added a kEventNewBannerArrival event to detect the update status of the push.
+        
+        Main page (DiscountPageViewController) logic:
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear), you will get the banner information (call getLobbyBanners api) to update the banner data.
+        (3). The discount classification is to write four game categories on the App side. The classified subpage (PageViewController) is in
+             - (UIViewController *) DLCustomSlideView: (DLCustomSlideView *) sender controllerAt: (NSInteger) index
+             Do the action of generating the page.
+        (4). After the sub-page is generated, the coupon list data (call getPromotionList api) will be obtained and updated on the page that belongs to it.
+        
+        2. Offer sliding paging module and related events:
+        Offer sliding tabs make up blocks with only their own TableView
+        • NSNotificationCenter added a NOTIFICATION_DISCOUNT_PAGE_REFRESH event to update the offer items that need to be displayed.
+        • NSNotificationCenter added a kEventRefreshPromotionList event to detect the update status of the push.
+        • NSNotificationCenter added a kEventNewPromotionArrival event to detect the update status of the push.
+        
+        Offer Slide Page (PageViewController) logic:
+        
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear), you will get the offer list data (call getPromotionList api) and update it.
+        
+        Click/slide behavior:
+        • Click on the Banner ad
+          - The banner click event will be handled uniformly in the DiscountPageViewController's actionByPromotionListData method. The action id value is defined as follows (this definition value is shared by all action ids):
+          "3": Deposit now (please go to the transfer page)
+          "9": Immediate betting (sports)
+          "11": Immediate betting (real person)
+          "12": Immediate betting (game)
+          "14": Discount page (sports)
+          "16": Discount page (real person)
+          "17": Discount page (game)
+          "18": Discount page (other)
+          "20": Home
+          Other numbers (0~2, 4, 5, 10, 13, 15, 19): no effect
+          
+        • Click on the menu button (dropMenu)
+          - Triggers the dropButtonClick event, which determines whether to show/hide the menu page depending on whether it is clicked.
+          - When the condition to be displayed is selected, pressing the filter button will trigger
+            -(void)dropMenu:(YTDropMenu *)dropMenu didMultiSelectIndexPaths:(NSIndexSet *)selIndexSet
+            as well as
+            - (void)filterData:(NSIndexSet *)selIndexSet
+            The above two methods will check which conditions have been selected in total, and convert different type values ​​depending on the name. (ex : deposit offer = type 2)
+          - The converted data will be stored in the NSMutableDictionary container and a notification event (NOTIFICATION_DISCOUNT_PAGE_REFRESH) will be sent to notify the subpage (PageViewController) that a screen update is required.
+          - After receiving the update event, the subpage will update the screen according to the type value and based on the api data.
+        • Click on a discount item
+          - Click on the offer image to generate a discount details page (DiscountDetailsViewController), which simply displays the offer information
+          - Click on the relevant button event such as immediate deposit/immediate bet, triggering PageViewController's actionByPromotionListData method to do action processing.
+### 3.4 Deposit
 
-        一. 主頁面(DepositPageViewController)模組及相關事件 :
-        存款頁區分上方存款/轉帳選擇區塊及下方存款功能業務選單．其中存款實作包含QQ支付、在线支付、本地银行转账、云闪付扫码、京东钱包及必威卡
-        • 主頁面生成(開啟)方式區分2種
-          - 使用自定義Present方式開啟(call initWithPresent method), 此方法會在頁面左上新增關閉按鈕．
-          - 使用一般方式開啟, TabBarItem 即用此方式, 此方法會在頁面左上無關關閉按鈕．
-        • 存款區塊包含存款及轉帳2顆按鈕.
-        • 存款業務功能區塊組成包含
-          - 存款選單部分由DLScrollTabbarView實作
-          - 存款內容頁由DLCustomSlideView實作
-        • NSNotificationCenter 新增 kEventNewDepositMethodArrival 事件, 偵測推播來的更新狀態.
-        • NSNotificationCenter 新增 kEventDespositSuccess 事件, 當存款成功時, 如當下頁面是使用Present方式開啟, 則關掉該頁面.
-        • NSNotificationCenter 新增 transfer_success 事件, 當轉帳成功時, 切回首頁
-        
-        二. 存款頁
-        存款功能頁區分為2種不同的類型, 一種為存款完成時, 統一導向Web頁面, 例如 : QQ支付、云闪付扫码、京东钱包以及在线支付等.另一種為自行頁面處理存款完成行為, 例如:本地银行转账及必威卡.
-        
-        • 存款頁面統一繼承PaymentView, 當有coupon資料時, 每個存款頁須顯示coupon資料. 但coupon資料會在離開小豬頁之後清除.無論使用者是否有使用coupon卷.
-        
-        存款功能頁面邏輯 : 
-        - QQ支付、云闪付扫码、京东钱包、在线支付 : 
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 檢查當有coupon卷資料時, 生成couponView.
-        (3). 當使用者輸入欄位資料並驗證完成後，會觸發 PaymentView's depositWithWebView method 並 call submitDeposit api 做存款動作.
-        (4.1). 存款完成且無使用coupon, 直接開啟WebView提示使用者存款完成
-        (4.2). 存款完成且使用coupon, 此時會觸發
-            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method 
-              並 call applyBonus api 做优惠券使用動作. 當api回傳資料無誤時, 將會清空本機端相關coupon資料.如 [UserInfoManager share].bonusData. 最後開啟WebView提示使用者存款完成
-          
-        - 本地银行转账 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 檢查當有coupon卷資料時, 生成couponView.
-        (3). call getDepositTargetBank api 取得銀行資料.(這邊在儲存暫存資料時會忽略 '支付宝转账' 功能)
-        (4). call getLocalDepositMethods api 取得轉帳功能.(這邊在儲存暫存資料時會忽略 '支付宝转账' 功能)
-        (5). 需注意的是, 點擊轉帳功能(bankTypeClick method), 會依據選擇的轉帳功能去更新可支援的銀行帳戶. 反之, 先點擊銀行帳戶(bankClick method), 會更新相對應的轉帳功能.
-        (6). 當使用者輸入欄位資料並驗證完成後，會 call submitDeposit api 做存款動作.
-        (7.1). 存款完成且無使用coupon, 直接開啟 DepositApplicationSuccessViewController 提示使用者存款完成
-        (7.2). 存款完成且使用coupon, 此時會觸發
-            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method 
-            並 call applyBonus api 做优惠券使用動作. 當api回傳資料無誤時, 將會清空本機端相關coupon資料.如 [UserInfoManager share].bonusData. 最後開啟 DepositApplicationSuccessViewController 提示使用者存款完成
-        
-        - 必威卡 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 檢查當有coupon卷資料時, 生成couponView.
-        (3). 當使用者輸入欄位資料並驗證完成後，會 call submitDeposit api 做存款動作.
-        (4.1). 存款完成且無使用coupon, 直接開啟 DepositApplicationSuccessViewController 提示使用者存款完成
-        (4.2). 存款完成且使用coupon, 此時會觸發
-            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method 
-            並 call applyBonus api 做优惠券使用動作. 當api回傳資料無誤時, 將會清空本機端相關coupon資料.如 [UserInfoManager share].bonusData. 最後開啟 DepositApplicationSuccessViewController 提示使用者存款完成
-        
-        三. 轉帳頁
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). call getUserTransferWallets api 更新使用者錢包資料.
-        (3). 當使用者選擇完目標帳戶時, 會call getBonusList api去取得該帳戶的紅利訊息. 並生成相對應的bonusView欄位.
-        (4). 紅利欄位的點擊情況會隨著轉帳金額的不同而有不同的顯示方式.
-            - 紅利欄位生成時, 預設選擇欄位下次再使用
-            - 當轉帳金額小於紅利發放的最低金額時, 在紅利欄位會顯示錯誤提示訊息. 提示金額未達標準
-            - 當轉帳金額有變動時, 變更選擇欄位下次再使用
-        (5). 當使用者選擇PT帳戶時, 會檢查該帳號是否有註冊PT帳號
-        (6). 轉帳頁的轉帳流程共分為4個步驟
-            - goDepositStep1 method : 主要功能負責個欄位資料檢核是否正確
-            - goDepositStep2 method : 主要功能負責確認是否使用coupon or 紅利
-                1. 判斷是否使用coupon卷, 如果有使用, 進入goDepositStep3 method
-                2. 使用者選擇麽一個有效的紅利欄位, 此時會call calculateBonusAmount api 確認紅利是否可以使用.如果可以使用, 進入 goDepositStep3 method
-                3. 其他狀態直接進入 goDepositStep3 method
-            - goDepositStep3 method : 主要功能負責轉帳動作
-                1. call submitTransfer api 做轉帳, 轉帳成功會顯示 '转账成功' toast. 並重新更新優惠及紅利列表資料.最後轉導轉帳成功頁面
-                2. 轉帳成功且使用coupon卷, 此時會觸發
-                - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method 
-                並 call applyBonus api 做优惠券使用動作. 當api回傳資料無誤時, 將會清空本機端相關coupon資料.如 [UserInfoManager share].bonusData. 最後顯示 '专属优惠使用成功' toast.最後轉導轉帳成功頁面
-                3. 有選擇紅利, 則進入 goDepositStep4
-                - goDepositStep4 method : 主要功能負責申請紅利. call applyBonus api取得紅利申請狀況.當紅利申請成功, 會重新更新優惠及紅利列表資料.最後轉導轉帳成功頁面.
+        1. The main page (DepositPageViewController) module and related events:
+        The deposit page distinguishes the deposit/transfer selection block above and the deposit function business menu below. The deposit implementation includes QQ payment, online payment, local bank transfer, cloud flash scan code, Jingdong wallet and Betwick card.
+        • The main page generation (on) method distinguishes 2 types
+          - Use the custom insured method (call initWithPresent method), this method will add a close button on the top left of the page.
+          - Opened in the normal way, TabBarItem is used this way, this method will not close the button on the top left of the page.
+        • The deposit block contains 2 buttons for deposit and transfer.
+        • Deposit business function block consists of
+          - The deposit menu section is implemented by DLScrollTabbarView
+          - Deposit content page is implemented by DLCustomSlideView
+        • NSNotificationCenter added a kEventNewDepositMethodArrival event to detect the update status of the push.
+        • NSNotificationCenter adds the kEventDespositSuccess event. When the deposit is successful, if the current page is opened using the Present method, the page is closed.
+        • NSNotificationCenter added a transfer_success event, when the transfer is successful, cut back to the home page
+        
+        Deposit page
+        The deposit function page is divided into two different types. One is to guide the web page when the deposit is completed, for example: QQ payment, cloud flash scan code, Jingdong wallet and online payment, etc. The other is to process the deposit completion behavior for the self page. For example: local bank transfer and BV.
+        
+        • The deposit page inherits the PaymentView in a unified manner. When there is coupon information, each deposit page must display coupon information. However, the coupon information will be cleared after leaving the piglet page. Whether or not the user has used the coupon roll.
+        
+        Deposit function page logic:
+        - QQ payment, cloud flash payment scan code, Jingdong wallet, online payment:
+        (1). The page opens will make all the components of the screen
+        (2). Check when a coupon volume is generated, generate a couponView.
+        (3). When the user enters the field data and the verification is completed, PaymentView's depositWithWebView method is triggered and call submitDeposit api is made to make the deposit action.
+        (4.1). The deposit is completed and no coupon is used. Open WebView directly to prompt the user to complete the deposit.
+        (4.2). The deposit is completed and coupon is used, which will trigger
+            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+              And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open WebView to prompt the user to complete the deposit.
+          
+        - Local bank transfer:
+        (1). The page opens will make all the components of the screen
+        (2). Check when a coupon volume is generated, generate a couponView.
+        (3). call getDepositTargetBank api Get bank information. (This will ignore the 'Alipay Transfer' function when storing temporary data)
+        (4). call getLocalDepositMethods api Get the transfer function. (This will ignore the 'Alipay Transfer' function when storing temporary data)
+        (5). It should be noted that the bankTypeClick method will update the supported bank account according to the selected transfer function. Otherwise, click the bankClick method to update the corresponding transfer function.
+        (6). When the user enters the field data and the verification is completed, the call submitDeposit api is used to make the deposit action.
+        (7.1). The deposit is completed and no coupon is used. Open DepositApplicationSuccessViewController directly to prompt the user to complete the deposit.
+        (7.2). The deposit is completed and coupon is used, which will trigger
+            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+            And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open DepositApplicationSuccessViewController to prompt the user to complete the deposit.
+        
+        - BW Card:
+        (1). The page opens will make all the components of the screen
+        (2). Check when a coupon volume is generated, generate a couponView.
+        (3). When the user enters the field data and the verification is completed, the call submitDeposit api will be used to make the deposit action.
+        (4.1). The deposit is completed and no coupon is used. Open DepositApplicationSuccessViewController directly to prompt the user to complete the deposit.
+        (4.2). The deposit is completed and coupon is used, which will trigger
+            - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+            And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally open DepositApplicationSuccessViewController to prompt the user to complete the deposit.
+        
+        Transfer page
+        (1). The page opens will make all the components of the screen
+        (2). call getUserTransferWallets api Update user wallet data.
+        (3). When the user selects the target account, it will call the getBonusList api to get the bonus message of the account. And generate the corresponding bonusView field.
+        (4). The click status of the bonus field will be displayed differently depending on the amount of the transfer.
+            - When the bonus field is generated, the default selection field will be used next time.
+            - When the transfer amount is less than the minimum amount issued by the bonus, an error message will be displayed in the bonus field. The reminder amount is not up to standard.
+            - When the transfer amount changes, change the selection field to use it again next time.
+        (5). When the user selects the PT account, it will check whether the account has a registered PT account.
+        (6). The transfer process of the transfer page is divided into 4 steps.
+            - goDepositStep1 method : The main function is responsible for checking whether the field data is correct.
+            - goDepositStep2 method : The main function is responsible for confirming whether to use coupon or bonus
+                1. Determine whether to use the coupon volume, if it is used, enter the goDepositStep3 method
+                2. The user selects a valid bonus field, then call calculateBonusAmount api to confirm whether the bonus can be used. If it can be used, enter the goDepositStep3 method
+                3. Other states go directly to the goDepositStep3 method
+            - goDepositStep3 method : The main function is responsible for the transfer action
+                1. call submitTransfer api to make the transfer, the transfer will display 'transfer success' toast. and re-update the offer and bonus list information. Finally transfer the transfer success page
+                2. The transfer is successful and the coupon volume is used, which triggers
+                - (BOOL)applyBonus : (TransactionResponseData*) transactionData amount:(NSInteger)amount depositCharges:(double)depositCharges method
+                And call applyBonus api to do the coupon use action. When the api returns the data is correct, it will clear the relevant coupon information of the local end. For example, [UserInfoManager share].bonusData. Finally, the 'exclusive offer is successfully used' toast. Finally, the transfer is transferred. Success page
+                3. If you have a choice bonus, go to goDepositStep4
+                - goDepositStep4 method : The main function is responsible for applying for dividends. call applyBonus api gets the bonus application status. When the bonus application is successful, the offer and bonus list information will be updated again. Finally, the transfer success page will be transferred.
             
-### 3.5 訊息
+### 3.5 Message
 
-        主頁面模組及相關事件 :
-        訊息組成區塊主要訊息類別選單.其中訊息包含所有讯息、存款通知、提款通知及红利通知．
-        • 訊息類別區塊組成包含
-        - 訊息選單部分由DLScrollTabbarView實作
-        - 訊息內容頁(slideView)由DLCustomSlideView實作
-        • NSNotificationCenter 新增 kEventUserDidLogin 事件, 偵測登入事件狀態.
-        • NSNotificationCenter 新增 kEventRefreshMessageList 事件, 偵測推播來的更新狀態.
-        • NSNotificationCenter 新增 kEventUserDidLogout 事件, 偵測登出事件狀態.
-        
-        主頁面(MessageViewController)邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 每次進入頁面時(viewWillAppear), 會取得訊息資料(call getMessageList api)更新訊息資料．
-        (3). 訊息分類是在App端寫死四種訊息分類, 分類的子頁面(MessageTableViewViewController)是在
-        - (UIViewController *)DLCustomSlideView:(DLCustomSlideView *)sender controllerAt:(NSInteger)index
-        做生成頁面的動作.
-        (4). 子頁面生成之後, 會在自己屬於的頁面去取得訊息已讀狀態(call sendMessageRead api)並發通知(kEventRefreshMessageUnReadCount)更新未讀訊息數量．
-        
-### 3.6 會員
+        Main page module and related events:
+        The message forms the main message category menu for the block. The message contains all messages, deposit notifications, withdrawal notices and bonus notifications.
+        • Message category block composition contains
+        - The message menu section is implemented by DLScrollTabbarView
+        - The message content page (slideView) is implemented by DLCustomSlideView
+        • NSNotificationCenter added a kEventUserDidLogin event to detect the status of the login event.
+        • NSNotificationCenter added a kEventRefreshMessageList event to detect the update status of the push.
+        • NSNotificationCenter added a kEventUserDidLogout event to detect the status of the logout event.
+        
+        Main page (MessageViewController) logic:
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear), you will get the message data (call getMessageList api) to update the message data.
+        (3). The message classification is to write four kinds of message classifications on the App side. The classified sub-page (MessageTableViewViewController) is in
+        - (UIViewController *) DLCustomSlideView: (DLCustomSlideView *) sender controllerAt: (NSInteger) index
+        Do the action of generating the page.
+        (4). After the sub-page is generated, it will get the message read status (call sendMessageRead api) concurrent notification (kEventRefreshMessageUnReadCount) to update the number of unread messages on the page it belongs to.
+        
+### 3.6 Members
 
-        主頁面模組及相關事件 :
-        會員中心組成區塊可分為三個區塊, 並在登入/登出的layout不盡相同．
-        登入狀態分別是上方的使用者相關訊息(AlreadyLogginHeadView), 中間的功能列表(tableView)以及下方的版本資訊和登出按鈕(AlreadyLogginFootView)
-        登出狀態分別是上方的登入/註冊按鈕(NotLoginHeadView), 中間的功能列表(tableView)以及下方的版本資訊(UpdateVersionView)
-        功能列表則包含公告、专属优惠、红利信息、银行资料管理、交易记录、提款、密码管理、PT游戏下载版密码管理、指纹识别/脸部识别登录、关于以及客服功能
-        
-        • NSNotificationCenter 新增 kEventUserDidLogout 事件, 偵測登出事件狀態.
-        
-        主頁面(MessageViewController)邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 判斷是否需要顯示更新版本資訊及更新生物辨識功能按鈕狀態(kIsTouchOrFaceIDLogin, 跟前次登入帳號不一致, 須將狀態設為false)
-        (3). 每次進入頁面時(viewWillAppear)且為登入狀態, 會取得會員資料(call getUserInfo api)以及帳戶資料(call getUserWalletBalance api)並更新頁面資料
-        (4). 點擊提款需要先檢查使用者資料(call getUserInfo api)及提款設定(call getWithdrawSettings api)是否填寫完成.
-        
-        - 编辑个人资料(EditPersonalDataViewController)頁面邏輯
-        (1). 頁面開啟會先生成畫面所有元件
-        (2.) 會取得會員資料(call getUserInfo api)、帳戶資料(call getUserWalletBalance api)、安全問題(call getSecretQuestions api)以及國家列表(call getNationsList api)並更新頁面資料
-        (3). 驗證填寫更新資料後, 每個欄位都需檢查是否有調整資料, 如果有調整, 需 call updateUserInfo api 更新會員資料.
-        (4). 全部資料更新成功, 需返回上一頁. 當有資料更新失敗, 需顯示哪些欄位更新失敗(call showUpdateProfileStatus method判斷)
-        
-        - PT游戏密码管理(PTPasswordManagementViewController)頁面邏輯
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). call getUserVendorInfo api 取得是否有PT帳戶
-        (3). 密碼填寫驗證完之後, call updateVendorPassword api 更新PT密碼
-        
-        - 密码管理(PasswordManagementViewController)頁面邏輯
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 密碼填寫驗證完之後, call updateUserPassword api 更新密碼
-        
-        - 提款(DrawMoneyViewController)頁面邏輯
-        
-        • 點擊新增帳戶開啟新增帳戶((AddBankAccountViewController))資料頁面
-        • 點擊提示訊息開啟提示訊息頁面(ReminderPageViewController)
-        • NSNotificationCenter 新增 kEventTransationSettingsChanged 事件, 偵測事件更新帳戶資料.
-        • NSNotificationCenter 新增 kEventBankAccountDidAdd 事件, 偵測事件更新帳戶資料.
-        
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 需檢查是否驗證/填寫過使用者資料, 如果沒有, 需開啟RealNameViewController做填寫
-        (3). call getUserWalletBalance api 取得帳戶金額資料
-        (4). call getUserBanksInfo api 取得銀行資料, 並預設顯示的一筆
-        (5). call getWithdrawSettings api 取得帳戶設定資料, 並更新單筆提款金額會低最高值
-        (6). 提款資料填寫完, call submitWithdraw api 做提款動作.
-        
-        - 交易记录(TransactionRecordViewController)頁面邏輯
-        
-        交易紀錄組成區塊主要訊息類別選單.其中訊息包含所有交易、存款記錄、轉賬記錄及提款記錄．
-        • 交易紀錄區塊組成包含
-        - 交易紀錄選單部分由DLScrollTabbarView實作
-        - 交易紀錄內容頁(slideView)由DLCustomSlideView實作
-        - 各交易功能共用實作一個內容頁(TransactionRecordTableViewViewController), 依據index值得不同實作內容資訊
-        - index 值(畫面順序)是APP端寫死.
-        
-        交易內容頁(TransactionRecordTableViewViewController) 頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 每次進入頁面時(viewWillAppear)會取call getTransactionHistory api取得最新交易資料.
-        (3). api 資料會依據 transactionType 做分類. 該內容頁會依據分類好的資料做顯示.
-        (4). 內容狀態會依據api給的statusID做顯示, 內容如下 :
-        statusID :
-        0、default -> api 給值
-        1 -> 待处理
-        2 -> 处理中
-        3 -> 网关处理中
-        4 -> 成功
-        5 -> 失败
-        6 -> 已取消
-        7、8、9 -> 处理中
-        
-        - 银行资料管理(BankManagementViewController)頁面邏輯
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 每次進入頁面時(viewWillAppear)會取call getUserBanksInfo api取得最新交易資料.
-        (3). 無銀行資料時, 可以點擊新增銀行新增銀行資料(new AddBankAccountViewController)
-        
-        - 红利信息(DividendDataViewController)頁面邏輯
-        紅利訊息組成區塊主要紅利選單.其中功能包含红利概览、查询红利记录及返水优惠．
-        • 紅利區塊組成包含
-        － 上方選單功能頁(topView), 是以刻死3個按鈕方式實作
-        - 下方內容區塊, 分別實作红利概览(DividendOverviewView)、查询红利记录(QueryDividendDataView)及返水优惠(BackwaterDiscountView) 三個頁面, 並直接addSubView方式貼在頁面上.
-        - 切換方式以show/hide view方式做顯示(btnClick method)
-        - 红利概览僅顯示 bonusStatusID = 3 and 4 分類資料
-        - 查询红利记录狀態按鈕, bonusStatusID = 2、5、6、8 將隱藏(完成及已過期不顯示按鈕)
-        
-        頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 頁面生成時會 call getBonusBalance api 取得紅利資料
-        (3). call getBonusMilestone 取得各月份即將過期紅利值, call getPromotionHistory api 取得紅利詳細資訊(红利概览預設查詢區間由2008/01/01 00:00:00 至 當天的 23:59:59) 
-        (4). call getUserWalletBalance api 取得帳戶列表資料
-        (5). 日期選擇會透過 toSelect delegate method (re-call getPromotionHistory api) 取得最新資料
-        
-        - 专属优惠(ExclusivePreferenceViewController)頁面邏輯
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). coupon填寫完會call getCouponInfo api, 先取得資料作初步驗證, 在 call calculateBonusAmount api 驗證此coupon是否有效(有無被使用).
-        
-        - 公告(NoticeViewController)頁面邏輯
-        公告組成區塊主要訊息類別選單.其中訊息包含所有公告、特別公告、最新公告及優惠公告．
-        • 公告區塊組成包含
-        - 公告選單部分由DLScrollTabbarView實作
-        - 公告內容頁(slideView)由DLCustomSlideView實作
-        - 各公告功能共用實作一個內容頁(NoticeTableViewViewController), 依據index值得不同實作內容資訊
-         
-        頁面邏輯 :
-        (1). 頁面開啟會先生成畫面所有元件
-        (2). 頁面生成時會 call sendMessageRead api 送出該頁面已讀狀態.
-        (3). 各頁面依據index值得不同, 會 call getMessageList api取相特別公告對應資料. call getNewsList api 取得其他公告資料
-        (4). 所有公告在APP端自行需合併2支api資料, 並做日期排序.
-        
-        - 关于(AboutUSViewController)頁面邏輯
-        (1). 頁面開啟會先生成畫面所有元件
+        Main page module and related events:
+        The membership center block can be divided into three blocks, and the layout of login/logout is not the same.
+        The login status is the user related message (AlreadyLogginHeadView), the middle function list (tableView) and the version information and logout button (AlreadyLogginFootView).
+        The logout status is the login/registration button (NotLoginHeadView), the function list (tableView) in the middle, and the version information (UpdateVersionView) below.
+        The function list includes announcements, exclusive offers, bonus information, bank data management, transaction records, withdrawals, password management, PT game download password management, fingerprint recognition/face recognition login, and customer service functions.
+        
+        • NSNotificationCenter added a kEventUserDidLogout event to detect the status of the logout event.
+        
+        Main page (MessageViewController) logic:
+        (1). The page opens will make all the components of the screen
+        (2). Determine whether it is necessary to display the updated version information and update the biometric function button status (kIsTouchOrFaceIDLogin, which is inconsistent with the previous login account, and must be set to false)
+        (3). Each time you enter the page (viewWillAppear) and log in, you will get the member data (call getUserInfo api) and account data (call getUserWalletBalance api) and update the page data.
+        (4). Click to check the user data (call getUserInfo api) and the withdrawal setting (call getWithdrawSettings api) is completed.
+        
+        - Edit Profile (EditPersonalDataViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2.) will get the member information (call getUserInfo api), account data (call getUserWalletBalance api), security question (call getSecretQuestions api) and country list (call getNationsList api) and update the page data
+        (3). After verifying the updated information, each field needs to check whether there is any adjustment data. If there is any adjustment, call updateUserInfo api to update the member information.
+        (4). All data is updated successfully, need to return to the previous page. When there is data update failure, which fields need to be updated failed (call showUpdateProfileStatus method judgment)
+        
+        - PT Game Password Management (PTPasswordManagementViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2). call getUserVendorInfo api to get a PT account
+        (3). After the password is filled in, the call updateVendorPassword api updates the PT password.
+        
+        - Password Management (PasswordManagementViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2). After the password is filled in, call updateUserPassword api to update the password.
+        
+        - DrawMoneyViewController page logic
+        
+        • Click Add Account to open the Add Account (AddBankAccountViewController) profile page.
+        • Click on the prompt message to open the prompt message page (ReminderPageViewController)
+        • NSNotificationCenter added a kEventTransationSettingsChanged event to detect event updates to account data.
+        • NSNotificationCenter added the kEventBankAccountDidAdd event to detect event updates to account data.
+        
+        (1). The page opens will make all the components of the screen
+        (2). Check whether the user data is verified/filled. If not, you need to open RealNameViewController to fill in.
+        (3). call getUserWalletBalance api Get account amount information
+        (4). call getUserBanksInfo api Get bank information, and preset the displayed
+        (5). call getWithdrawSettings api Get account settings data, and update the single withdrawal amount will be the lowest value
+        (6). After the withdrawal information is completed, call submitWithdraw api is used to make withdrawals.
+        
+        - Transaction Record (TransactionRecordViewController) page logic
+        
+        The transaction record constitutes the main message category menu of the block. The message contains all transactions, deposit records, transfer records and withdrawal records.
+        • The transaction record block consists of
+        - The transaction history menu is implemented by DLScrollTabbarView
+        - The transaction record content page (slideView) is implemented by DLCustomSlideView
+        - Each transaction function is shared as a content page (TransactionRecordTableViewViewController), based on the index worth different implementation content information
+        - The index value (screen order) is written on the APP side.
+        
+        Transaction Content Page (TransactionRecordTableViewViewController) Page Logic:
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear) will take the call getTransactionHistory api to get the latest transaction data.
+        (3). The api data will be classified according to the transactionType. The content page will be displayed according to the classified information.
+        (4). The content status will be displayed according to the statusID given by the api, as follows:
+        statusID :
+        0, default -> api to the value
+        1 -> pending
+        2 -> Processing
+        3 -> Gateway processing
+        4 -> Success
+        5 -> failed
+        6 -> Cancelled
+        7, 8, 9 -> Processing
+        
+        - BankManagementViewController page logic
+        (1). The page opens will make all the components of the screen
+        (2). Each time you enter the page (viewWillAppear) will take the call getUserBanksInfo api to get the latest transaction data.
+        (3). When there is no bank information, you can click Add Bank to add bank information (new AddBankAccountViewController)
+
+        - DividendDataViewController page logic
+        The bonus message forms the main bonus menu of the block. The function includes the bonus overview, the inquiry bonus record and the return water offer.
+        • Bonus block composition contains
+        - The top menu function page (topView) is implemented by killing 3 buttons.
+        - The following content blocks are divided into three pages: DividendOverviewView, QueryDividendDataView and BackwaterDiscountView, and are directly attached to the page by addSubView.
+        - Switching mode is displayed in show/hide view mode (btnClick method)
+        - Dividend overview only shows bonusStatusID = 3 and 4
+        - Query bonus record status button, bonusStatusID = 2, 5, 6, 8 will be hidden (completed and expired without displaying button)
+        
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). When the page is generated, it will call getBonusBalance api to get the bonus information.
+        (3). call getBonusMilestone Get the bonus value of each month's upcoming expiration, call getPromotionHistory api Get the bonus details (the bonus query preset query interval from 2008/01/01 00:00:00 to 23:59:59 of the day)
+        (4). call getUserWalletBalance api Get account list information
+        (5). Date selection will get the latest information through toSelect delegate method (re-call getPromotionHistory api)
+        
+        - Exclusive offer (ExclusivePreferenceViewController) page logic
+        (1). The page opens will make all the components of the screen
+        (2). After the coupon is filled out, call getCouponInfo api, first obtain the data for preliminary verification, and verify whether the coupon is valid (with or without it) in call calculateBonusAmount api.
+        
+        - Announcement (NoticeViewController) page logic
+        Announcements form the main message category menu for the block. The message contains all announcements, special announcements, latest announcements and offers.
+        • Announcement block composition contains
+        - The bulletin menu is implemented by DLScrollTabbarView
+        - Announcement content page (slideView) is implemented by DLCustomSlideView
+        - Each announcement function shares a content page (NoticeTableViewViewController), based on the index worth different implementation content information
+         
+        Page logic:
+        (1). The page opens will make all the components of the screen
+        (2). When the page is generated, the call sendMessageRead api will send out the read status of the page.
+        (3). Each page is different according to the index, and will call getMessageList api to take the corresponding information of the special announcement. call getNewsList api Get other announcement materials
+        (4). All announcements need to merge 2 api data on the APP side and sort the date.
+        
+        - About (AboutUSViewController) page logic
+        (1). The page opens will make all the components of the screen
         
 ## 4. SDK / Utiity 說明 
     
