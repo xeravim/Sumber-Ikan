@@ -94,58 +94,58 @@
         • UITextField *payNameTF -> payer name input 
         • UIButton *submitBtn -> submit button
         • UILabel *promptLab -> please submit the application message after successful "deposit" or "transfer"
-##### 1.3 QQPayView  (QQ支付)
-        • UIScrollView *myScrollView -> 容器
-        • UIButton *remindBtn -> 溫馨提醒
-        • UILabel *depositAmountLab -> 存款金額
-        • UITextField *amountTF -> 金額輸入匡
-        • UIView *amountTFLine ->輸入匡底線
-        • UILabel *explainLab -> 存款金額提示
-        • UIView *btnView -> 快選金額
-        • UILabel *actualAmountTitleLab -> 可得金額標題
-        • UILabel *actualAmountLab -> 可得金額
-        • UIButton *goDepositBtn -> 立即存款
-##### 1.4 CloudFlashPaymentView (雲閃付)
-        • UIScrollView *myScrollView -> 容器
-        • UIButton *remindBtn -> 溫馨提醒
-        • UILabel *depositAmountLab -> 存款金額
-        • UITextField *amountTF -> 金額輸入匡
-        • UIView *amountTFLine ->輸入匡底線
-        • UILabel *explainLab -> 存款金額提示
-        • UIView *btnView -> 快選金額
-        • UILabel *actualAmountTitleLab -> 可得金額標題
-        • UILabel *actualAmountLab -> 可得金額
-        • UIButton *goDepositBtn -> 立即存款
-##### 1.5 JDWalletView (京東錢包)
-        • UIScrollView *myScrollView -> 容器
-        • UIButton *remindBtn -> 溫馨提醒
-        • UILabel *depositAmountLab -> 存款金額
-        • UITextField *amountTF -> 金額輸入匡
-        • UIView *amountTFLine ->輸入匡底線
-        • UILabel *explainLab -> 存款金額提示
-        • UIView *btnView -> 快選金額
-        • UILabel *actualAmountTitleLab -> 可得金額標題
-        • UILabel *actualAmountLab -> 可得金額
-        • UIButton *goDepositBtn -> 立即存款
-##### 1.6 BetwayCardPayView (必威卡)
-        • UIScrollView *myScrollView -> 容器
-        • UIButton *remindBtn -> 溫馨提醒
-        • UILabel *dateLab -> 到帳時間
-        • UILabel *cardSerialNumberLab -> 必威卡序列號
-        • UITextField *cardSerialNumberTF -> 必威卡序列號輸入匡
-        • UIView *cardSerialNumberTFLine -> 必威卡序列號輸入匡底線
-        • UILabel *cardSerialNumberHintLab -> 必威卡序列號輸入匡提示
-        • UILabel *cardCipherLab -> 必威卡密碼
-        • UITextField *cardCipherTF -> 必威卡密碼輸入匡
-        • UIView *cardCipherTFLine -> 必威卡密碼輸入匡底線
-        • UILabel *cardCipherHintLab -> 必威卡密碼輸入匡提示
-        • UILabel *depositAmountLab -> 存款金額
-        • UITextField *amountTF -> 金額輸入匡
-        • UIView *amountTFLine ->輸入匡底線
-        • UILabel *explainLab -> 存款金額提示
-        • UIView *btnView -> 快選金額
-        • UIButton *goDepositBtn -> 立即存款
-#### 2.轉帳
+##### 1.3 QQPayView  (QQ Payment)
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> Warm reminder
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> Amount input
+        • UIView *amountTFLine -> input bottom line
+        • UILabel *explainLab -> Deposit Amount Tip
+        • UIView *btnView -> Quick selection amount
+        • UILabel *actualAmountTitleLab -> Available Amount Title
+        • UILabel *actualAmountLab -> Amount available
+        • UIButton *goDepositBtn -> Deposit Now
+##### 1.4 CloudFlashPaymentView (Cloud Flash Pay)
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> Warm reminder
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> Amount input
+        • UIView *amountTFLine -> input bottom line
+        • UILabel *explainLab -> Deposit Amount Tip
+        • UIView *btnView -> Quick selection amount
+        • UILabel *actualAmountTitleLab -> Available Amount Title
+        • UILabel *actualAmountLab -> Amount available
+        • UIButton *goDepositBtn -> Deposit Now
+##### 1.5 JDWalletView (Jingdong Wallet)
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> Warm reminder
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> Amount input
+        • UIView *amountTFLine -> input bottom line
+        • UILabel *explainLab -> Deposit Amount Tip
+        • UIView *btnView -> Quick selection amount
+        • UILabel *actualAmountTitleLab -> Available Amount Title
+        • UILabel *actualAmountLab -> Amount available
+        • UIButton *goDepositBtn -> Deposit Now
+##### 1.6 BetwayCardPayView (Briva Card)
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> Warm reminder
+        • UILabel *dateLab -> arrival time
+        • UILabel *cardSerialNumberLab -> BV Card Serial Number
+        • UITextField *cardSerialNumberTF -> BV Card serial number input匡
+        • UIView *cardSerialNumberTFLine -> BV card serial number input bottom line
+        • UILabel *cardSerialNumberHintLab -> BV card serial number input 匡 prompt
+        • UILabel *cardCipherLab -> BV Card Password
+        • UITextField *cardCipherTF -> BV Card Password Input匡
+        • UIView *cardCipherTFLine -> BV Card Password Input Bottom Line
+        • UILabel *cardCipherHintLab -> BV Card Password Input Tips
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> Amount input匡
+        • UIView *amountTFLine -> input bottom line
+        • UILabel *explainLab -> Deposit Amount Tip
+        • UIView *btnView -> Quick selection amount
+        • UIButton *goDepositBtn -> Deposit Now
+#### 2.Transfer
 ##### 2.1 MyCouponView (專屬優惠券)
         • UILabel *contentLable -> 優惠券內容
         • UITextField *couponField -> 優惠券輸入匡
