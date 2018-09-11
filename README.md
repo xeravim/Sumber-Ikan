@@ -3,7 +3,7 @@
 ## 1. System Architecture (Figure)
 
 #### Please refer to the architecture diagram :
-<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "680">
+<br><img src = "https://github.com/xeravim/Sumber-Ikan/blob/master/Screenshot/Architecture/Betway_Architecture.png?raw=true" width = "800">
 
 ## 2. Description of each module
 ### Home
