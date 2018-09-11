@@ -95,56 +95,56 @@
         • UIButton *submitBtn -> submit button
         • UILabel *promptLab -> please submit the application message after successful "deposit" or "transfer"
 ##### 1.3 QQPayView  (QQ Payment)
-        • UIScrollView *myScrollView -> container
-        • UIButton *remindBtn -> Warm reminder
-        • UILabel *depositAmountLab -> deposit amount
-        • UITextField *amountTF -> Amount input
-        • UIView *amountTFLine -> input bottom line
-        • UILabel *explainLab -> Deposit Amount Tip
-        • UIView *btnView -> Quick selection amount
-        • UILabel *actualAmountTitleLab -> Available Amount Title
-        • UILabel *actualAmountLab -> Amount available
-        • UIButton *goDepositBtn -> Deposit Now
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> warm reminder
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> amount input
+        • UIView *amountTFLine ->input bottom line
+        • UILabel *explainLab -> deposit amount tip
+        • UIView *btnView -> quick selection amount
+        • UILabel *actualAmountTitleLab -> available amount title
+        • UILabel *actualAmountLab -> amount available
+        • UIButton *goDepositBtn -> deposit now
 ##### 1.4 CloudFlashPaymentView (Cloud Flash Pay)
-        • UIScrollView *myScrollView -> container
-        • UIButton *remindBtn -> Warm reminder
-        • UILabel *depositAmountLab -> deposit amount
-        • UITextField *amountTF -> Amount input
-        • UIView *amountTFLine -> input bottom line
-        • UILabel *explainLab -> Deposit Amount Tip
-        • UIView *btnView -> Quick selection amount
-        • UILabel *actualAmountTitleLab -> Available Amount Title
-        • UILabel *actualAmountLab -> Amount available
-        • UIButton *goDepositBtn -> Deposit Now
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> warm reminder
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> amount input
+        • UIView *amountTFLine ->input bottom line
+        • UILabel *explainLab -> deposit amount tip
+        • UIView *btnView -> quick selection amount
+        • UILabel *actualAmountTitleLab -> available amount title
+        • UILabel *actualAmountLab -> amount available
+        • UIButton *goDepositBtn -> deposit now
 ##### 1.5 JDWalletView (Jingdong Wallet)
-        • UIScrollView *myScrollView -> container
-        • UIButton *remindBtn -> Warm reminder
-        • UILabel *depositAmountLab -> deposit amount
-        • UITextField *amountTF -> Amount input
-        • UIView *amountTFLine -> input bottom line
-        • UILabel *explainLab -> Deposit Amount Tip
-        • UIView *btnView -> Quick selection amount
-        • UILabel *actualAmountTitleLab -> Available Amount Title
-        • UILabel *actualAmountLab -> Amount available
-        • UIButton *goDepositBtn -> Deposit Now
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> warm reminder
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> amount input
+        • UIView *amountTFLine ->input bottom line
+        • UILabel *explainLab -> deposit amount tip
+        • UIView *btnView -> quick selection amount
+        • UILabel *actualAmountTitleLab -> available amount title
+        • UILabel *actualAmountLab -> amount available
+        • UIButton *goDepositBtn -> deposit now
 ##### 1.6 BetwayCardPayView (Briva Card)
-        • UIScrollView *myScrollView -> container
-        • UIButton *remindBtn -> Warm reminder
-        • UILabel *dateLab -> arrival time
-        • UILabel *cardSerialNumberLab -> BV Card Serial Number
-        • UITextField *cardSerialNumberTF -> BV Card serial number input匡
-        • UIView *cardSerialNumberTFLine -> BV card serial number input bottom line
-        • UILabel *cardSerialNumberHintLab -> BV card serial number input 匡 prompt
-        • UILabel *cardCipherLab -> BV Card Password
-        • UITextField *cardCipherTF -> BV Card Password Input匡
-        • UIView *cardCipherTFLine -> BV Card Password Input Bottom Line
-        • UILabel *cardCipherHintLab -> BV Card Password Input Tips
-        • UILabel *depositAmountLab -> deposit amount
-        • UITextField *amountTF -> Amount input匡
-        • UIView *amountTFLine -> input bottom line
-        • UILabel *explainLab -> Deposit Amount Tip
-        • UIView *btnView -> Quick selection amount
-        • UIButton *goDepositBtn -> Deposit Now
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> warm reminder
+        • UILabel *dateLab -> arrival date
+        • UILabel *cardSerialNumberLab -> BV card serial number
+        • UITextField *cardSerialNumberTF -> BV card serial number input
+        • UIView *cardSerialNumberTFLine -> BV card serial number input bottom line
+        • UILabel *cardSerialNumberHintLab -> BV card serial number input tips
+        • UILabel *cardCipherLab -> BV card password
+        • UITextField *cardCipherTF -> BV card password input
+        • UIView *cardCipherTFLine -> BV card password input bottom line
+        • UILabel *cardCipherHintLab -> BV card password input tips
+        • UILabel *depositAmountLab -> deposit amount
+        • UITextField *amountTF -> amount input
+        • UIView *amountTFLine -> amount input bottom line 
+        • UILabel *explainLab -> deposit amount tip
+        • UIView *btnView -> quick selection amount
+        • UIButton *goDepositBtn -> deposit now
 #### 2.Transfer
 ##### 2.1 MyCouponView (專屬優惠券)
         • UILabel *contentLable -> 優惠券內容
