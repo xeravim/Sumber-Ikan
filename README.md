@@ -146,63 +146,63 @@
         • UIView *btnView -> quick selection amount
         • UIButton *goDepositBtn -> deposit now
 #### 2.Transfer
-##### 2.1 MyCouponView (專屬優惠券)
-        • UILabel *contentLable -> 優惠券內容
-        • UITextField *couponField -> 優惠券輸入匡
-        • UILabel *tipsLable ->  優惠券提示
-        • UILabel *warningLable -> 申請金額提示
+##### 2.1 MyCouponView (Exclusive Coupon)
+        • UILabel *contentLable -> coupon content
+        • UITextField *couponField -> coupon input
+        • UILabel *tipsLable ->  coupon tips
+        • UILabel *warningLable -> application amount tip
 ##### 2.2 TransferAccountsView
-        • UIScrollView *myScrollView -> 容器
-        • UIButton *remindBtn -> 溫馨提醒
-        • UILabel *sourceAccountLab -> 源自帳戶
-        • UILabel *sourceAccountMoney -> 源自帳戶餘額
-        • UITextField *sourceAccountTF -> 源自目標帳戶輸入匡
-        • UIView *sourceAccountTFLine -> 目標帳戶輸入匡底線
-        • UILabel *targetAccountLab -> 目標帳戶
-        • UILabel *targetAccountMoney -> 目標帳戶餘額
-        • UITextField *targetAccountTF -> 目標帳戶輸入匡 
-        • UIView *targetAccountTFLine -> 目標帳戶底線
-        • UILabel *amountLab -> 轉帳金額
-        • UITextField *amountTF -> 轉帳金額輸入匡
-        • UIView *amountTFLine -> 轉帳金額輸入匡底線
-        • UILabel *lbTransferHint -> 轉帳金額提示
-        • UIButton *goDepositBtn -> 立即轉帳
+        • UIScrollView *myScrollView -> container
+        • UIButton *remindBtn -> warm reminder
+        • UILabel *sourceAccountLab -> from account
+        • UILabel *sourceAccountMoney -> from account balance
+        • UITextField *sourceAccountTF -> from the target account input
+        • UIView *sourceAccountTFLine -> target account input bottom line
+        • UILabel *targetAccountLab -> target account
+        • UILabel *targetAccountMoney -> target account balance
+        • UITextField *targetAccountTF -> target account input 
+        • UIView *targetAccountTFLine -> target account bottom line
+        • UILabel *amountLab -> transfer amount
+        • UITextField *amountTF -> transfer amount input
+        • UIView *amountTFLine -> transfer amount input to the bottom line
+        • UILabel *lbTransferHint -> transfer amount tip
+        • UIButton *goDepositBtn -> transfer now
 ##### 2.3 TransferSuccessViewController
-        • UIScrollView *myScrollView -> 容器
-        • UIImageView *alertImgView -> 成功圖示
-        • UILabel *titleLab -> 標題
-        • UILabel *alertLab -> 提示訊息
-        • UIButton *personalCenterBtn -> 關閉
+        • UIScrollView *myScrollView -> container
+        • UIImageView *alertImgView -> success icon
+        • UILabel *titleLab -> title
+        • UILabel *alertLab -> prompt message
+        • UIButton *personalCenterBtn -> close
 ##### 2.4 BonusItemView
-        • UIView *topView -> 上方區塊
-        • UIView *centerView -> 中間區塊
-        • UIView *bottomView -> 下方區塊
-        • UITextField *couponField -> 優惠券代碼輸入匡
+        • UIView *topView -> upper block
+        • UIView *centerView -> middle block
+        • UIView *bottomView -> bottom block
+        • UITextField *couponField -> coupon code entry
 ##### 2.5 UnfinishedGameHeaderView
-        • UILabel *lbPlatform -> 未完成遊戲的分類
+        • UILabel *lbPlatform -> classification of unfinished games
 ##### 2.6 UnfinishedGamesPromptViewController
-        • NSLayoutConstraint *FakeNavgationBarHeight -> 客製化天的高
-        • UIButton *backButton -> 返回按鈕
-        • UITableView *tableView -> 未完成遊戲列表
+        • NSLayoutConstraint *FakeNavgationBarHeight -> the heigh of the custom day
+        • UIButton *backButton -> return button
+        • UITableView *tableView -> unfinished game list
 ##### 2.7 UnfinishedGameCell
-        • UIImageView *imgGame -> 遊戲預覽圖
-        • UILabel *lbGameTitle -> 遊戲名稱
+        • UIImageView *imgGame -> game preview
+        • UILabel *lbGameTitle -> game name
 ###### 2.8 ReminderPageViewController
-        • UIScrollView *myScrollView -> 容器
-        • UILabel *DepositRestrictionLab -> 存款限制
-        • UILabel *DepositRestrictionContentLab -> 存款限制提示內容
-        • UILabel *RemindYouLab -> 提醒您
-        • UILabel *RemindYouContentLab -> 提醒您內容
+        • UIScrollView *myScrollView -> container
+        • UILabel *DepositRestrictionLab -> deposit limit
+        • UILabel *DepositRestrictionContentLab -> deposit limit prompt content
+        • UILabel *RemindYouLab -> remind you
+        • UILabel *RemindYouContentLab -> remind you of the content
 ##### 2.9 RealNameViewController
-        • UIScrollView *myScrollView -> 容器
-        • UIImageView *alertImgView -> 提示圖
-        • UILabel *alertLab -> 提示訊息
-        • UILabel *realNameLab -> 真實姓名
-        • UITextField *realNameTF -> 真實姓名輸入匡
-        • UIView *realNameTFLine -> 真實姓名輸入匡底線
-        • UILabel *realNameWordingLab -> 真實姓名提示
-        • UIButton *sendRealNameBtn -> 送出
-        • UILabel *pageWordingLab -> 真實姓名只能輸入一次的提示
+        • UIScrollView *myScrollView -> container
+        • UIImageView *alertImgView -> prompt map
+        • UILabel *alertLab -> prompt message
+        • UILabel *realNameLab -> real name
+        • UITextField *realNameTF -> real name input
+        • UIView *realNameTFLine -> real name input bottom line
+        • UILabel *realNameWordingLab -> real name prompt
+        • UIButton *sendRealNameBtn -> send out
+        • UILabel *pageWordingLab -> prompt that the real name can only be entered once
 ##### 2.10 RealNameSuccessViewController
         • UIScrollView *myScrollView -> 容器
         • UIImageView *alertImgView -> 成功圖示
